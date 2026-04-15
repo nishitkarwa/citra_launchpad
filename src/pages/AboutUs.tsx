@@ -83,7 +83,7 @@ const Stats = () => {
               className={`text-center ${inView ? "animate-fade-in-up" : "opacity-0"}`}
               style={inView ? { animationDelay: `${i * 100}ms` } : undefined}
             >
-              <p className="text-[40px] md:text-[52px] font-bold leading-none text-foreground">{s.value}</p>
+              <p className="text-[40px] md:text-[52px] font-bold leading-none text-foreground"><AnimatedNumber value={s.value} inView={inView} /></p>
               <p className="label-caption text-muted-foreground mt-2">{s.label}</p>
             </div>
           ))}
