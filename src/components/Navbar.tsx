@@ -97,12 +97,12 @@ const Navbar = () => {
         <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-4 space-y-3">
           {navLinks.map((l) => (
             <a
-              key={l}
-              href={`#${l.toLowerCase().replace(/\s/g, "")}`}
+              key={l.label}
+              href={l.link}
               onClick={() => setOpen(false)}
               className="block text-base font-medium text-foreground/70 hover:text-foreground"
             >
-              {l}
+              {l.label}
             </a>
           ))}
           <a
