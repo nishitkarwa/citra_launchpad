@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import citraLogo from "@/assets/CITRA LOGO.png";
 
 const navLinks = [
-  { label: "Projects", link: "/#projects" },
-  { label: "Services", link: "/#services" },
+  { label: "Projects", link: "/projects" },
+  { label: "Services", link: "/services" },
   { label: "About Us", link: "/about" },
   { label: "Contact", link: "/#contact" },
 ];
