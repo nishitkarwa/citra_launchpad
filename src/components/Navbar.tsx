@@ -97,16 +97,19 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-4 space-y-3">
-          {navLinks.map((l) => (
-            <a
-              key={l.label}
-              href={l.link}
-              onClick={() => setOpen(false)}
-              className="block text-base font-medium text-foreground/70 hover:text-foreground"
-            >
-              {l.label}
-            </a>
-          ))}
+          {navLinks.map((l) => {
+            const isRoute = l.link.startsWith("/") && !l.link.includes("#");
+            const cls = "block text-base font-medium text-foreground/70 hover:text-foreground";
+            return isRoute ? (
+              <Link key={l.label} to={l.link} onClick={() => setOpen(false)} className={cls}>
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.label} href={l.link} onClick={() => setOpen(false)} className={cls}>
+                {l.label}
+              </a>
+            );
+          })}
           <a
             href="#contact"
             onClick={() => setOpen(false)}
