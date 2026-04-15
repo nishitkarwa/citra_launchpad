@@ -1,25 +1,63 @@
 import { useInView } from "@/hooks/useInView";
 
 const reviews = [
-  { quote: "CIIRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.", name: "Ananya Mehta", title: "Director, Surabi Group" },
-  { quote: "From the first brief to final handover, the process was seamless. We had full visibility at every stage and the finished development exceeded our expectations on every metric.", name: "Rohan Desai", title: "CEO, Greenmark Developments" },
-  { quote: "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CIIRA delivers.", name: "Priya Nambiar", title: "Founder, EcoEdge Properties" },
+  {
+    quote:
+      "CIIRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.",
+    name: "Ananya Mehta",
+    title: "Director, Surabi Group",
+  },
+  {
+    quote:
+      "From the first brief to final handover, the process was seamless. We had full visibility at every stage and the finished development exceeded our expectations on every metric.",
+    name: "Rohan Desai",
+    title: "CEO, Greenmark Developments",
+  },
+  {
+    quote:
+      "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CIIRA delivers.",
+    name: "Priya Nambiar",
+    title: "Founder, EcoEdge Properties",
+  },
 ];
 
 const Testimonials = () => {
   const { ref, inView } = useInView();
 
   return (
-    <section ref={ref} className={`section-padding bg-secondary ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
-      <div className="container mx-auto">
-        <p className="label-caption text-primary mb-4">THE REVIEWS</p>
-        <h2 className="mb-12">What Our Clients Say</h2>
+    <section
+      ref={ref}
+      className={`section-padding bg-secondary ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+    >
+      <div className="container mx-auto px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <p className="label-caption text-primary mb-4">THE REVIEWS</p>
+          <h2>What Our Clients Say</h2>
+        </div>
         <div className="grid md:grid-cols-3 gap-4">
           {reviews.map((r) => (
-            <div key={r.name} className="bg-background rounded-lg p-8">
-              <p className="body-default text-muted-foreground mb-6">"{r.quote}"</p>
-              <p className="font-semibold text-foreground">{r.name}</p>
-              <p className="text-sm text-muted-foreground">{r.title}</p>
+            <div
+              key={r.name}
+              className="bg-background rounded-2xl p-8 flex flex-col justify-between"
+            >
+              <div>
+                <svg className="text-primary mb-4" width="32" height="24" viewBox="0 0 32 24" fill="currentColor">
+                  <path d="M0 24V14.4C0 6.08 4.48 1.12 13.44 0l1.28 3.84C9.28 5.12 6.88 8.64 6.72 12H12v12H0zm18.56 0V14.4c0-8.32 4.48-13.28 13.44-14.4L33.28 3.84C27.84 5.12 25.44 8.64 25.28 12H30.56v12H18.56z" />
+                </svg>
+                <p className="body-default text-muted-foreground mb-8">{r.quote}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-xs font-semibold text-secondary-foreground">
+                  {r.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </div>
+                <div>
+                  <p className="font-semibold text-sm text-foreground">{r.name}</p>
+                  <p className="text-xs text-muted-foreground">{r.title}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

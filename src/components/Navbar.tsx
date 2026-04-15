@@ -1,47 +1,102 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const navLinks = ["Home", "About", "Projects", "Services"];
+const navLinks = ["Projects", "Services", "About Us", "Contact"];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 md:h-20">
-        <span className="text-xl font-bold tracking-tight text-foreground">CIIRA</span>
+    <nav
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-6 lg:px-8">
+        {/* Logo */}
+        <a href="#home" className={`text-xl font-bold tracking-tight transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
+          CIIRA
+        </a>
 
-        {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
+        {/* Center pill nav — desktop */}
+        <div
+          className={`hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5 transition-colors ${
+            scrolled ? "bg-foreground/5" : "bg-primary-foreground/10 backdrop-blur-sm"
+          }`}
+        >
           {navLinks.map((l) => (
-            <li key={l}>
-              <a href={`#${l.toLowerCase()}`} className="body-default text-muted-foreground hover:text-foreground transition-colors">
-                {l}
-              </a>
-            </li>
+            <a
+              key={l}
+              href={`#${l.toLowerCase().replace(/\s/g, "")}`}
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+                scrolled
+                  ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                  : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+              }`}
+            >
+              {l}
+            </a>
           ))}
-        </ul>
+        </div>
 
-        <a href="#contact" className="hidden md:inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity">
+        {/* CTA */}
+        <a
+          href="#contact"
+          className="hidden md:inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
+        >
           Get In Touch
         </a>
 
         {/* Mobile toggle */}
         <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menu">
-          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            {open ? <><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></> : <><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></>}
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke={scrolled ? "currentColor" : "white"}
+            strokeWidth="2"
+            strokeLinecap="round"
+          >
+            {open ? (
+              <>
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </>
+            ) : (
+              <>
+                <line x1="3" y1="7" x2="21" y2="7" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="17" x2="21" y2="17" />
+              </>
+            )}
           </svg>
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-2 space-y-4">
+        <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-4 space-y-3">
           {navLinks.map((l) => (
-            <a key={l} href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)} className="block body-default text-muted-foreground">
+            <a
+              key={l}
+              href={`#${l.toLowerCase().replace(/\s/g, "")}`}
+              onClick={() => setOpen(false)}
+              className="block text-base font-medium text-foreground/70 hover:text-foreground"
+            >
               {l}
             </a>
           ))}
-          <a href="#contact" onClick={() => setOpen(false)} className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground">
+          <a
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground mt-2"
+          >
             Get In Touch
           </a>
         </div>
