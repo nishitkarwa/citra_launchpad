@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import citraLogo from "@/assets/CITRA LOGO.png";
 
-const navLinks = ["Projects", "Services", "About Us", "Contact"];
+const navLinks = [
+  { label: "Projects", link: "/#projects" },
+  { label: "Services", link: "/#services" },
+  { label: "About Us", link: "/about" },
+  { label: "Contact", link: "/#contact" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -35,19 +40,22 @@ const Navbar = () => {
             scrolled ? "bg-transparent" : "bg-primary-foreground/10 backdrop-blur-sm"
           }`}
         >
-          {navLinks.map((l) => (
-            <a
-              key={l}
-              href={`#${l.toLowerCase().replace(/\s/g, "")}`}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
-                scrolled
-                  ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
-                  : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
-              }`}
-            >
-              {l}
-            </a>
-          ))}
+          {navLinks.map((l) => {
+            const href = l.link || `#${l.label.toLowerCase().replace(/\s/g, "")}`;
+            return (
+              <a
+                key={l.label}
+                href={href}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+                  scrolled
+                    ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                    : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                }`}
+              >
+                {l.label}
+              </a>
+            );
+          })}
         </div>
 
         {/* CTA */}
