@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import citraLogo from "@/assets/CITRA LOGO.png";
 
 const navLinks = [
@@ -26,13 +27,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-6 lg:px-8">
         {/* Logo */}
-        <a href="#home">
+        <Link to="/">
           <img
             src={citraLogo}
             alt="CITRA"
             className="h-10 md:h-12 w-auto object-contain"
           />
-        </a>
+        </Link>
 
         {/* Center pill nav — desktop */}
         <div
@@ -41,17 +42,18 @@ const Navbar = () => {
           }`}
         >
           {navLinks.map((l) => {
-            const href = l.link || `#${l.label.toLowerCase().replace(/\s/g, "")}`;
-            return (
-              <a
-                key={l.label}
-                href={href}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
-                  scrolled
-                    ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
-                    : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
-                }`}
-              >
+            const isRoute = l.link.startsWith("/") && !l.link.includes("#");
+            const className = `px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+              scrolled
+                ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+            }`;
+            return isRoute ? (
+              <Link key={l.label} to={l.link} className={className}>
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.label} href={l.link} className={className}>
                 {l.label}
               </a>
             );
@@ -95,16 +97,19 @@ const Navbar = () => {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-4 space-y-3">
-          {navLinks.map((l) => (
-            <a
-              key={l.label}
-              href={l.link}
-              onClick={() => setOpen(false)}
-              className="block text-base font-medium text-foreground/70 hover:text-foreground"
-            >
-              {l.label}
-            </a>
-          ))}
+          {navLinks.map((l) => {
+            const isRoute = l.link.startsWith("/") && !l.link.includes("#");
+            const cls = "block text-base font-medium text-foreground/70 hover:text-foreground";
+            return isRoute ? (
+              <Link key={l.label} to={l.link} onClick={() => setOpen(false)} className={cls}>
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.label} href={l.link} onClick={() => setOpen(false)} className={cls}>
+                {l.label}
+              </a>
+            );
+          })}
           <a
             href="#contact"
             onClick={() => setOpen(false)}
