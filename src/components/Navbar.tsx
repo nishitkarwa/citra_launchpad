@@ -6,7 +6,8 @@ const navLinks = [
   { label: "Projects", link: "/projects" },
   { label: "Services", link: "/services" },
   { label: "About Us", link: "/about" },
-  { label: "Contact", link: "/#contact" },
+  { label: "Blog", link: "/blog" },
+  { label: "Contact", link: "/contact" },
 ];
 
 const Navbar = () => {
@@ -61,12 +62,12 @@ const Navbar = () => {
         </div>
 
         {/* CTA */}
-        <a
-          href="#contact"
+        <Link
+          to="/contact"
           className="hidden md:inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
         >
           Get In Touch
-        </a>
+        </Link>
 
         {/* Mobile toggle */}
         <button onClick={() => setOpen(!open)} className="md:hidden p-2" aria-label="Menu">
@@ -110,13 +111,13 @@ const Navbar = () => {
               </a>
             );
           })}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground mt-2"
           >
             Get In Touch
-          </a>
+          </Link>
         </div>
       )}
     </nav>
