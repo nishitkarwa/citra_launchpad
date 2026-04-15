@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
+import AnimatedNumber from "@/components/AnimatedNumber";
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutBuilding from "@/assets/about-building.jpg";
 import leader1 from "@/assets/leader-1.jpg";
