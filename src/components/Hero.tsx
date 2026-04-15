@@ -1,5 +1,6 @@
 import heroImg from "@/assets/hero.jpg";
 import { useInView } from "@/hooks/useInView";
+import AnimatedNumber from "@/components/AnimatedNumber";
 
 const stats = [
   { value: "50+", label: "Projects Delivered" },
@@ -67,7 +68,7 @@ const Hero = () => {
           <div className="grid grid-cols-3 divide-x divide-primary-foreground/15">
             {stats.map((s) => (
               <div key={s.label} className="py-6 md:py-8 flex flex-col items-center justify-center overflow-hidden">
-                <p className="text-2xl md:text-4xl font-bold text-primary-foreground leading-none">{s.value}</p>
+                <p className="text-2xl md:text-4xl font-bold text-primary-foreground leading-none"><AnimatedNumber value={s.value} inView={inView} /></p>
                 <p className="text-xs md:text-sm text-primary-foreground/50 mt-1.5 text-center">{s.label}</p>
               </div>
             ))}
