@@ -1,21 +1,51 @@
 import { useInView } from "@/hooks/useInView";
 
+const words: { text: string; bold: boolean }[] = [
+  { text: "Where",        bold: false },
+  { text: "architecture", bold: true  },
+  { text: "meets",        bold: false },
+  { text: "business",     bold: true  },
+  { text: "performance",  bold: true  },
+  { text: "—",            bold: false },
+  { text: "we",           bold: false },
+  { text: "go",           bold: false },
+  { text: "beyond",       bold: false },
+  { text: "blueprints",   bold: false },
+  { text: "to",           bold: false },
+  { text: "deliver",      bold: false },
+  { text: "real",         bold: true  },
+  { text: "commercial",   bold: true  },
+  { text: "outcomes.",    bold: true  },
+];
+
 const Editorial = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView(0.2);
 
   return (
-    <section ref={ref} className={`section-padding ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
+    <section ref={ref} className="section-padding">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="max-w-4xl">
-          <p className="text-[28px] md:text-[40px] lg:text-[52px] font-light leading-[1.25] tracking-[-0.01em] text-muted-foreground">
-            Where <span className="font-bold text-foreground">architecture</span> meets{" "}
-            <span className="font-bold text-foreground">business performance</span> — we go beyond blueprints to deliver{" "}
-            <span className="font-bold text-foreground">real commercial outcomes.</span>
+          <p className="text-[28px] md:text-[40px] lg:text-[52px] font-light leading-[1.25] tracking-[-0.01em]">
+            {words.map((w, i) => (
+              <span
+                key={i}
+                className={`inline-block mr-[0.25em] ${
+                  w.bold ? "font-bold text-foreground" : "text-muted-foreground"
+                } ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+                style={inView ? { animationDelay: `${i * 55}ms` } : undefined}
+              >
+                {w.text}
+              </span>
+            ))}
           </p>
         </div>
 
-        <div className="mt-16 md:mt-24 flex flex-col md:flex-row items-start md:items-end justify-between gap-8">
-          {/* Avatars placeholder */}
+        <div
+          className={`mt-16 md:mt-24 flex flex-col md:flex-row items-start md:items-end justify-between gap-8 ${
+            inView ? "animate-fade-in-up" : "opacity-0"
+          }`}
+          style={inView ? { animationDelay: `${words.length * 55 + 100}ms` } : undefined}
+        >
           <div>
             <div className="flex -space-x-3 mb-4">
               {[0, 1, 2].map((i) => (
@@ -32,7 +62,6 @@ const Editorial = () => {
             </p>
           </div>
 
-          {/* Circular Learn more button */}
           <a
             href="#aboutus"
             className="w-28 h-28 md:w-32 md:h-32 rounded-full bg-dark flex items-center justify-center text-primary-foreground text-sm font-medium hover:bg-primary transition-colors shrink-0"

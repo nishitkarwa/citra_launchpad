@@ -24,18 +24,25 @@ const Contact = () => {
     <section
       id="contact"
       ref={ref}
-      className={`section-padding bg-dark ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+      className="section-padding bg-dark"
     >
       <div className="container mx-auto px-6 lg:px-8 max-w-2xl text-center">
-        <p className="label-caption text-primary mb-4">GET IN TOUCH</p>
-        <h2 className="text-primary-foreground mb-4">
+        <p className={`label-caption text-primary mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>GET IN TOUCH</p>
+        <h2
+          className={`text-primary-foreground mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "80ms" } : undefined}
+        >
           Let's Build Something Great Together
         </h2>
-        <p className="body-large text-primary-foreground/60 mb-14">
+        <p
+          className={`body-large text-primary-foreground/60 mb-14 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "160ms" } : undefined}
+        >
           Tell us about your project. Whether you have a detailed brief or just an idea, we are ready to help you bring it to life.
         </p>
         <form
-          className="space-y-4 text-left"
+          className={`space-y-4 text-left ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "280ms" } : undefined}
           onSubmit={(e) => e.preventDefault()}
         >
           <div className="grid sm:grid-cols-2 gap-4">

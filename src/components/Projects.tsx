@@ -38,56 +38,73 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className={`section-padding ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+      className="section-padding"
     >
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <p className="label-caption text-primary mb-4">OUR WORK</p>
-            <h2>Feature Projects</h2>
+            <p className={`label-caption text-primary mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>OUR WORK</p>
+            <h2
+              className={inView ? "animate-fade-in-up" : "opacity-0"}
+              style={inView ? { animationDelay: "80ms" } : undefined}
+            >
+              Feature Projects
+            </h2>
           </div>
           <a
             href="#projects"
-            className="rounded-full border-[1.5px] border-primary px-6 py-2.5 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors self-start md:self-auto"
+            className={`rounded-full border-[1.5px] border-primary px-6 py-2.5 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors self-start md:self-auto ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            style={inView ? { animationDelay: "160ms" } : undefined}
           >
             View All Projects
           </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <ProjectCard
-            img={imgCommercial}
-            title="Commercial Complex Development"
-            category="Mixed‑Use Development"
-            className="md:col-span-2 h-[280px] md:h-[420px]"
-          />
-          <ProjectCard
-            img={imgRetail}
-            title="Retail Plaza"
-            category="Retail Architecture"
-            className="h-[240px] md:h-[340px]"
-          />
-          <ProjectCard
-            img={imgOffice}
-            title="Corporate Office"
-            category="Commercial Interior"
-            className="h-[240px] md:h-[340px]"
-          />
+          <div className={`md:col-span-2 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "120ms" } : undefined}>
+            <ProjectCard
+              img={imgCommercial}
+              title="Commercial Complex Development"
+              category="Mixed‑Use Development"
+              className="h-[280px] md:h-[420px]"
+            />
+          </div>
+          <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "240ms" } : undefined}>
+            <ProjectCard
+              img={imgRetail}
+              title="Retail Plaza"
+              category="Retail Architecture"
+              className="h-[240px] md:h-[340px]"
+            />
+          </div>
+          <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "360ms" } : undefined}>
+            <ProjectCard
+              img={imgOffice}
+              title="Corporate Office"
+              category="Commercial Interior"
+              className="h-[240px] md:h-[340px]"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-          <ProjectCard
-            img={imgHospitality}
-            title="Hospitality Resort"
-            category="Hospitality Design"
-            className="h-[240px]"
-          />
-          <ProjectCard
-            img={imgResidential}
-            title="Residential Tower"
-            category="Luxury Residential"
-            className="h-[240px]"
-          />
+          <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "480ms" } : undefined}>
+            <ProjectCard
+              img={imgHospitality}
+              title="Hospitality Resort"
+              category="Hospitality Design"
+              className="h-[240px]"
+            />
+          </div>
+          <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "560ms" } : undefined}>
+            <ProjectCard
+              img={imgResidential}
+              title="Residential Tower"
+              category="Luxury Residential"
+              className="h-[240px]"
+            />
+          </div>
+          <div className={`${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "640ms" } : undefined}>
           <div className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col justify-center h-[240px]">
             <h3 className="mb-3 text-xl md:text-2xl">Ready to see more?</h3>
             <p className="body-default text-primary-foreground/60 mb-6">
@@ -99,6 +116,7 @@ const Projects = () => {
             >
               View All Projects
             </a>
+          </div>
           </div>
         </div>
       </div>

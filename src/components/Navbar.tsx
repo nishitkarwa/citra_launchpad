@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import citraLogo from "@/assets/CITRA LOGO.png";
 
 const navLinks = ["Projects", "Services", "About Us", "Contact"];
 
@@ -20,14 +21,18 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-6 lg:px-8">
         {/* Logo */}
-        <a href="#home" className={`text-xl font-bold tracking-tight transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-          CIIRA
+        <a href="#home">
+          <img
+            src={citraLogo}
+            alt="CITRA"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Center pill nav — desktop */}
         <div
           className={`hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5 transition-colors ${
-            scrolled ? "bg-foreground/5" : "bg-primary-foreground/10 backdrop-blur-sm"
+            scrolled ? "bg-transparent" : "bg-primary-foreground/10 backdrop-blur-sm"
           }`}
         >
           {navLinks.map((l) => (

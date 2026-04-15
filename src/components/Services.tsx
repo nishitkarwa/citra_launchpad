@@ -46,22 +46,32 @@ const Services = () => {
     <section
       id="services"
       ref={ref}
-      className={`section-padding ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+      className="section-padding"
     >
       <div className="container mx-auto px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <p className="label-caption text-primary mb-4">WHAT WE DO</p>
-          <h2 className="mb-4">Core Services</h2>
-          <p className="body-default text-muted-foreground">
+          <p className={`label-caption text-primary mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>WHAT WE DO</p>
+          <h2
+            className={`mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            style={inView ? { animationDelay: "80ms" } : undefined}
+          >
+            Core Services
+          </h2>
+          <p
+            className={`body-default text-muted-foreground ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            style={inView ? { animationDelay: "160ms" } : undefined}
+          >
             Comprehensive solutions at every phase of your development journey.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.map((s) => (
+          {services.map((s, i) => (
             <div
               key={s.title}
-              className="rounded-2xl overflow-hidden border border-border group hover:shadow-lg transition-shadow duration-300"
+              className={inView ? "animate-fade-in-up" : "opacity-0"}
+              style={inView ? { animationDelay: `${120 + i * 80}ms` } : undefined}
             >
+            <div className="rounded-2xl overflow-hidden border border-border group hover:shadow-lg transition-shadow duration-300 h-full">
               <div className="overflow-hidden">
                 <img
                   src={s.img}
@@ -74,6 +84,7 @@ const Services = () => {
                 <h4 className="mb-2">{s.title}</h4>
                 <p className="body-default text-muted-foreground">{s.body}</p>
               </div>
+            </div>
             </div>
           ))}
         </div>

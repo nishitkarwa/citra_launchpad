@@ -1,3 +1,5 @@
+import citraLogo from "@/assets/CITRA LOGO.png";
+
 const navLinks = ["Home", "About Us", "Projects", "Services", "Contact"];
 
 const Footer = () => (
@@ -6,7 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-12">
         {/* Left */}
         <div>
-          <span className="text-xl font-bold">CIIRA</span>
+          <img src={citraLogo} alt="CITRA" className="h-12 w-auto object-contain" />
           <p className="body-default text-primary-foreground/50 mt-3 mb-6">
             Transforming land into experience‑led developments.
           </p>

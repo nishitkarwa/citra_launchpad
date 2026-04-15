@@ -25,15 +25,24 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className={`relative z-10 flex-1 flex flex-col justify-center container mx-auto px-6 lg:px-8 pt-28 pb-8 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
-        <p className="label-caption text-primary mb-5">ARCHITECTURE AND DEVELOPMENT</p>
-        <h1 className="text-primary-foreground max-w-3xl mb-6">
+      <div className="relative z-10 flex-1 flex flex-col justify-center container mx-auto px-6 lg:px-8 pt-28 pb-8">
+        <p className={`label-caption text-primary mb-5 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>ARCHITECTURE AND DEVELOPMENT</p>
+        <h1
+          className={`text-primary-foreground max-w-3xl mb-6 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "80ms" } : undefined}
+        >
           Transforming Land Into Experience‑Led Developments
         </h1>
-        <p className="body-large text-primary-foreground/70 max-w-xl mb-10">
+        <p
+          className={`body-large text-primary-foreground/70 max-w-xl mb-10 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "160ms" } : undefined}
+        >
           We partner with businesses and developers to design, build, and deliver high‑performance spaces that drive real commercial outcomes.
         </p>
-        <div className="flex flex-wrap gap-4 mb-16">
+        <div
+          className={`flex flex-wrap gap-4 mb-16 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+          style={inView ? { animationDelay: "240ms" } : undefined}
+        >
           <a
             href="#projects"
             className="group inline-flex items-center gap-2 rounded-full bg-primary pl-7 pr-2.5 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
@@ -45,7 +54,7 @@ const Hero = () => {
           </a>
           <a
             href="#about"
-            className="rounded-full border-[1.5px] border-primary-foreground/30 px-7 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
+            className="inline-flex items-center justify-center rounded-full border-[1.5px] border-primary-foreground/30 px-7 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10 transition-colors whitespace-nowrap"
           >
             Learn More
           </a>
@@ -57,9 +66,9 @@ const Hero = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-3 divide-x divide-primary-foreground/15">
             {stats.map((s) => (
-              <div key={s.label} className="py-6 md:py-8 text-center">
-                <p className="text-2xl md:text-4xl font-bold text-primary-foreground">{s.value}</p>
-                <p className="text-xs md:text-sm text-primary-foreground/50 mt-1">{s.label}</p>
+              <div key={s.label} className="py-6 md:py-8 flex flex-col items-center justify-center overflow-hidden">
+                <p className="text-2xl md:text-4xl font-bold text-primary-foreground leading-none">{s.value}</p>
+                <p className="text-xs md:text-sm text-primary-foreground/50 mt-1.5 text-center">{s.label}</p>
               </div>
             ))}
           </div>

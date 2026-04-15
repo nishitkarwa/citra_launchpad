@@ -39,29 +39,40 @@ const About = () => {
     <section
       id="aboutus"
       ref={ref}
-      className={`section-padding ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+      className="section-padding"
     >
       <div className="container mx-auto px-6 lg:px-8">
-        <p className="label-caption text-primary mb-4">ABOUT US</p>
+        <p className={`label-caption text-primary mb-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>ABOUT US</p>
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 mb-16">
-          <h2>Where Architecture Meets Business Performance</h2>
-          <div className="flex items-end">
+          <h2
+            className={inView ? "animate-fade-in-up" : "opacity-0"}
+            style={inView ? { animationDelay: "80ms" } : undefined}
+          >
+            Where Architecture Meets Business Performance
+          </h2>
+          <div
+            className={`flex items-end ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            style={inView ? { animationDelay: "160ms" } : undefined}
+          >
             <p className="body-large text-muted-foreground">
               At CIIRA we go beyond blueprints. Every project we take on is rooted in commercial thinking, built around your business goals, and delivered with end‑to‑end accountability from concept to handover.
             </p>
           </div>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
-          {cards.map((c) => (
+          {cards.map((c, i) => (
             <div
               key={c.title}
-              className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col"
+              className={inView ? "animate-fade-in-up" : "opacity-0"}
+              style={inView ? { animationDelay: `${120 + i * 120}ms` } : undefined}
             >
+            <div className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col h-full">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6">
                 {c.icon}
               </div>
               <h4 className="mb-3">{c.title}</h4>
               <p className="body-default text-primary-foreground/60">{c.body}</p>
+            </div>
             </div>
           ))}
         </div>
