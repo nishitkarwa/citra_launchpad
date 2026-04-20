@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import citraLogo from "@/assets/CITRA LOGO.png";
+import citraLogo from "@/assets/citra-logo.png";
 
 const navLinks = [
   { label: "Projects", link: "/projects" },
