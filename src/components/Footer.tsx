@@ -1,4 +1,4 @@
-import citraLogo from "@/assets/CITRA LOGO.png";
+import citraLogo from "@/assets/citra-logo.png";
 
 const navLinks = ["Home", "About Us", "Projects", "Services", "Contact"];
 
