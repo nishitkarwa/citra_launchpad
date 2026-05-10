@@ -1,5 +1,5 @@
 import { useInView } from "@/hooks/useInView";
-import { Compass, PenRuler, HardHat, KeyRound, ArrowRight } from "lucide-react";
+import { Compass, PencilRuler, HardHat, KeyRound, ArrowRight } from "lucide-react";
 
 const steps = [
   {
@@ -11,7 +11,7 @@ const steps = [
   },
   {
     step: "02",
-    icon: PenRuler,
+    icon: PencilRuler,
     title: "Design",
     body: "Concepts, 3D renders & spatial strategy aligned to budget.",
     tags: ["Concepts", "3D renders", "Spatial strategy"],
