@@ -55,7 +55,7 @@ const About = () => {
             style={inView ? { animationDelay: "160ms" } : undefined}
           >
             <p className="body-large text-muted-foreground">
-              At CIIRA we go beyond blueprints. Every project we take on is rooted in commercial thinking, built around your business goals, and delivered with end‑to‑end accountability from concept to handover.
+              At CITRA we go beyond blueprints. Every project we take on is rooted in commercial thinking, built around your business goals, and delivered with end‑to‑end accountability from concept to handover.
             </p>
           </div>
         </div>

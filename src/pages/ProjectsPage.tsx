@@ -18,7 +18,7 @@ import projectResidential from "@/assets/project-residential.jpg";
 /* ── Hero ── */
 const ProjectsHero = () => (
   <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
-    <img src={projectsHero} alt="CIIRA projects" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
+    <img src={projectsHero} alt="CITRA projects" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
     <div className="absolute inset-0 bg-foreground/50" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="animate-fade-in-up">

@@ -47,7 +47,7 @@ const Footer = () => (
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Contact</p>
           <ul className="space-y-2.5 body-default text-primary-foreground/60">
-            <li>hello@ciira.com</li>
+            <li>hello@citra.com</li>
             <li>+91 98765 43210</li>
             <li>Hyderabad, India</li>
           </ul>
@@ -57,7 +57,7 @@ const Footer = () => (
 
     <div className="border-t border-primary-foreground/10">
       <div className="container mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between text-xs text-primary-foreground/40 gap-4">
-        <p>© 2025 CIIRA. All rights reserved.</p>
+        <p>© 2025 CITRA. All rights reserved.</p>
         <div className="flex gap-6">
           <a href="#" className="hover:text-primary-foreground transition-colors">
             Privacy Policy
