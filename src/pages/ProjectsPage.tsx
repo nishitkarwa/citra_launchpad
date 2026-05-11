@@ -3,19 +3,8 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
-import { signatureProjects } from "@/data/projects";
+import { projects, signatureProjects, projectCategories } from "@/data/projects";
 import projectsHero from "@/assets/projects-hero.jpg";
-import projectConvent from "@/assets/project-convent.jpg";
-import projectRoofgarden from "@/assets/project-roofgarden.jpg";
-import projectGolf from "@/assets/project-golf.jpg";
-import projectCommercial from "@/assets/project-commercial.jpg";
-import projectRetail from "@/assets/project-retail.jpg";
-import projectReligious from "@/assets/project-religious.jpg";
-import projectFarm from "@/assets/project-farm.jpg";
-import projectLandscape from "@/assets/project-landscape.jpg";
-import projectOffice from "@/assets/project-office.jpg";
-import projectHospitality from "@/assets/project-hospitality.jpg";
-import projectResidential from "@/assets/project-residential.jpg";
 
 /* ── Hero ── */
 const ProjectsHero = () => (
@@ -93,40 +82,23 @@ const SignatureProjects = () => {
 };
 
 /* ── Our Work Grid ── */
-const categories = [
-  "All Projects",
-  "Commercial & Mixed‑Use",
-  "Religious / Institutional",
-  "Master Planning",
-  "Farm & Experience",
-  "Landscaping",
-  "3D Visualisation",
-];
-
-const workItems = [
-  { title: "Sri Tirumala", subtitle: "ISKCON Temple Design", location: "Bangalore, IN", status: "Completed", category: "Religious / Institutional", img: projectReligious },
-  { title: "Residency 18", subtitle: "Skymark Resi. Complex", location: "Gurgaon, IN", status: "Completed", category: "Commercial & Mixed‑Use", img: projectCommercial },
-  { title: "Kalyan Farms", subtitle: "Multi‑Use Agri Market", location: "Bangalore, IN", status: "Completed", category: "Farm & Experience", img: projectFarm },
-  { title: "Centra Hub", subtitle: "Deccan Business Centre", location: "Bangalore, IN", status: "Completed", category: "Commercial & Mixed‑Use", img: projectRetail },
-  { title: "Nadaprabhu Complex", subtitle: "Rainbow Towers Institutional", location: "Bangalore, IN", status: "Completed", category: "Master Planning", img: projectOffice },
-  { title: "Meadows Jasmine", subtitle: "Silverlane Tourism Complex", location: "Mangalore, IN", status: "Completed", category: "Farm & Experience", img: projectLandscape },
-  { title: "Park Avenue Villas", subtitle: "BHCDS Jabalpur", location: "Bangalore, IN", status: "Completed", category: "Commercial & Mixed‑Use", img: projectResidential },
-  { title: "Landscaping", subtitle: "Golf Course Rooftop", location: "Bangalore, IN", status: "Completed", category: "Landscaping", img: projectHospitality },
-];
-
 const OurWork = () => {
   const { ref, inView } = useInView();
-  const [active, setActive] = useState("All Projects");
-  const filtered = active === "All Projects" ? workItems : workItems.filter((w) => w.category === active);
+  const [active, setActive] = useState<string>("All Projects");
+  const filtered =
+    active === "All Projects" ? projects : projects.filter((w) => w.category === active);
 
   return (
     <section ref={ref} className="section-padding bg-secondary/30">
       <div className="container mx-auto px-6 lg:px-8">
         <h2 className={`text-center ${inView ? "animate-fade-in-up" : "opacity-0"}`}>Our Work</h2>
+        <p className={`body-default text-muted-foreground text-center max-w-2xl mx-auto mt-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "60ms" } : undefined}>
+          Browse our full portfolio across residential, commercial, religious, and master plan projects.
+        </p>
 
         {/* Filter tabs */}
-        <div className={`flex flex-wrap justify-center gap-2 mt-10 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "80ms" } : undefined}>
-          {categories.map((c) => (
+        <div className={`flex flex-wrap justify-center gap-2 mt-10 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "120ms" } : undefined}>
+          {projectCategories.map((c) => (
             <button
               key={c}
               onClick={() => setActive(c)}
@@ -142,37 +114,29 @@ const OurWork = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-10">
           {filtered.map((w, i) => (
-            <div
-              key={w.title + i}
+            <Link
+              to={`/projects/${w.slug}`}
+              key={w.slug}
               className={`group ${inView ? "animate-fade-in-up" : "opacity-0"}`}
-              style={inView ? { animationDelay: `${120 + i * 60}ms` } : undefined}
+              style={inView ? { animationDelay: `${120 + (i % 8) * 50}ms` } : undefined}
             >
               <div className="rounded-2xl overflow-hidden">
                 <img
-                  src={w.img}
+                  src={w.cover}
                   alt={w.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
-              <h4 className="mt-3 text-base">{w.title}</h4>
-              <p className="text-sm text-muted-foreground">{w.subtitle}</p>
+              <p className="label-caption text-primary mt-3">{w.category}</p>
+              <h4 className="mt-1 text-base group-hover:text-primary transition-colors">{w.title}</h4>
               <p className="text-xs text-muted-foreground mt-1">
                 {w.location} · <span className="text-primary">{w.status}</span>
               </p>
-            </div>
+            </Link>
           ))}
-        </div>
-
-        <div className="text-center mt-14">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
-          >
-            Load More Projects
-          </a>
         </div>
       </div>
     </section>
