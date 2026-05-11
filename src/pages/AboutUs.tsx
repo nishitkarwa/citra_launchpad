@@ -17,7 +17,7 @@ import team7 from "@/assets/team-7.jpg";
 /* ── Hero ── */
 const AboutHero = () => (
   <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
-    <img src={aboutHero} alt="CIIRA headquarters" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
+    <img src={aboutHero} alt="CITRA headquarters" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
     <div className="absolute inset-0 bg-foreground/60" />
     <div className="relative z-10 text-center text-primary-foreground px-6">
       <p className="label-caption text-primary mb-4 animate-fade-in-up">About Us</p>
@@ -39,15 +39,15 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className={inView ? "animate-fade-in-up" : "opacity-0"}>
-            <img src={aboutBuilding} alt="CIIRA project" className="rounded-2xl w-full h-[400px] md:h-[480px] object-cover" loading="lazy" width={640} height={800} />
+            <img src={aboutBuilding} alt="CITRA project" className="rounded-2xl w-full h-[400px] md:h-[480px] object-cover" loading="lazy" width={640} height={800} />
           </div>
           <div>
             <p className={`label-caption text-primary mb-3 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>WHO WE ARE</p>
             <h2 className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "80ms" } : undefined}>
-              About CIIRA
+              About CITRA
             </h2>
             <div className={`mt-6 space-y-4 body-default text-muted-foreground ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "160ms" } : undefined}>
-              <p>• CIIRA is a business‑focused architecture and construction firm based in Hyderabad, India.</p>
+              <p>• CITRA is a business‑focused architecture and construction firm based in Hyderabad, India.</p>
               <p>• We specialise in end‑to‑end real estate development — from design and 3D visualisation to project execution. Our approach combines analytical thinking, construction expertise, and market insight, helping clients build projects that perform as assets.</p>
             </div>
             <a
@@ -235,7 +235,7 @@ const CTA = () => {
       <div className="container mx-auto px-6 lg:px-8 text-center">
         <h2 className={inView ? "animate-fade-in-up" : "opacity-0"}>Ready to build?</h2>
         <p className={`body-large text-primary-foreground/70 max-w-xl mx-auto mt-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "80ms" } : undefined}>
-          Let's turn your vision into reality. Partner with CIIRA for your next landmark.
+          Let's turn your vision into reality. Partner with CITRA for your next landmark.
         </p>
         <a
           href="/#contact"

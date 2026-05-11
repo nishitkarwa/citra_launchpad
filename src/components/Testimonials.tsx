@@ -3,7 +3,7 @@ import { useInView } from "@/hooks/useInView";
 const reviews = [
   {
     quote:
-      "CIIRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.",
+      "CITRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.",
     name: "Ananya Mehta",
     title: "Director, Surabi Group",
   },
@@ -15,7 +15,7 @@ const reviews = [
   },
   {
     quote:
-      "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CIIRA delivers.",
+      "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CITRA delivers.",
     name: "Priya Nambiar",
     title: "Founder, EcoEdge Properties",
   },

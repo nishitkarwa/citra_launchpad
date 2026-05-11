@@ -36,7 +36,7 @@ const ContactPage = () => {
 
       {/* ── Hero ── */}
       <section ref={heroRef} className="relative h-[50vh] min-h-[360px] flex items-center justify-center overflow-hidden">
-        <img src={contactHero} alt="CIIRA team meeting" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
+        <img src={contactHero} alt="CITRA team meeting" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
         <div className="absolute inset-0 bg-foreground/50" />
         <h1
           className={`relative z-10 text-primary-foreground text-center max-w-2xl px-6 ${heroInView ? "animate-fade-in-up" : "opacity-0"}`}
@@ -205,7 +205,7 @@ const ContactPage = () => {
         <div className="container mx-auto px-6 lg:px-8 pb-20 md:pb-28">
           <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden">
             <iframe
-              title="CIIRA Office Location"
+              title="CITRA Office Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3169117!2d78.24323!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
