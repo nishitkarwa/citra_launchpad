@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
+import { signatureProjects } from "@/data/projects";
 import projectsHero from "@/assets/projects-hero.jpg";
 import projectConvent from "@/assets/project-convent.jpg";
 import projectRoofgarden from "@/assets/project-roofgarden.jpg";
@@ -32,61 +34,58 @@ const ProjectsHero = () => (
 );
 
 /* ── Signature Projects ── */
-const signatureProjects = [
-  {
-    title: "Piarist Convent",
-    desc: "Piarist Convent is a thoughtfully planned institutional campus designed to support community living, learning, and spiritual practice through calm materials, clean lines, and efficient space planning.",
-    img: projectConvent,
-  },
-  {
-    title: "Vesella Roof Garden",
-    desc: "Vesella Meadows Roof Garden transforms an elevated terrace into a serene experience‑led outdoor space with curated planting, leisure zones, and clever hardscape planning.",
-    img: projectRoofgarden,
-  },
-  {
-    title: "Golf Course Rooftop",
-    desc: "Golf Course Rooftop creates an elevated outdoor environment that blends structural landscaping, comfort, focused zoning, and panoramic views for a resort‑like rooftop experience.",
-    img: projectGolf,
-  },
-];
-
 const SignatureProjects = () => {
   const { ref, inView } = useInView();
   return (
     <section ref={ref} className="section-padding">
       <div className="container mx-auto px-6 lg:px-8">
         <h2 className={`text-center ${inView ? "animate-fade-in-up" : "opacity-0"}`}>Signature Projects</h2>
+        <p className={`body-default text-muted-foreground text-center max-w-2xl mx-auto mt-4 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "80ms" } : undefined}>
+          A closer look at the developments that define our practice.
+        </p>
         <div className="mt-14 space-y-20">
-          {signatureProjects.map((p, i) => (
-            <div
-              key={p.title}
-              className={`${inView ? "animate-fade-in-up" : "opacity-0"}`}
-              style={inView ? { animationDelay: `${100 + i * 120}ms` } : undefined}
-            >
-              <div className="border border-border rounded-2xl p-6 md:p-8">
-                <p className="label-caption text-muted-foreground mb-2">Featured</p>
-                <div className="grid md:grid-cols-2 gap-6 items-start">
-                  <div>
-                    <h3>{p.title}</h3>
-                    <p className="body-default text-muted-foreground mt-3">{p.desc}</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <img src={p.img} alt={p.title} className="rounded-xl w-full h-40 object-cover col-span-2" loading="lazy" />
-                    <img src={p.img} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
-                    <img src={p.img} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+          {signatureProjects.map((p, i) => {
+            const reverse = i % 2 === 1;
+            return (
+              <div
+                key={p.slug}
+                className={`${inView ? "animate-fade-in-up" : "opacity-0"}`}
+                style={inView ? { animationDelay: `${100 + i * 120}ms` } : undefined}
+              >
+                <div className="border border-border rounded-2xl p-6 md:p-8">
+                  <div className={`grid md:grid-cols-2 gap-8 items-center ${reverse ? "md:[&>*:first-child]:order-2" : ""}`}>
+                    <div>
+                      <p className="label-caption text-primary mb-2">{p.section}</p>
+                      <h3>{p.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        {p.location} · {p.year}
+                      </p>
+                      <p className="body-default text-muted-foreground mt-4">{p.tagline}</p>
+                      <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1.5 text-sm text-foreground/80">
+                        {p.highlights.slice(0, 4).map((h) => (
+                          <li key={h} className="flex items-start gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                            <span>{h}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Link
+                        to={`/projects/${p.slug}`}
+                        className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all mt-7"
+                      >
+                        View Project
+                      </Link>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-44 md:h-56 object-cover col-span-2" loading="lazy" />
+                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="text-center mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
-                >
-                  Read More
-                </a>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
