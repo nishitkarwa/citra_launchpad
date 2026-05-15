@@ -36,6 +36,9 @@ import telecom2 from "@/assets/projects/telecom-2.png";
 import telecom3 from "@/assets/projects/telecom-3.png";
 import telecom4 from "@/assets/projects/telecom-4.png";
 import telecom5 from "@/assets/projects/telecom-5.png";
+import manikondaHero from "@/assets/projects/manikonda-hero.png";
+import manikonda1 from "@/assets/projects/manikonda-1.png";
+import manikonda2 from "@/assets/projects/manikonda-2.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -471,8 +474,8 @@ export const projects: Project[] = [
       { label: "Section", value: "Commercial" },
       { label: "Location", value: "Manikonda" },
     ],
-    cover: projectRetail,
-    gallery: [projectRetail, projectRetail, projectRetail, projectRetail],
+    cover: manikondaHero,
+    gallery: [manikondaHero, manikonda1, manikonda2],
   },
   {
     slug: "msr-villa-floor-planning",
