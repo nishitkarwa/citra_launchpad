@@ -42,7 +42,7 @@ const ProjectDetail = () => {
         <img
           src={project.cover}
           alt={project.title}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns will-change-transform"
           width={1920}
           height={1080}
         />
