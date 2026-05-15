@@ -384,11 +384,8 @@ export const projects: Project[] = [
       { label: "Section", value: "Residential" },
       { label: "Built-up Area", value: "2,000 SFT" },
     ],
-    cover: projectResidential,
-    gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
-  },
-  {
-    slug: "balreddy-residence-yadagirigutta",
+    cover: naveenHero,
+    gallery: [naveenHero, naveen1, naveen2, naveen3, naveen4],
     title: "Mr. Balreddy Residence – Yadagirigutta",
     location: "Yadagirigutta Region, India",
     year: "—",
