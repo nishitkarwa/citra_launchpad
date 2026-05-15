@@ -15,6 +15,10 @@ import iskconNerella2 from "@/assets/projects/iskcon-nerella-2.jpg";
 import iskconNerella3 from "@/assets/projects/iskcon-nerella-3.jpg";
 import iskconNerella4 from "@/assets/projects/iskcon-nerella-4.jpg";
 import iskconNerella5 from "@/assets/projects/iskcon-nerella-5.jpg";
+import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
+import motiMahal1 from "@/assets/projects/moti-mahal-1.jpg";
+import motiMahal3 from "@/assets/projects/moti-mahal-3.jpg";
+import motiMahal4 from "@/assets/projects/moti-mahal-4.jpg";
 
 export type ProjectCategory =
   | "Residential"
@@ -104,8 +108,8 @@ export const projects: Project[] = [
       { label: "Year", value: "2019" },
       { label: "Status", value: "Completed" },
     ],
-    cover: projectCommercial,
-    gallery: [projectCommercial, projectCommercial, projectCommercial, projectCommercial],
+    cover: motiMahalHero,
+    gallery: [motiMahalHero, motiMahal1, motiMahal3, motiMahal4],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1QPtvAcif0-eytmgPKhpj19PU-nqsggVp",
   },
