@@ -9,6 +9,7 @@ import projectLandscape from "@/assets/project-landscape.jpg";
 import projectHospitality from "@/assets/project-hospitality.jpg";
 import projectRoofgarden from "@/assets/project-roofgarden.jpg";
 import projectGolf from "@/assets/project-golf.jpg";
+import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.jpg";
 
 export type ProjectCategory =
   | "Residential"
@@ -67,8 +68,8 @@ export const projects: Project[] = [
       { label: "Year", value: "2024 – Ongoing" },
       { label: "Status", value: "Design Completed" },
     ],
-    cover: projectReligious,
-    gallery: [projectReligious, projectReligious, projectReligious, projectReligious],
+    cover: iskconNerellaHero,
+    gallery: [iskconNerellaHero, projectReligious, projectReligious, projectReligious],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1j0iiTJeRPsd_xPdNz6i8Fz8WONfwCKyd",
   },
