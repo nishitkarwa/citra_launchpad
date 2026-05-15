@@ -50,6 +50,12 @@ import ishanya2 from "@/assets/projects/ishanya-2.png";
 import ishanya3 from "@/assets/projects/ishanya-3.png";
 import ishanya4 from "@/assets/projects/ishanya-4.png";
 import ishanya5 from "@/assets/projects/ishanya-5.png";
+import westroHero from "@/assets/projects/westro-hero.png";
+import westro1 from "@/assets/projects/westro-1.png";
+import westro2 from "@/assets/projects/westro-2.png";
+import westro3 from "@/assets/projects/westro-3.png";
+import westro4 from "@/assets/projects/westro-4.png";
+import westro5 from "@/assets/projects/westro-5.png";
 
 export type ProjectCategory =
   | "Residential"
