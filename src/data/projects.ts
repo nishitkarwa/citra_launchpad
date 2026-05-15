@@ -9,6 +9,7 @@ import projectLandscape from "@/assets/project-landscape.jpg";
 import projectHospitality from "@/assets/project-hospitality.jpg";
 import projectRoofgarden from "@/assets/project-roofgarden.jpg";
 import projectGolf from "@/assets/project-golf.jpg";
+import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.jpg";
 
 export type ProjectCategory =
   | "Residential"
