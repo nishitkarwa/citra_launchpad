@@ -4,6 +4,7 @@ import ekveera from "@/assets/clients/ekveera.png";
 import ecoridge from "@/assets/clients/ecoridge.png";
 import eeshanya from "@/assets/clients/eeshanya.png";
 import hrInfra from "@/assets/clients/hr-infra.png";
+import taj from "@/assets/clients/taj.png";
 
 type Client = { name: string; logo?: string };
 
@@ -14,7 +15,7 @@ const clients: Client[] = [
   { name: "Tokyo Japan Constructions" },
   { name: "Eeshanya Infra", logo: eeshanya },
   { name: "Blubuild Infra" },
-  { name: "Taj Dharamshala" },
+  { name: "Taj Dharamshala", logo: taj },
   { name: "HR Infra", logo: hrInfra },
 ];
 
