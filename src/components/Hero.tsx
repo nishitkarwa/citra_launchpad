@@ -66,7 +66,7 @@ const Hero = () => {
       {/* Stats strip at bottom */}
       <div className="relative z-10 border-t border-primary-foreground/15">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-3 divide-x divide-primary-foreground/15">
+          <div className="grid grid-cols-4 divide-x divide-primary-foreground/15">
             {stats.map((s) => (
               <div key={s.label} className="py-6 md:py-8 flex flex-col items-center justify-center overflow-hidden">
                 <p className="text-2xl md:text-4xl font-bold text-primary-foreground leading-none"><AnimatedNumber value={s.value} inView={inView} /></p>
