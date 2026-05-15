@@ -386,6 +386,9 @@ export const projects: Project[] = [
     ],
     cover: naveenHero,
     gallery: [naveenHero, naveen1, naveen2, naveen3, naveen4],
+  },
+  {
+    slug: "balreddy-residence-yadagirigutta",
     title: "Mr. Balreddy Residence – Yadagirigutta",
     location: "Yadagirigutta Region, India",
     year: "—",
