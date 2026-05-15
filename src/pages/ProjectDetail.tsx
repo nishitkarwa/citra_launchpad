@@ -131,13 +131,17 @@ const ProjectDetail = () => {
           <h2 className="mb-10">Visual Showcase</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {project.gallery.map((g, i) => (
-              <img
+              <div
                 key={i}
-                src={g}
-                alt={`${project.title} visual ${i + 1}`}
-                className={`rounded-2xl object-cover w-full ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
-                loading="lazy"
-              />
+                className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
+              >
+                <img
+                  src={g}
+                  alt={`${project.title} visual ${i + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  loading="lazy"
+                />
+              </div>
             ))}
           </div>
           <p className="text-xs text-muted-foreground mt-4">Placeholder visuals — final imagery to be added.</p>
