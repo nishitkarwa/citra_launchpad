@@ -13,6 +13,7 @@ import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.jpg";
 import iskconNerella1 from "@/assets/projects/iskcon-nerella-1.jpg";
 import iskconNerella2 from "@/assets/projects/iskcon-nerella-2.jpg";
 import iskconNerella3 from "@/assets/projects/iskcon-nerella-3.jpg";
+import iskconNerella4 from "@/assets/projects/iskcon-nerella-4.jpg";
 
 export type ProjectCategory =
   | "Residential"
