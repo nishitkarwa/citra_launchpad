@@ -19,6 +19,12 @@ import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
 import motiMahal1 from "@/assets/projects/moti-mahal-1.jpg";
 import motiMahal3 from "@/assets/projects/moti-mahal-3.jpg";
 import motiMahal4 from "@/assets/projects/moti-mahal-4.jpg";
+import varahiHero from "@/assets/projects/varahi-hero.png";
+import varahi1 from "@/assets/projects/varahi-1.png";
+import varahi2 from "@/assets/projects/varahi-2.png";
+import varahi3 from "@/assets/projects/varahi-3.png";
+import varahi4 from "@/assets/projects/varahi-4.png";
+import varahi5 from "@/assets/projects/varahi-5.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -139,8 +145,8 @@ export const projects: Project[] = [
       { label: "Year", value: "2025 – Ongoing" },
       { label: "Status", value: "Under Development" },
     ],
-    cover: projectResidential,
-    gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
+    cover: varahiHero,
+    gallery: [varahiHero, varahi1, varahi2, varahi3, varahi4, varahi5],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1AdtkoRIoFlaoNVvYla77oWkaV7uO-k0U",
   },
