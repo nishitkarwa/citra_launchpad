@@ -6,6 +6,7 @@ const stats = [
   { value: "50+", label: "Projects Delivered" },
   { value: "100+", label: "Satisfied Clients" },
   { value: "15+", label: "Years of Experience" },
+  { value: "5,00,000+", label: "SFT Delivered" },
 ];
 
 const Hero = () => {
