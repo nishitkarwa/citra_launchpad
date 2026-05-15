@@ -30,6 +30,12 @@ import naveen1 from "@/assets/projects/naveen-1.png";
 import naveen2 from "@/assets/projects/naveen-2.png";
 import naveen3 from "@/assets/projects/naveen-3.png";
 import naveen4 from "@/assets/projects/naveen-4.png";
+import telecomHero from "@/assets/projects/telecom-hero.png";
+import telecom1 from "@/assets/projects/telecom-1.png";
+import telecom2 from "@/assets/projects/telecom-2.png";
+import telecom3 from "@/assets/projects/telecom-3.png";
+import telecom4 from "@/assets/projects/telecom-4.png";
+import telecom5 from "@/assets/projects/telecom-5.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -289,8 +295,8 @@ export const projects: Project[] = [
       { label: "Plot Size", value: "135 Sq Yards" },
       { label: "Status", value: "Execution Ongoing" },
     ],
-    cover: projectResidential,
-    gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
+    cover: telecomHero,
+    gallery: [telecomHero, telecom1, telecom2, telecom3, telecom4, telecom5],
   },
   {
     slug: "ishanya-infra-villa-development",
