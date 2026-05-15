@@ -25,7 +25,7 @@ const ClientLogos = () => {
   return (
     <section
       ref={ref}
-      className={`py-16 md:py-20 border-y border-border bg-muted/30 ${
+      className={`py-16 md:py-20 border-y border-border ${
         inView ? "animate-fade-in-up" : "opacity-0"
       }`}
     >
@@ -56,7 +56,7 @@ const ClientLogos = () => {
                   src={c.logo}
                   alt={`${c.name} logo`}
                   loading="lazy"
-                  className="h-12 md:h-14 w-auto object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition duration-300"
+                  className="h-12 md:h-14 w-auto object-contain opacity-90 hover:opacity-100 hover:scale-105 transition duration-300"
                 />
               ) : (
                 <div className="h-12 md:h-14 w-12 md:w-14 rounded-full border border-border flex items-center justify-center text-sm font-semibold text-muted-foreground opacity-70 group-hover:opacity-100 transition">
