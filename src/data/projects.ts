@@ -14,6 +14,7 @@ import iskconNerella1 from "@/assets/projects/iskcon-nerella-1.jpg";
 import iskconNerella2 from "@/assets/projects/iskcon-nerella-2.jpg";
 import iskconNerella3 from "@/assets/projects/iskcon-nerella-3.jpg";
 import iskconNerella4 from "@/assets/projects/iskcon-nerella-4.jpg";
+import iskconNerella5 from "@/assets/projects/iskcon-nerella-5.jpg";
 
 export type ProjectCategory =
   | "Residential"
@@ -73,7 +74,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design Completed" },
     ],
     cover: iskconNerellaHero,
-    gallery: [iskconNerellaHero, iskconNerella1, iskconNerella2, iskconNerella3, iskconNerella4],
+    gallery: [iskconNerellaHero, iskconNerella1, iskconNerella2, iskconNerella3, iskconNerella4, iskconNerella5],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1j0iiTJeRPsd_xPdNz6i8Fz8WONfwCKyd",
   },
