@@ -25,6 +25,11 @@ import varahi2 from "@/assets/projects/varahi-2.png";
 import varahi3 from "@/assets/projects/varahi-3.png";
 import varahi4 from "@/assets/projects/varahi-4.png";
 import varahi5 from "@/assets/projects/varahi-5.png";
+import naveenHero from "@/assets/projects/naveen-hero.png";
+import naveen1 from "@/assets/projects/naveen-1.png";
+import naveen2 from "@/assets/projects/naveen-2.png";
+import naveen3 from "@/assets/projects/naveen-3.png";
+import naveen4 from "@/assets/projects/naveen-4.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -379,8 +384,8 @@ export const projects: Project[] = [
       { label: "Section", value: "Residential" },
       { label: "Built-up Area", value: "2,000 SFT" },
     ],
-    cover: projectResidential,
-    gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
+    cover: naveenHero,
+    gallery: [naveenHero, naveen1, naveen2, naveen3, naveen4],
   },
   {
     slug: "balreddy-residence-yadagirigutta",
