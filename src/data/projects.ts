@@ -44,6 +44,12 @@ import surabhi1 from "@/assets/projects/surabhi-1.png";
 import surabhi2 from "@/assets/projects/surabhi-2.png";
 import surabhi3 from "@/assets/projects/surabhi-3.png";
 import surabhi4 from "@/assets/projects/surabhi-4.png";
+import ishanyaHero from "@/assets/projects/ishanya-hero.png";
+import ishanya1 from "@/assets/projects/ishanya-1.png";
+import ishanya2 from "@/assets/projects/ishanya-2.png";
+import ishanya3 from "@/assets/projects/ishanya-3.png";
+import ishanya4 from "@/assets/projects/ishanya-4.png";
+import ishanya5 from "@/assets/projects/ishanya-5.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -328,8 +334,8 @@ export const projects: Project[] = [
       { label: "Section", value: "Master Plan" },
       { label: "Status", value: "Design & Visualization" },
     ],
-    cover: projectLandscape,
-    gallery: [projectLandscape, projectLandscape, projectLandscape, projectLandscape],
+    cover: ishanyaHero,
+    gallery: [ishanyaHero, ishanya1, ishanya2, ishanya3, ishanya4, ishanya5],
   },
   {
     slug: "rainbow-vistas-5-acre-development",
