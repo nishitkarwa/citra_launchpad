@@ -39,6 +39,11 @@ import telecom5 from "@/assets/projects/telecom-5.png";
 import manikondaHero from "@/assets/projects/manikonda-hero.png";
 import manikonda1 from "@/assets/projects/manikonda-1.png";
 import manikonda2 from "@/assets/projects/manikonda-2.png";
+import surabhiHero from "@/assets/projects/surabhi-hero.png";
+import surabhi1 from "@/assets/projects/surabhi-1.png";
+import surabhi2 from "@/assets/projects/surabhi-2.png";
+import surabhi3 from "@/assets/projects/surabhi-3.png";
+import surabhi4 from "@/assets/projects/surabhi-4.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -219,8 +224,8 @@ export const projects: Project[] = [
       { label: "Year", value: "2024" },
       { label: "Status", value: "Completed" },
     ],
-    cover: projectFarm,
-    gallery: [projectFarm, projectFarm, projectFarm, projectFarm],
+    cover: surabhiHero,
+    gallery: [surabhiHero, surabhi1, surabhi2, surabhi3, surabhi4],
   },
   {
     slug: "church-parametric-chapel",
