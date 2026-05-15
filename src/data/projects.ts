@@ -295,8 +295,8 @@ export const projects: Project[] = [
       { label: "Plot Size", value: "135 Sq Yards" },
       { label: "Status", value: "Execution Ongoing" },
     ],
-    cover: projectResidential,
-    gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
+    cover: telecomHero,
+    gallery: [telecomHero, telecom1, telecom2, telecom3, telecom4, telecom5],
   },
   {
     slug: "ishanya-infra-villa-development",
