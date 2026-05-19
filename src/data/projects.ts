@@ -67,6 +67,12 @@ import chapel1 from "@/assets/projects/chapel-1.png";
 import chapel2 from "@/assets/projects/chapel-2.png";
 import chapel3 from "@/assets/projects/chapel-3.png";
 import chapel4 from "@/assets/projects/chapel-4.png";
+import nikitaHero from "@/assets/projects/nikita-hero.png";
+import nikita1 from "@/assets/projects/nikita-1.png";
+import nikita2 from "@/assets/projects/nikita-2.png";
+import nikita3 from "@/assets/projects/nikita-3.png";
+import nikita4 from "@/assets/projects/nikita-4.png";
+import nikita5 from "@/assets/projects/nikita-5.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -401,8 +407,8 @@ export const projects: Project[] = [
       { label: "Section", value: "Residential" },
       { label: "Status", value: "Design" },
     ],
-    cover: projectRoofgarden,
-    gallery: [projectRoofgarden, projectRoofgarden, projectRoofgarden, projectRoofgarden],
+    cover: nikitaHero,
+    gallery: [nikitaHero, nikita1, nikita2, nikita3, nikita4, nikita5],
   },
   {
     slug: "naveen-residence-keshavaram",
