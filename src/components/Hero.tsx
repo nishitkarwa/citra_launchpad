@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
 import heroImg from "@/assets/hero.jpg";
+import hero2 from "@/assets/hero-2.png";
+import hero3 from "@/assets/hero-3.png";
+import hero4 from "@/assets/hero-4.png";
+import hero5 from "@/assets/hero-5.png";
 import { useInView } from "@/hooks/useInView";
 import AnimatedNumber from "@/components/AnimatedNumber";
+
+const heroImages = [heroImg, hero2, hero3, hero4, hero5];
 
 const stats = [
   { value: "50+", label: "Projects Delivered" },
@@ -11,18 +18,33 @@ const stats = [
 
 const Hero = () => {
   const { ref, inView } = useInView(0.1);
+  const [active, setActive] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setActive((p) => (p + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <section id="home" ref={ref} className="relative min-h-screen flex flex-col">
-      {/* Full-bleed background image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt="Modern architectural development at dusk"
-          className="w-full h-full object-cover"
-          width={1920}
-          height={960}
-        />
+      {/* Full-bleed background slider */}
+      <div className="absolute inset-0 overflow-hidden">
+        {heroImages.map((src, i) => (
+          <img
+            key={i}
+            src={src}
+            alt="Modern architectural development"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out will-change-[opacity,transform] ${
+              i === active ? "opacity-100 animate-ken-burns" : "opacity-0"
+            }`}
+            style={{ transform: "translateZ(0)" }}
+            width={1920}
+            height={960}
+            loading={i === 0 ? "eager" : "lazy"}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-foreground/80" />
       </div>
 
