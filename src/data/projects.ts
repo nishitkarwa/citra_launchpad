@@ -56,6 +56,11 @@ import westro2 from "@/assets/projects/westro-2.png";
 import westro3 from "@/assets/projects/westro-3.png";
 import westro4 from "@/assets/projects/westro-4.png";
 import westro5 from "@/assets/projects/westro-5.png";
+import chapelHero from "@/assets/projects/chapel-hero.png";
+import chapel1 from "@/assets/projects/chapel-1.png";
+import chapel2 from "@/assets/projects/chapel-2.png";
+import chapel3 from "@/assets/projects/chapel-3.png";
+import chapel4 from "@/assets/projects/chapel-4.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -262,8 +267,8 @@ export const projects: Project[] = [
       { label: "Year", value: "2025 – Ongoing" },
       { label: "Status", value: "Under Construction" },
     ],
-    cover: projectReligious,
-    gallery: [projectReligious, projectReligious, projectReligious, projectReligious],
+    cover: chapelHero,
+    gallery: [chapelHero, chapel1, chapel2, chapel3, chapel4],
   },
   {
     slug: "convent-school-rayagada",
