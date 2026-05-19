@@ -36,8 +36,8 @@ const Hero = () => {
             key={i}
             src={src}
             alt="Modern architectural development"
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out will-change-[opacity,transform] ${
-              i === active ? "opacity-100 animate-ken-burns" : "opacity-0"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[2000ms] ease-in-out will-change-[opacity,transform] animate-ken-burns ${
+              i === active ? "opacity-100" : "opacity-0"
             }`}
             style={{ transform: "translateZ(0)" }}
             width={1920}
