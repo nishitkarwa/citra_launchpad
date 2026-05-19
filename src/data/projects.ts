@@ -3,6 +3,12 @@ import projectCommercial from "@/assets/project-commercial.jpg";
 import projectResidential from "@/assets/project-residential.jpg";
 import projectRetail from "@/assets/project-retail.jpg";
 import projectConvent from "@/assets/project-convent.jpg";
+import conventHero from "@/assets/projects/convent-hero.png";
+import convent1 from "@/assets/projects/convent-1.png";
+import convent2 from "@/assets/projects/convent-2.png";
+import convent3 from "@/assets/projects/convent-3.png";
+import convent4 from "@/assets/projects/convent-4.png";
+import convent5 from "@/assets/projects/convent-5.png";
 import projectOffice from "@/assets/project-office.jpg";
 import projectFarm from "@/assets/project-farm.jpg";
 import projectLandscape from "@/assets/project-landscape.jpg";
@@ -294,8 +300,8 @@ export const projects: Project[] = [
       { label: "Built-up Area", value: "~30,000 SFT" },
       { label: "Status", value: "Design" },
     ],
-    cover: projectConvent,
-    gallery: [projectConvent, projectConvent, projectConvent, projectConvent],
+    cover: conventHero,
+    gallery: [conventHero, convent1, convent2, convent3, convent4, convent5],
   },
   {
     slug: "telecom-colony-villa-alwal",
