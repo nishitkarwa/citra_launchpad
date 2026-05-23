@@ -70,11 +70,11 @@ const Process = () => {
                   style={inView ? { animationDelay: `${120 + i * 100}ms` } : undefined}
                 >
                   {/* icon node on the line */}
-                  <div className="hidden lg:flex absolute -top-0 left-7 w-12 h-12 rounded-full bg-primary text-primary-foreground items-center justify-center ring-8 ring-secondary z-10">
-                    <Icon className="w-5 h-5" />
-                  </div>
-
-                  <div className="bg-background border border-border rounded-2xl p-6 lg:pt-20 h-full flex flex-col transition-transform duration-500 ease-out hover:-translate-y-8 hover:scale-105 will-change-transform">
+                  <div className="bg-background border border-border rounded-2xl p-6 lg:pt-20 h-full flex flex-col transition-transform duration-500 ease-out hover:-translate-y-5 hover:scale-105 will-change-transform relative">
+                    {/* desktop icon (moves with card on hover) */}
+                    <div className="hidden lg:flex absolute top-0 left-7 w-12 h-12 rounded-full bg-primary text-primary-foreground items-center justify-center ring-8 ring-secondary z-10">
+                      <Icon className="w-5 h-5" />
+                    </div>
                     {/* mobile icon */}
                     <div className="lg:hidden w-11 h-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4">
                       <Icon className="w-5 h-5" />
