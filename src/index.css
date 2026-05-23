@@ -105,7 +105,7 @@
 }
 
 .animate-fade-in-up {
-  animation: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: fade-in-up 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .opacity-0 {
