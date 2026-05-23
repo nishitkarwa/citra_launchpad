@@ -58,12 +58,12 @@ const Services = () => {
               style={inView ? { animationDelay: `${120 + i * 80}ms` } : undefined}
             >
               <div className="rounded-2xl overflow-hidden border border-border group hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
-                <div className="overflow-hidden">
-                  <img
+                <div className="overflow-hidden h-52">
+                  <ParallaxImage
                     src={s.img}
                     alt={s.title}
-                    className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
+                    className="w-full h-full"
+                    imgClassName="transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-7 flex flex-col flex-1">
