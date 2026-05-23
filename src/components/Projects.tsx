@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import ParallaxImage from "@/components/ParallaxImage";
 import imgCommercial from "@/assets/project-commercial.jpg";
 import imgRetail from "@/assets/project-retail.jpg";
 import imgOffice from "@/assets/project-office.jpg";
@@ -17,11 +18,11 @@ const ProjectCard = ({
   className?: string;
 }) => (
   <div className={`relative rounded-2xl overflow-hidden group cursor-pointer ${className}`}>
-    <img
+    <ParallaxImage
       src={img}
       alt={title}
-      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-      loading="lazy"
+      className="absolute inset-0 w-full h-full"
+      imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
     <div className="absolute bottom-0 left-0 p-5 md:p-7">
@@ -30,6 +31,7 @@ const ProjectCard = ({
     </div>
   </div>
 );
+
 
 const Projects = () => {
   const { ref, inView } = useInView();
