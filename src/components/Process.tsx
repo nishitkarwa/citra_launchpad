@@ -74,7 +74,7 @@ const Process = () => {
                     <Icon className="w-5 h-5" />
                   </div>
 
-                  <div className="bg-background border border-border rounded-2xl p-6 lg:pt-20 h-full flex flex-col hover:border-primary/40 hover:shadow-lg transition-all duration-300">
+                  <div className="bg-background border border-border rounded-2xl p-6 lg:pt-20 h-full flex flex-col transition-transform duration-500 ease-out hover:-translate-y-8 hover:scale-105 will-change-transform">
                     {/* mobile icon */}
                     <div className="lg:hidden w-11 h-11 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4">
                       <Icon className="w-5 h-5" />
