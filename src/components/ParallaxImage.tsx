@@ -60,16 +60,16 @@ const ParallaxImage = ({
   }, [strength]);
 
   return (
-    <div ref={wrapperRef} className={`overflow-hidden ${className}`}>
+    <div ref={wrapperRef} className={`relative overflow-hidden ${className}`}>
       <img
         src={src}
         alt={alt}
         loading={loading}
-        className={`w-full h-[calc(100%+${strength * 2}px)] object-cover will-change-transform ${imgClassName}`}
+        className={`absolute left-0 w-full object-cover will-change-transform ${imgClassName}`}
         style={{
-          transform: `translate3d(0, ${offset}px, 0)`,
+          top: `-${strength}px`,
           height: `calc(100% + ${strength * 2}px)`,
-          marginTop: `-${strength}px`,
+          transform: `translate3d(0, ${offset}px, 0)`,
         }}
       />
     </div>
