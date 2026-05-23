@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
 import citraLogo from "@/assets/citra-logo.png";
+import { projects } from "@/data/projects";
 
 const navLinks = ["Home", "About Us", "Projects", "Services", "Contact"];
+const featuredProjects = projects.slice(0, 5);
 
 const Footer = () => (
   <footer className="bg-dark text-primary-foreground">
     <div className="container mx-auto px-6 lg:px-8 py-16 md:py-20">
-      <div className="grid md:grid-cols-3 gap-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Left */}
         <div>
           <img src={citraLogo} alt="CITRA" className="h-12 w-auto object-contain" />
@@ -26,7 +29,7 @@ const Footer = () => (
           </div>
         </div>
 
-        {/* Middle */}
+        {/* Navigation */}
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Navigation</p>
           <ul className="space-y-2.5">
@@ -43,7 +46,24 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Right */}
+        {/* Featured Projects */}
+        <div>
+          <p className="label-caption text-primary-foreground/50 mb-5">Featured Projects</p>
+          <ul className="space-y-2.5">
+            {featuredProjects.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  to={`/projects/${p.slug}`}
+                  className="body-default text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+                >
+                  {p.shortTitle ?? p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact */}
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Contact</p>
           <ul className="space-y-2.5 body-default text-primary-foreground/60">
