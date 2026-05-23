@@ -66,7 +66,7 @@ const About = () => {
               className={inView ? "animate-fade-in-up" : "opacity-0"}
               style={inView ? { animationDelay: `${120 + i * 120}ms` } : undefined}
             >
-            <div className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col h-full">
+            <div className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col h-full transition-transform duration-500 ease-out hover:-translate-y-8 hover:scale-[1.15] will-change-transform">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6">
                 {c.icon}
               </div>
