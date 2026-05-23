@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import ParallaxImage from "@/components/ParallaxImage";
 import imgArchitecture from "@/assets/service-design.jpg";
 import imgTurnkey from "@/assets/service-construction.jpg";
 import imgPermission from "@/assets/service-collab.jpg";
