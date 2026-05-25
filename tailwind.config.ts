@@ -88,6 +88,10 @@ export default {
           "0%": { transform: "scale(1.02)" },
           "100%": { transform: "scale(1.04)" },
         },
+        "slide-in-left": {
+          "0%": { opacity: "0", transform: "translateX(-40px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -95,6 +99,7 @@ export default {
         "marquee": "marquee 40s linear infinite",
         "ken-burns": "ken-burns 20s ease-in-out infinite alternate",
         "ken-burns-soft": "ken-burns-soft 28s ease-in-out infinite alternate",
+        "slide-in-left": "slide-in-left 0.9s cubic-bezier(0.22, 1, 0.36, 1) both",
       },
     },
   },
