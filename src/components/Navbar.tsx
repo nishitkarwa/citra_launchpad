@@ -47,7 +47,11 @@ const Navbar = () => {
         {/* Center pill nav — desktop */}
         <div
           className={`hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5 transition-colors ${
-            scrolled ? "bg-transparent" : "bg-primary-foreground/10 backdrop-blur-sm"
+            scrolled
+              ? "bg-transparent"
+              : isLightBg
+                ? "bg-[#38BDF8]/10 backdrop-blur-sm"
+                : "bg-primary-foreground/10 backdrop-blur-sm"
           }`}
         >
           {navLinks.map((l) => {
@@ -55,7 +59,9 @@ const Navbar = () => {
             const className = `px-5 py-2 rounded-full text-sm font-medium transition-colors ${
               scrolled
                 ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
-                : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                : isLightBg
+                  ? "text-[#0EA5E9] hover:text-[#0284C7] hover:bg-[#38BDF8]/15"
+                  : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
             }`;
             return isRoute ? (
               <Link key={l.label} to={l.link} className={className}>
