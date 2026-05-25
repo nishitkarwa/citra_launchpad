@@ -89,7 +89,7 @@ const Navbar = () => {
             width="24"
             height="24"
             fill="none"
-            stroke={scrolled ? "currentColor" : "white"}
+            stroke={scrolled ? "currentColor" : isLightBg ? "#0EA5E9" : "white"}
             strokeWidth="2"
             strokeLinecap="round"
           >
