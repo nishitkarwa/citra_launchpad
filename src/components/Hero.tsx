@@ -34,24 +34,18 @@ const Hero = () => {
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
-      {/* Hero stage: viewport-sized, image extends below for parallax reveal */}
+      {/* Hero stage: viewport-sized; image is taller and revealed via parallax */}
       <div className="relative w-full h-[100svh] min-h-[680px] overflow-hidden">
-        {/* Image is taller than the stage and translates on scroll */}
-        <div
-          className="absolute inset-x-0 top-0 h-[160%] will-change-transform"
-          style={{ transform: `translate3d(0, ${-offset}px, 0)` }}
-        >
-          <img
-            ref={imgRef}
-            src={heroDesert}
-            alt="Luxury modern desert house at twilight"
-            className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
-            style={{ objectPosition: "center top" }}
-            width={1920}
-            height={1280}
-            loading="eager"
-          />
-        </div>
+        <img
+          ref={imgRef}
+          src={heroDesert}
+          alt="Luxury modern desert house at twilight"
+          className="absolute inset-x-0 top-0 w-full h-[160svh] min-h-[1100px] object-cover animate-ken-burns will-change-transform"
+          style={{ objectPosition: "center bottom", transform: `translate3d(0, ${-offset}px, 0)` }}
+          width={1920}
+          height={1280}
+          loading="eager"
+        />
 
         {/* Cinematic gradients for depth and copy legibility */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/35 via-black/10 to-transparent" />
