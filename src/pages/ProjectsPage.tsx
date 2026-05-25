@@ -107,9 +107,9 @@ const SignatureProjects = () => {
                       </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-3">
-                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-44 md:h-56 object-cover col-span-2" loading="lazy" />
-                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
-                      <img src={p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+                      <img src={p.gallery[0] ?? p.cover} alt={p.title} className="rounded-xl w-full h-44 md:h-56 object-cover col-span-2" loading="lazy" />
+                      <img src={p.gallery[1] ?? p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+                      <img src={p.gallery[2] ?? p.gallery[1] ?? p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
                     </div>
                   </div>
                 </div>
