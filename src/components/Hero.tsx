@@ -20,7 +20,7 @@ const Hero = () => {
           src={heroDesert}
           alt="Modern desert architectural development"
           className="absolute inset-0 w-full h-full object-cover animate-ken-burns will-change-transform"
-          style={{ objectPosition: "center bottom" }}
+          style={{ objectPosition: "58% bottom" }}
           width={1920}
           height={1088}
           loading="eager"
