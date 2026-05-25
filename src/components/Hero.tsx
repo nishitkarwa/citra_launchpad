@@ -14,13 +14,13 @@ const Hero = () => {
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
-      {/* Background image — taller than viewport so the house sits well below the fold */}
-      <div className="relative w-full h-[170svh] min-h-[1100px] overflow-hidden">
+      {/* Background image — much taller than viewport so the house lives below the fold */}
+      <div className="relative w-full h-[200svh] min-h-[1400px] overflow-hidden">
         <img
           src={heroDesert}
           alt="Modern desert architectural development"
           className="absolute inset-0 w-full h-full object-cover animate-ken-burns will-change-transform"
-          style={{ objectPosition: "center 85%" }}
+          style={{ objectPosition: "center top" }}
           width={1920}
           height={1280}
           loading="eager"
