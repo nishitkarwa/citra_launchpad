@@ -19,10 +19,10 @@ const ProjectsHero = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/30 to-black/50" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
-      <h1 className="animate-fade-in-up drop-shadow-lg">
+      <h1 className="animate-slide-in-left drop-shadow-lg">
         A Showcase of <em className="italic">Design, Detail</em> &amp; <em className="italic">Development.</em>
       </h1>
-      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 animate-fade-in-up drop-shadow" style={{ animationDelay: "120ms" }}>
+      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 animate-slide-in-left drop-shadow" style={{ animationDelay: "200ms" }}>
         Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
       </p>
     </div>
