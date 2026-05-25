@@ -50,7 +50,7 @@ const Navbar = () => {
             scrolled
               ? "bg-transparent"
               : isLightBg
-                ? "bg-white/[0.08] backdrop-blur-2xl"
+                ? "bg-white/40 backdrop-blur-3xl backdrop-saturate-150 border border-white/50 shadow-lg shadow-black/5"
                 : "bg-primary-foreground/10 backdrop-blur-sm"
           }`}
         >
