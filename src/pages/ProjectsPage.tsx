@@ -7,6 +7,21 @@ import { projects, signatureProjects, projectCategories } from "@/data/projects"
 import projectsHero from "@/assets/projects-hero-collage.jpg";
 
 /* ── Hero ── */
+const headingWords: { text: string; italic?: boolean }[] = [
+  { text: "A" },
+  { text: "Showcase" },
+  { text: "of" },
+  { text: "Design,", italic: true },
+  { text: "Detail", italic: true },
+  { text: "&" },
+  { text: "Development.", italic: true },
+];
+
+const subWords =
+  "Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.".split(
+    " "
+  );
+
 const ProjectsHero = () => (
   <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black">
     <img
@@ -19,11 +34,30 @@ const ProjectsHero = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/30 to-black/50" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
-      <h1 className="animate-slide-in-left drop-shadow-lg">
-        A Showcase of <em className="italic">Design, Detail</em> &amp; <em className="italic">Development.</em>
+      <h1 className="drop-shadow-lg">
+        {headingWords.map((w, i) => (
+          <span
+            key={i}
+            className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
+            style={{ animationDelay: `${i * 120}ms`, animationFillMode: "forwards" }}
+          >
+            {w.italic ? <em className="italic">{w.text}</em> : w.text}
+          </span>
+        ))}
       </h1>
-      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 animate-slide-in-left drop-shadow" style={{ animationDelay: "200ms" }}>
-        Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
+      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 drop-shadow">
+        {subWords.map((w, i) => (
+          <span
+            key={i}
+            className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
+            style={{
+              animationDelay: `${headingWords.length * 120 + i * 60}ms`,
+              animationFillMode: "forwards",
+            }}
+          >
+            {w}
+          </span>
+        ))}
       </p>
     </div>
   </section>
