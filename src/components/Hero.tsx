@@ -14,20 +14,19 @@ const Hero = () => {
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
-      {/* Background image — much taller than viewport so the house lives below the fold */}
-      <div className="relative w-full h-[200svh] min-h-[1400px] overflow-hidden">
+      {/* Background image — taller than viewport so the house sits below the fold */}
+      <div className="relative w-full h-[140svh] min-h-[900px] overflow-hidden">
         <img
           src={heroDesert}
           alt="Modern desert architectural development"
           className="absolute inset-0 w-full h-full object-cover animate-ken-burns will-change-transform"
-          style={{ objectPosition: "center top" }}
+          style={{ objectPosition: "center bottom" }}
           width={1920}
           height={1280}
           loading="eager"
         />
         {/* Bottom fade into page background for a soft blend */}
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
-
 
         {/* Copy positioned over the sky area */}
         <div className="relative z-10 flex flex-col items-center text-center container mx-auto px-6 lg:px-8 pt-28 md:pt-32">
