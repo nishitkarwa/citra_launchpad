@@ -84,12 +84,17 @@ export default {
           "0%": { transform: "scale(1)" },
           "100%": { transform: "scale(1.08)" },
         },
+        "ken-burns-soft": {
+          "0%": { transform: "scale(1.02)" },
+          "100%": { transform: "scale(1.04)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "marquee": "marquee 40s linear infinite",
         "ken-burns": "ken-burns 20s ease-in-out infinite alternate",
+        "ken-burns-soft": "ken-burns-soft 28s ease-in-out infinite alternate",
       },
     },
   },
