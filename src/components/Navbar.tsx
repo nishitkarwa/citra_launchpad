@@ -17,6 +17,10 @@ const navLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isLightBg = LIGHT_BG_ROUTES.some(
+    (r) => location.pathname === r || location.pathname.startsWith(r + "/"),
+  );
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
