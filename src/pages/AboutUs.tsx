@@ -196,7 +196,7 @@ const Leaders = () => {
 const teamMembers = [
   { name: "Mr. Pavan", title: "Structural Engineer", img: team1 },
   { name: "Ar. Nandini", title: "Junior Architect", img: team2 },
-  { name: "Akhil Kalyan", title: "3D Artist", img: team3 },
+  { name: "Mr. Akhil Kalyan", title: "Junior Architect", img: team3 },
   { name: "Vaishali", title: "Junior Architect", img: team4 },
   { name: "Ganesh", title: "Project Manager", img: team5 },
   { name: "Veena Ramani", title: "Planning Lead", img: team6 },
