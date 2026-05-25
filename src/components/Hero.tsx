@@ -27,26 +27,26 @@ const Hero = () => {
         {/* Bottom fade into page background for the soft blend like the reference */}
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
 
-        {/* Centered copy over the sky area */}
-        <div className="relative z-10 h-full flex flex-col items-center text-center container mx-auto px-6 lg:px-8 pt-28">
-          <p className={`label-caption text-primary-foreground/90 mb-5 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
+        {/* Copy positioned over the sky area at the top */}
+        <div className="relative z-10 flex flex-col items-center text-center container mx-auto px-6 lg:px-8 pt-24 md:pt-28">
+          <p className={`label-caption text-primary-foreground/90 mb-3 text-[10px] md:text-xs ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
             ARCHITECTURE AND DEVELOPMENT
           </p>
           <h1
-            className={`text-primary-foreground max-w-3xl mb-6 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            className={`text-primary-foreground max-w-xl mb-3 text-xl md:text-2xl leading-tight font-semibold ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "80ms" } : undefined}
           >
             Transforming Land Into Experience‑Led Developments
           </h1>
           <p
-            className={`body-large text-primary-foreground/85 max-w-xl mb-8 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            className={`text-primary-foreground/85 max-w-md mb-5 text-xs md:text-sm ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "160ms" } : undefined}
           >
             We partner with businesses and developers to design, build, and deliver high‑performance spaces that drive real commercial outcomes.
           </p>
           <a
             href="#projects"
-            className={`inline-flex items-center justify-center rounded-full bg-foreground px-8 py-3 text-sm font-medium text-background hover:brightness-110 transition-all ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            className={`inline-flex items-center justify-center rounded-full bg-foreground px-6 py-2.5 text-xs font-medium text-background hover:brightness-110 transition-all ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "240ms" } : undefined}
           >
             Explore Projects
