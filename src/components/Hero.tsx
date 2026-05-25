@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import heroDesert from "@/assets/hero-desert-house.jpg";
 import { useInView } from "@/hooks/useInView";
 import AnimatedNumber from "@/components/AnimatedNumber";
@@ -11,26 +12,54 @@ const stats = [
 
 const Hero = () => {
   const { ref, inView } = useInView(0.1);
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        // Parallax: image moves up slower than scroll for cinematic reveal
+        setOffset(Math.min(window.scrollY * 0.35, 400));
+      });
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, []);
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
-      {/* Background image — taller than viewport so the house sits below the fold */}
-      <div className="relative w-full h-[145svh] min-h-[1000px] overflow-hidden">
-        <img
-          src={heroDesert}
-          alt="Modern desert architectural development"
-          className="absolute inset-0 w-full h-full object-cover animate-ken-burns will-change-transform"
-          style={{ objectPosition: "58% bottom" }}
-          width={1920}
-          height={1088}
-          loading="eager"
-        />
-        {/* Bottom fade into page background for a soft blend */}
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
+      {/* Hero stage: viewport-sized, image extends below for parallax reveal */}
+      <div className="relative w-full h-[100svh] min-h-[680px] overflow-hidden">
+        {/* Image is taller than the stage and translates on scroll */}
+        <div
+          className="absolute inset-x-0 top-0 h-[160%] will-change-transform"
+          style={{ transform: `translate3d(0, ${-offset}px, 0)` }}
+        >
+          <img
+            ref={imgRef}
+            src={heroDesert}
+            alt="Luxury modern desert house at twilight"
+            className="absolute inset-0 w-full h-full object-cover animate-ken-burns"
+            style={{ objectPosition: "center top" }}
+            width={1920}
+            height={1280}
+            loading="eager"
+          />
+        </div>
 
-        {/* Copy positioned over the sky area */}
+        {/* Cinematic gradients for depth and copy legibility */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/35 via-black/10 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-background" />
+
+        {/* Hero copy — centered with generous negative space */}
         <div className="relative z-10 flex flex-col items-center text-center container mx-auto px-6 lg:px-8 pt-28 md:pt-32">
-          <p className={`label-caption text-primary-foreground/90 mb-4 text-[10.5px] md:text-[11px] ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
+          <p className={`label-caption text-primary-foreground/90 mb-4 text-[10.5px] md:text-[11px] tracking-[0.25em] ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
             ARCHITECTURE AND DEVELOPMENT
           </p>
           <h1
