@@ -164,7 +164,7 @@ const Capability = () => {
 
 /* ── Leaders ── */
 const leaders = [
-  { name: "Ar. Ravi", title: "Founding Principal & Creative Director", img: leader1 },
+  { name: "Ar. Ravi Varma", title: "Founding Principal & Creative Director", img: leader1 },
   { name: "Mr. P. Goel", title: "Joint Director & Management Head", img: leader2 },
 ];
 
