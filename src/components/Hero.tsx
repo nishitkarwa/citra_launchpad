@@ -30,17 +30,17 @@ const Hero = () => {
 
         {/* Copy positioned over the sky area */}
         <div className="relative z-10 flex flex-col items-center text-center container mx-auto px-6 lg:px-8 pt-28 md:pt-32">
-          <p className={`label-caption text-primary-foreground/90 mb-5 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
+          <p className={`label-caption text-primary-foreground/90 mb-4 text-[10.5px] md:text-[11px] ${inView ? "animate-fade-in-up" : "opacity-0"}`}>
             ARCHITECTURE AND DEVELOPMENT
           </p>
           <h1
-            className={`text-primary-foreground max-w-3xl mb-6 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            className={`text-primary-foreground max-w-2xl mb-5 text-3xl md:text-4xl lg:text-5xl leading-tight ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "80ms" } : undefined}
           >
             Transforming Land Into Experience‑Led Developments
           </h1>
           <p
-            className={`body-large text-primary-foreground/85 max-w-xl mb-8 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
+            className={`text-primary-foreground/85 max-w-lg mb-7 text-sm md:text-base ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "160ms" } : undefined}
           >
             We partner with businesses and developers to design, build, and deliver high‑performance spaces that drive real commercial outcomes.
