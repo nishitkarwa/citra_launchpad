@@ -8,20 +8,21 @@ import projectsHero from "@/assets/projects-hero-collage.jpg";
 
 /* ── Hero ── */
 const ProjectsHero = () => (
-  <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
+  <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
     <img
       src={projectsHero}
       alt="CITRA projects"
-      className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns will-change-transform"
+      className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns-soft will-change-transform"
+      style={{ objectPosition: "center center" }}
       width={1920}
-      height={800}
+      height={1280}
     />
-    <div className="absolute inset-0 bg-foreground/50" />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/60 to-black/75" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
-      <h1 className="animate-fade-in-up">
+      <h1 className="animate-fade-in-up drop-shadow-lg">
         A Showcase of <em className="italic">Design, Detail</em> &amp; <em className="italic">Development.</em>
       </h1>
-      <p className="body-large text-primary-foreground/80 max-w-2xl mx-auto mt-6 animate-fade-in-up" style={{ animationDelay: "120ms" }}>
+      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 animate-fade-in-up drop-shadow" style={{ animationDelay: "120ms" }}>
         Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
       </p>
     </div>
