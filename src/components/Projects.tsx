@@ -113,12 +113,12 @@ const Projects = () => {
             <p className="body-default text-primary-foreground/60 mb-6">
               Browse our full portfolio of completed and ongoing developments.
             </p>
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               className="self-start rounded-full bg-primary px-7 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
             >
               View All Projects
-            </a>
+            </Link>
           </div>
           </div>
         </div>
