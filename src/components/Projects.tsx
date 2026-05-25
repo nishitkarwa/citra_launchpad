@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useInView } from "@/hooks/useInView";
 import ParallaxImage from "@/components/ParallaxImage";
 import imgCommercial from "@/assets/project-commercial.jpg";
@@ -53,13 +54,13 @@ const Projects = () => {
               Feature Projects
             </h2>
           </div>
-          <a
-            href="#projects"
+          <Link
+            to="/projects"
             className={`rounded-full border-[1.5px] border-primary px-6 py-2.5 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors self-start md:self-auto ${inView ? "animate-fade-in-up" : "opacity-0"}`}
             style={inView ? { animationDelay: "160ms" } : undefined}
           >
             View All Projects
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -112,12 +113,12 @@ const Projects = () => {
             <p className="body-default text-primary-foreground/60 mb-6">
               Browse our full portfolio of completed and ongoing developments.
             </p>
-            <a
-              href="#projects"
+            <Link
+              to="/projects"
               className="self-start rounded-full bg-primary px-7 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
             >
               View All Projects
-            </a>
+            </Link>
           </div>
           </div>
         </div>
