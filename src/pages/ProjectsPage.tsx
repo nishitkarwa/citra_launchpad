@@ -17,7 +17,7 @@ const ProjectsHero = () => (
       width={1920}
       height={1280}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/65 to-black/80" />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/30 to-black/50" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="animate-fade-in-up drop-shadow-lg">
         A Showcase of <em className="italic">Design, Detail</em> &amp; <em className="italic">Development.</em>
