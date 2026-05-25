@@ -50,9 +50,18 @@ const Navbar = () => {
             scrolled
               ? "bg-transparent"
               : isLightBg
-                ? "bg-white/40 backdrop-blur-3xl backdrop-saturate-150 border border-white/50 shadow-lg shadow-black/5"
+                ? "border border-white/40 shadow-lg shadow-black/5"
                 : "bg-primary-foreground/10 backdrop-blur-sm"
           }`}
+          style={
+            !scrolled && isLightBg
+              ? {
+                  backgroundColor: "rgba(255,255,255,0.55)",
+                  backdropFilter: "blur(18px) saturate(140%)",
+                  WebkitBackdropFilter: "blur(18px) saturate(140%)",
+                }
+              : undefined
+          }
         >
           {navLinks.map((l) => {
             const isRoute = l.link.startsWith("/") && !l.link.includes("#");
