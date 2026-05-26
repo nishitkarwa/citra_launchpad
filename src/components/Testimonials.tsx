@@ -1,4 +1,7 @@
 import { useInView } from "@/hooks/useInView";
+import greenmarkLogo from "@/assets/grrenmarkdev.jpg";
+import ecoLogo from "@/assets/eco.png";
+import surabiLogo from "@/assets/surabi.png";
 
 const reviews = [
   {
@@ -6,18 +9,21 @@ const reviews = [
       "CITRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.",
     name: "Ananya Mehta",
     title: "Director, Surabi Group",
+    logo: surabiLogo,
   },
   {
     quote:
       "From the first brief to final handover, the process was seamless. We had full visibility at every stage and the finished development exceeded our expectations on every metric.",
     name: "Rohan Desai",
     title: "CEO, Greenmark Developments",
+    logo: greenmarkLogo,
   },
   {
     quote:
       "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CITRA delivers.",
     name: "Priya Nambiar",
     title: "Founder, EcoEdge Properties",
+    logo: ecoLogo,
   },
 ];
 
@@ -54,12 +60,18 @@ const Testimonials = () => {
                 <p className="body-default text-muted-foreground mb-8">{r.quote}</p>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-xs font-semibold text-secondary-foreground">
-                  {r.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </div>
+                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center overflow-hidden border border-muted-foreground/10">
+                    {r.logo ? (
+                      <img src={r.logo} alt={r.name} className="w-full h-full object-contain p-1" />
+                    ) : (
+                      <span className="text-sm font-semibold text-secondary-foreground">
+                        {r.name
+                          .split(" ")
+                          .map((n) => n[0])
+                          .join("")}
+                      </span>
+                    )}
+                  </div>
                 <div>
                   <p className="font-semibold text-sm text-foreground">{r.name}</p>
                   <p className="text-xs text-muted-foreground">{r.title}</p>

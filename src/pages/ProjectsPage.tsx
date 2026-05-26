@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
+import ParallaxImage from "@/components/ParallaxImage";
 import { projects, signatureProjects, projectCategories } from "@/data/projects";
 import projectsHero from "@/assets/projects-hero-collage.jpg";
 
@@ -120,9 +121,24 @@ const SignatureProjects = () => {
                       </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-3">
-                      <img src={p.gallery[0] ?? p.cover} alt={p.title} className="rounded-xl w-full h-44 md:h-56 object-cover col-span-2" loading="lazy" />
-                      <img src={p.gallery[1] ?? p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
-                      <img src={p.gallery[2] ?? p.gallery[1] ?? p.cover} alt={p.title} className="rounded-xl w-full h-32 object-cover" loading="lazy" />
+                      <ParallaxImage
+                        src={p.gallery[0] ?? p.cover}
+                        alt={p.title}
+                        className="rounded-xl w-full h-44 md:h-56 col-span-2"
+                        loading="lazy"
+                      />
+                      <ParallaxImage
+                        src={p.gallery[1] ?? p.cover}
+                        alt={p.title}
+                        className="rounded-xl w-full h-32"
+                        loading="lazy"
+                      />
+                      <ParallaxImage
+                        src={p.gallery[2] ?? p.gallery[1] ?? p.cover}
+                        alt={p.title}
+                        className="rounded-xl w-full h-32"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>
@@ -177,10 +193,11 @@ const OurWork = () => {
               style={inView ? { animationDelay: `${120 + (i % 8) * 50}ms` } : undefined}
             >
               <div className="rounded-2xl overflow-hidden">
-                <img
+                <ParallaxImage
                   src={w.cover}
                   alt={w.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-48"
+                  imgClassName="transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>

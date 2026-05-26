@@ -13,12 +13,14 @@ const ProjectCard = ({
   category,
   to,
   className = "",
+  strength = 96,
 }: {
   img: string;
   title: string;
   category: string;
   to: string;
   className?: string;
+  strength?: number;
 }) => (
   <Link to={to} className={`relative rounded-2xl overflow-hidden group cursor-pointer block ${className}`}>
     <ParallaxImage
@@ -26,6 +28,7 @@ const ProjectCard = ({
       alt={title}
       className="absolute inset-0 w-full h-full"
       imgClassName="transition-transform duration-700 ease-out group-hover:scale-105"
+      strength={strength}
     />
     <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
     <div className="absolute bottom-0 left-0 p-5 md:p-7">
@@ -73,6 +76,7 @@ const Projects = () => {
               category="Master Plan"
               to="/projects/iskcon-master-plan-nerella"
               className="h-[280px] md:h-[420px]"
+              strength={120}
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "240ms" } : undefined}>
@@ -82,6 +86,7 @@ const Projects = () => {
               category="Commercial"
               to="/projects/moti-mahal"
               className="h-[240px] md:h-[340px]"
+              strength={110}
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "360ms" } : undefined}>
@@ -91,6 +96,7 @@ const Projects = () => {
               category="Residential"
               to="/projects/varahi-homes-nizamabad"
               className="h-[240px] md:h-[340px]"
+              strength={110}
             />
           </div>
         </div>
@@ -103,6 +109,7 @@ const Projects = () => {
               category="Residential"
               to="/projects/hr-infra-westro-villas-attapur"
               className="h-[240px]"
+              strength={104}
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "560ms" } : undefined}>

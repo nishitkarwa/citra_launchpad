@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { blogData } from "@/data/blogData";
+import ParallaxImage from "@/components/ParallaxImage";
 
 type Post = {
   id: number;
@@ -55,7 +56,13 @@ const BlogPost: React.FC = () => {
             <p className="text-sm text-muted-foreground mt-2">Citra Infra Studio • {post.date} • {post.readTime}</p>
 
             <div className="mt-8 rounded-lg overflow-hidden" style={{ maxHeight: 480 }}>
-              <img src={post.detailImage || post.image} alt={post.title} className="w-full h-[min(480px,60vh)] object-cover" />
+              <ParallaxImage
+                src={post.detailImage || post.image}
+                alt={post.title}
+                className="w-full h-[min(480px,60vh)]"
+                imgClassName=""
+                loading="lazy"
+              />
             </div>
 
             <div className="mt-10">

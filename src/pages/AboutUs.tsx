@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
 import AnimatedNumber from "@/components/AnimatedNumber";
+import ParallaxImage from "@/components/ParallaxImage";
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutBuilding from "@/assets/about-building.jpg";
 import leader1 from "@/assets/leader-1.jpg";
@@ -33,7 +34,12 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className={inView ? "animate-fade-in-up" : "opacity-0"}>
-            <img src={aboutBuilding} alt="CITRA project" className="rounded-2xl w-full h-[400px] md:h-[480px] object-cover" loading="lazy" width={640} height={800} />
+            <ParallaxImage
+              src={aboutBuilding}
+              alt="CITRA project"
+              className="rounded-2xl w-full h-[400px] md:h-[480px]"
+              loading="lazy"
+            />
           </div>
           <div>
             <p className={`label-caption text-primary mb-3 ${inView ? "animate-fade-in-up" : "opacity-0"}`}>WHO WE ARE</p>
@@ -175,7 +181,12 @@ const Leaders = () => {
               className={`w-56 ${inView ? "animate-fade-in-up" : "opacity-0"}`}
               style={inView ? { animationDelay: `${100 + i * 120}ms` } : undefined}
             >
-              <img src={l.img} alt={l.name} className="w-48 h-56 object-cover rounded-2xl mx-auto" loading="lazy" width={512} height={640} />
+              <ParallaxImage
+                src={l.img}
+                alt={l.name}
+                className="w-48 h-56 rounded-2xl mx-auto"
+                loading="lazy"
+              />
               <h4 className="mt-4 text-lg">{l.name}</h4>
               <p className="text-sm text-muted-foreground mt-1">{l.title}</p>
             </div>
@@ -212,9 +223,18 @@ const Team = () => {
               className={`${inView ? "animate-fade-in-up" : "opacity-0"}`}
               style={inView ? { animationDelay: `${80 + i * 60}ms` } : undefined}
             >
+<<<<<<< HEAD
               <div className="w-36 h-44 rounded-2xl mx-auto bg-secondary flex items-center justify-center">
                 <User className="w-16 h-16 text-muted-foreground" strokeWidth={1.5} />
               </div>
+=======
+              <ParallaxImage
+                src={m.img}
+                alt={m.name}
+                className="w-36 h-44 rounded-2xl mx-auto"
+                loading="lazy"
+              />
+>>>>>>> f39e7fc (chore: commit workspace changes — testimonials logos & styling, parallax/stagger, hero animation, social links)
               <h4 className="mt-3 text-base">{m.name}</h4>
               <p className="text-sm text-muted-foreground mt-0.5">{m.title}</p>
             </div>

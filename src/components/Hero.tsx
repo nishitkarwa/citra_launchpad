@@ -20,7 +20,7 @@ const Hero = () => {
         <img
           src={heroDesert}
           alt="Modern desert architectural development"
-          className="absolute inset-0 w-full h-full object-cover animate-pan-left-right will-change-transform"
+          className="absolute inset-0 w-full h-full object-cover animate-hero-zoom will-change-transform"
           style={{ objectPosition: "center bottom" }}
           width={1920}
           height={1088}

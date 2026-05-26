@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink, MapPin, Calendar, CheckCircle2 } from "lucide-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
+import ParallaxImage from "@/components/ParallaxImage";
 import { getProjectBySlug, signatureProjects } from "@/data/projects";
 
 const ProjectDetail = () => {
@@ -135,10 +136,11 @@ const ProjectDetail = () => {
                 key={i}
                 className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
               >
-                <img
+                <ParallaxImage
                   src={g}
                   alt={`${project.title} visual ${i + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full h-full"
+                  imgClassName="transition-transform duration-700 ease-out hover:scale-110"
                   loading="lazy"
                 />
               </div>
@@ -159,7 +161,13 @@ const ProjectDetail = () => {
             {others.map((o) => (
               <Link key={o.slug} to={`/projects/${o.slug}`} className="group">
                 <div className="rounded-2xl overflow-hidden">
-                  <img src={o.cover} alt={o.title} className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <ParallaxImage
+                    src={o.cover}
+                    alt={o.title}
+                    className="w-full h-56"
+                    imgClassName="transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
                 </div>
                 <p className="label-caption text-primary mt-4">{o.section}</p>
                 <h4 className="mt-1 text-lg">{o.title}</h4>
