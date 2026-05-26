@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
 import { Link } from "react-router-dom";
-import servicesHero from "@/assets/services-hero.jpg";
+import servicesHero from "@/assets/service_hero.png";
 import imgResidential from "@/assets/project-residential.jpg";
 import imgCommercial from "@/assets/service-commercial.jpg";
 import imgReligious from "@/assets/project-religious.jpg";

@@ -2,36 +2,9 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
-import blogSample from "@/assets/blog-sample.jpg";
-import projectConvent from "@/assets/project-convent.jpg";
-import projectRoofgarden from "@/assets/project-roofgarden.jpg";
+import { blogData } from "@/data/blogData";
 
-const posts = [
-  {
-    slug: "sustainable-architecture-2025",
-    title: "The Rise of Sustainable Architecture in 2025",
-    excerpt: "From net-zero energy buildings to biophilic design, how the architecture industry is embracing sustainability at every scale.",
-    image: blogSample,
-    date: "April 10, 2025",
-    category: "Sustainability",
-  },
-  {
-    slug: "adaptive-reuse-heritage",
-    title: "Adaptive Reuse: Breathing New Life Into Heritage Structures",
-    excerpt: "How modern developers are preserving cultural landmarks while creating functional commercial and residential spaces.",
-    image: projectConvent,
-    date: "March 22, 2025",
-    category: "Heritage",
-  },
-  {
-    slug: "rooftop-landscapes-urban",
-    title: "Rooftop Landscapes: The Future of Urban Green Spaces",
-    excerpt: "Exploring the trend of transforming neglected rooftops into lush gardens, social hubs, and productive farms.",
-    image: projectRoofgarden,
-    date: "February 15, 2025",
-    category: "Landscaping",
-  },
-];
+const posts = blogData;
 
 const BlogPage = () => {
   const { ref: heroRef, inView: heroInView } = useInView(0.1);
@@ -62,7 +35,7 @@ const BlogPage = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className={`group block ${gridInView ? "animate-fade-in-up" : "opacity-0"}`}
+                className={`group block cursor-pointer hover:scale-[1.02] transition-transform duration-200 ${gridInView ? "animate-fade-in-up" : "opacity-0"}`}
                 style={gridInView ? { animationDelay: `${i * 120}ms` } : undefined}
               >
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5">

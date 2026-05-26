@@ -1,4 +1,6 @@
 import { useInView } from "@/hooks/useInView";
+import { useRef } from "react";
+import useStaggeredAnimation from "@/hooks/useStaggeredAnimation";
 
 const cards = [
   {
@@ -34,6 +36,9 @@ const cards = [
 
 const About = () => {
   const { ref, inView } = useInView();
+  const cardsRef = useRef<HTMLDivElement | null>(null);
+
+  useStaggeredAnimation(cardsRef, inView, { selector: ":scope > *", baseDelay: 120, step: 120 });
 
   return (
     <section
@@ -59,12 +64,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div ref={cardsRef} className="grid md:grid-cols-3 gap-4">
           {cards.map((c, i) => (
             <div
               key={c.title}
               className={inView ? "animate-fade-in-up" : "opacity-0"}
-              style={inView ? { animationDelay: `${120 + i * 120}ms` } : undefined}
             >
             <div className="bg-dark text-primary-foreground rounded-2xl p-8 flex flex-col h-full transition-transform duration-500 ease-out hover:-translate-y-5 hover:scale-105 will-change-transform">
               <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6">

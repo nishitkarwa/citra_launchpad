@@ -1,4 +1,5 @@
 import { useInView } from "@/hooks/useInView";
+import useStaggeredAnimation from "@/hooks/useStaggeredAnimation";
 
 const words: { text: string; bold: boolean }[] = [
   { text: "Where",        bold: false },
@@ -21,6 +22,8 @@ const words: { text: string; bold: boolean }[] = [
 const Editorial = () => {
   const { ref, inView } = useInView(0.2);
 
+  useStaggeredAnimation(ref, inView, { selector: "span", baseDelay: 0, step: 55 });
+
   return (
     <section ref={ref} className="section-padding">
       <div className="container mx-auto px-6 lg:px-8">
@@ -30,9 +33,8 @@ const Editorial = () => {
               <span
                 key={i}
                 className={`inline-block mr-[0.25em] ${
-                  w.bold ? "font-bold text-foreground" : "text-muted-foreground"
-                } ${inView ? "animate-fade-in-up" : "opacity-0"}`}
-                style={inView ? { animationDelay: `${i * 55}ms` } : undefined}
+                      w.bold ? "font-bold text-foreground" : "text-muted-foreground"
+                    } ${inView ? "animate-fade-in-up" : "opacity-0"}`}
               >
                 {w.text}
               </span>
