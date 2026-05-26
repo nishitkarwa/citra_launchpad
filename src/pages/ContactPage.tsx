@@ -41,7 +41,7 @@ const ContactPage = () => {
         <h1
           className={`relative z-10 text-primary-foreground text-center max-w-2xl px-6 ${heroInView ? "animate-fade-in-up" : "opacity-0"}`}
         >
-          Let's Develop Something Exceptional.
+          Let's Develop<br />Something Exceptional.
         </h1>
       </section>
 
