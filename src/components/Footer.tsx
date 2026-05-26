@@ -32,7 +32,7 @@ const Footer = () => (
         {/* Navigation */}
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Navigation</p>
-          <ul className="space-y-2.5">
+          <ul className="space-y-4">
             {navLinks.map((l) => (
               <li key={l}>
                 <a
@@ -49,7 +49,7 @@ const Footer = () => (
         {/* Featured Projects */}
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Featured Projects</p>
-          <ul className="space-y-2.5">
+          <ul className="space-y-4">
             {featuredProjects.map((p) => (
               <li key={p.slug}>
                 <Link
@@ -66,7 +66,7 @@ const Footer = () => (
         {/* Contact */}
         <div>
           <p className="label-caption text-primary-foreground/50 mb-5">Contact</p>
-          <ul className="space-y-2.5 body-default text-primary-foreground/60">
+          <ul className="space-y-4 body-default text-primary-foreground/60">
             <li>hello@citra.com</li>
             <li>+91 98765 43210</li>
             <li>Hyderabad, India</li>
