@@ -41,7 +41,7 @@ const Hero = () => {
           src={heroDesert}
           alt="Luxury modern desert house at twilight"
           className="absolute inset-x-0 top-0 w-full h-[160svh] min-h-[1100px] object-cover animate-ken-burns will-change-transform"
-          style={{ objectPosition: "center bottom", transform: `translate3d(0, ${-offset}px, 0)` }}
+          style={{ objectPosition: "center top", transform: `translate3d(0, ${-offset}px, 0)` }}
           width={1920}
           height={1280}
           loading="eager"
