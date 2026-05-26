@@ -27,14 +27,14 @@ const ProjectsHero = () => (
     <img
       src={projectsHero}
       alt="CITRA projects"
-      className="absolute inset-0 w-full h-full object-contain md:object-cover animate-ken-burns-soft will-change-transform scale-90"
-      style={{ objectPosition: "center bottom", filter: "brightness(1.1) saturate(1.05)" }}
+      className="absolute inset-0 w-full h-full object-contain md:object-cover animate-ken-burns-soft will-change-transform scale-[0.82] translate-y-[6%]"
+      style={{ objectPosition: "center bottom", filter: "brightness(1.28) saturate(1.05)" }}
       width={1920}
       height={1280}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
-    <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20 md:pt-24">
-      <h1 className="text-[#1f2a44] text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] tracking-tight">
+    <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
+    <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
+      <h1 className="text-[#1f2a44] text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-tight">
         {headingWords.map((w, i) => (
           <span
             key={i}
