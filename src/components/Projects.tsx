@@ -1,24 +1,26 @@
 import { Link } from "react-router-dom";
 import { useInView } from "@/hooks/useInView";
 import ParallaxImage from "@/components/ParallaxImage";
-import imgCommercial from "@/assets/project-commercial.jpg";
-import imgRetail from "@/assets/project-retail.jpg";
-import imgOffice from "@/assets/project-office.jpg";
-import imgHospitality from "@/assets/project-hospitality.jpg";
-import imgResidential from "@/assets/project-residential.jpg";
+import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.jpg";
+import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
+import varahiHero from "@/assets/projects/varahi-hero.png";
+import westroHero from "@/assets/projects/westro-hero.png";
+import chapelHero from "@/assets/projects/chapel-hero.png";
 
 const ProjectCard = ({
   img,
   title,
   category,
+  to,
   className = "",
 }: {
   img: string;
   title: string;
   category: string;
+  to: string;
   className?: string;
 }) => (
-  <div className={`relative rounded-2xl overflow-hidden group cursor-pointer ${className}`}>
+  <Link to={to} className={`relative rounded-2xl overflow-hidden group cursor-pointer block ${className}`}>
     <ParallaxImage
       src={img}
       alt={title}
@@ -30,7 +32,7 @@ const ProjectCard = ({
       <p className="label-caption text-primary mb-1.5">{category}</p>
       <h4 className="text-primary-foreground text-lg md:text-xl">{title}</h4>
     </div>
-  </div>
+  </Link>
 );
 
 
@@ -66,25 +68,28 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className={`md:col-span-2 ${inView ? "animate-fade-in-up" : "opacity-0"}`} style={inView ? { animationDelay: "120ms" } : undefined}>
             <ProjectCard
-              img={imgCommercial}
-              title="Commercial Complex Development"
-              category="Mixed‑Use Development"
+              img={iskconNerellaHero}
+              title="ISKCON Master Plan – Nerella"
+              category="Master Plan"
+              to="/projects/iskcon-master-plan-nerella"
               className="h-[280px] md:h-[420px]"
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "240ms" } : undefined}>
             <ProjectCard
-              img={imgRetail}
-              title="Retail Plaza"
-              category="Retail Architecture"
+              img={motiMahalHero}
+              title="Moti Mahal"
+              category="Commercial"
+              to="/projects/moti-mahal"
               className="h-[240px] md:h-[340px]"
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "360ms" } : undefined}>
             <ProjectCard
-              img={imgOffice}
-              title="Corporate Office"
-              category="Commercial Interior"
+              img={varahiHero}
+              title="Varahi Homes – Nizamabad"
+              category="Residential"
+              to="/projects/varahi-homes-nizamabad"
               className="h-[240px] md:h-[340px]"
             />
           </div>
@@ -93,17 +98,19 @@ const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "480ms" } : undefined}>
             <ProjectCard
-              img={imgHospitality}
-              title="Hospitality Resort"
-              category="Hospitality Design"
+              img={westroHero}
+              title="HR Infra – Westro Villas"
+              category="Residential"
+              to="/projects/hr-infra-westro-villas-attapur"
               className="h-[240px]"
             />
           </div>
           <div className={inView ? "animate-fade-in-up" : "opacity-0"} style={inView ? { animationDelay: "560ms" } : undefined}>
             <ProjectCard
-              img={imgResidential}
-              title="Residential Tower"
-              category="Luxury Residential"
+              img={chapelHero}
+              title="Parametric Chapel"
+              category="Religious"
+              to="/projects/church-parametric-chapel"
               className="h-[240px]"
             />
           </div>
