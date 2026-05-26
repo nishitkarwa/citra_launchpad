@@ -33,19 +33,19 @@ const ProjectsHero = () => (
       height={1280}
     />
     <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
-    <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto pt-28 md:pt-32">
-      <h1 className="drop-shadow-lg">
+    <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20 md:pt-24">
+      <h1 className="text-[#1f2a44] text-5xl md:text-7xl lg:text-8xl font-light leading-[1.05] tracking-tight">
         {headingWords.map((w, i) => (
           <span
             key={i}
             className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
             style={{ animationDelay: `${i * 120}ms`, animationFillMode: "forwards" }}
           >
-            {w.italic ? <em className="italic">{w.text}</em> : w.text}
+            {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
           </span>
         ))}
       </h1>
-      <p className="body-large text-primary-foreground/90 max-w-2xl mx-auto mt-6 drop-shadow">
+      <p className="text-[#1f2a44]/70 text-sm md:text-base max-w-xl mx-auto mt-6">
         {subWords.map((w, i) => (
           <span
             key={i}
