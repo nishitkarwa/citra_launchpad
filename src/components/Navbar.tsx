@@ -69,7 +69,7 @@ const Navbar = () => {
               scrolled
                 ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
                 : isLightBg
-                  ? "text-[#0EA5E9] hover:text-[#0284C7] hover:bg-[#38BDF8]/15"
+                  ? "text-foreground hover:text-foreground hover:bg-foreground/5"
                   : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
             }`;
             return isRoute ? (
