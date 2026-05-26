@@ -57,13 +57,13 @@ const Hero = () => {
       </div>
 
       {/* Stats strip */}
-      <div className="border-t border-border bg-background">
+      <div ref={statsRef} className="border-t border-border bg-background">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-border">
             {stats.map((s) => (
               <div key={s.label} className="py-6 md:py-8 flex flex-col items-center justify-center overflow-hidden">
-                <p className="text-2xl md:text-4xl font-bold text-foreground leading-none">
-                  <AnimatedNumber value={s.value} inView={inView} />
+                <p className="text-2xl md:text-4xl font-bold text-foreground leading-none tabular-nums">
+                  <AnimatedNumber value={s.value} inView={statsInView} />
                 </p>
                 <p className="text-xs md:text-sm text-muted-foreground mt-1.5 text-center">{s.label}</p>
               </div>
