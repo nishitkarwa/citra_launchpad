@@ -8,7 +8,7 @@ if (typeof window !== "undefined") {
     "scroll",
     () => {
       const y = window.scrollY;
-      scrollingDown = y > lastScrollY;
+      if (y !== lastScrollY) scrollingDown = y > lastScrollY;
       lastScrollY = y;
     },
     { passive: true },
@@ -18,7 +18,7 @@ if (typeof window !== "undefined") {
 export function useInView(
   threshold = 0.25,
   rootMargin = "0px 0px -15% 0px",
-  introDelay = 500,
+  introDelay = 250,
 ) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
@@ -30,19 +30,21 @@ export function useInView(
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Only trigger the appear animation when the user is scrolling down.
+          // Only trigger the appear animation when scrolling down.
           if (!scrollingDown) return;
           if (timer) clearTimeout(timer);
           timer = setTimeout(() => setInView(true), introDelay);
         } else {
-          if (timer) {
-            clearTimeout(timer);
-            timer = null;
+          // Only reset (so it can replay) when the section leaves the viewport
+          // while the user is scrolling UP — i.e. it disappeared below the
+          // fold. Don't hide it when scrolling down past it.
+          if (!scrollingDown) {
+            if (timer) {
+              clearTimeout(timer);
+              timer = null;
+            }
+            setInView(false);
           }
-          // Reset only when leaving past the bottom (i.e. scrolling down past it
-          // or scrolling back up above it) so it can replay next time we scroll
-          // down into it.
-          setInView(false);
         }
       },
       { threshold, rootMargin },
