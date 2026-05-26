@@ -49,7 +49,7 @@ const ProjectsHero = () => (
         ))}
       </h1>
 
-      <p className="text-[#1f2a44]/70 text-sm md:text-base max-w-xl mx-auto mt-6">
+      <p className="text-[#1f2a44]/70 text-xs md:text-sm max-w-lg mx-auto mt-4">
         {subWords.map((w, i) => (
           <span
             key={i}
