@@ -11,6 +11,7 @@ const stats = [
 
 const Hero = () => {
   const { ref, inView } = useInView(0.1);
+  const { ref: statsRef, inView: statsInView } = useInView(0.3);
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
