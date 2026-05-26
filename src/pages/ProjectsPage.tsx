@@ -23,17 +23,17 @@ const subWords =
   );
 
 const ProjectsHero = () => (
-  <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-black">
+  <section className="relative min-h-screen w-full flex items-start justify-center overflow-hidden bg-black">
     <img
       src={projectsHero}
       alt="CITRA projects"
-      className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns-soft will-change-transform scale-95"
-      style={{ objectPosition: "center center", filter: "brightness(1.15) saturate(1.05)" }}
+      className="absolute inset-0 w-full h-full object-cover animate-ken-burns-soft will-change-transform"
+      style={{ objectPosition: "center bottom", filter: "brightness(1.1) saturate(1.05)" }}
       width={1920}
       height={1280}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-black/20" />
-    <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
+    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent" />
+    <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto pt-28 md:pt-32">
       <h1 className="drop-shadow-lg">
         {headingWords.map((w, i) => (
           <span
