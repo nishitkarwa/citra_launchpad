@@ -39,7 +39,7 @@ const ContactPage = () => {
         <img src={contactHero} alt="CITRA team meeting" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
         <div className="absolute inset-0 bg-foreground/50" />
         <h1
-          className={`relative z-10 text-primary-foreground text-center max-w-2xl px-6 ${heroInView ? "animate-fade-in-up" : "opacity-0"}`}
+          className={`relative z-10 text-primary-foreground text-center max-w-5xl px-6 whitespace-nowrap ${heroInView ? "animate-fade-in-up" : "opacity-0"}`}
         >
           Let's Develop<br />Something Exceptional.
         </h1>
