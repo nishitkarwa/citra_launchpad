@@ -23,7 +23,7 @@ const ProjectsHero = () => (
     <img
       src={projectsHero}
       alt="CITRA projects"
-      className="absolute inset-0 w-full h-full object-contain md:object-cover animate-ken-burns-soft will-change-transform scale-[0.78] translate-y-[14%]"
+      className="absolute inset-0 w-full h-full object-contain md:object-cover animate-ken-burns-soft will-change-transform scale-[0.74] translate-y-[22%]"
       style={{ objectPosition: "center bottom", filter: "brightness(1.28) saturate(1.05)" }}
       width={1920}
       height={1280}
