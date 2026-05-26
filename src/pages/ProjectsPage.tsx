@@ -55,7 +55,7 @@ const ProjectsHero = () => (
             key={i}
             className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
             style={{
-              animationDelay: `${headingWords.length * 120 + i * 60}ms`,
+              animationDelay: `${4 * 120 + i * 60}ms`,
               animationFillMode: "forwards",
             }}
           >
