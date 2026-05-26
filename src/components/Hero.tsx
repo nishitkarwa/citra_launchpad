@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
       {/* Background image — taller than viewport so the house sits below the fold */}
-      <div className="relative w-full h-[145svh] min-h-[1000px] overflow-hidden">
+      <div className="relative w-full h-[125svh] min-h-[880px] overflow-hidden">
         <img
           src={heroDesert}
           alt="Modern desert architectural development"
