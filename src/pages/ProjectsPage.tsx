@@ -30,7 +30,7 @@ const ProjectsHero = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
     <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
-      <h1 className="text-[#1f2a44] text-2xl md:text-4xl lg:text-5xl font-light leading-[1.05] tracking-tight">
+      <h1 className="text-[#1f2a44] text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-tight">
         {headingLines.map((line, li) => (
           <span key={li} className="block">
             {line.map((w, i) => {
