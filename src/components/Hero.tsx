@@ -13,15 +13,33 @@ const stats = [
 const Hero = () => {
   const { ref, inView } = useInView(0.1);
   const imgRef = useRef<HTMLImageElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
   const [offset, setOffset] = useState(0);
+  const [maxOffset, setMaxOffset] = useState(0);
+
+  // Recompute parallax travel based on rendered image vs stage so we never
+  // reveal empty space and the image never overscrolls past its natural bounds.
+  useEffect(() => {
+    const compute = () => {
+      const stage = stageRef.current;
+      const img = imgRef.current;
+      if (!stage || !img) return;
+      setMaxOffset(Math.max(0, img.offsetHeight - stage.offsetHeight));
+    };
+    compute();
+    const img = imgRef.current;
+    if (img && !img.complete) img.addEventListener("load", compute, { once: true });
+    window.addEventListener("resize", compute);
+    return () => window.removeEventListener("resize", compute);
+  }, []);
 
   useEffect(() => {
     let raf = 0;
     const onScroll = () => {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
-        // Parallax: image moves up slower than scroll for cinematic reveal
-        setOffset(Math.min(window.scrollY * 0.35, 400));
+        // Parallax: image moves up at ~45% of scroll, capped to image overflow
+        setOffset(Math.min(window.scrollY * 0.45, maxOffset));
       });
     };
     onScroll();
@@ -30,22 +48,23 @@ const Hero = () => {
       window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [maxOffset]);
 
   return (
     <section id="home" ref={ref} className="relative flex flex-col">
       {/* Hero stage: viewport-sized; image is taller and revealed via parallax */}
-      <div className="relative w-full h-[100svh] min-h-[680px] overflow-hidden">
+      <div ref={stageRef} className="relative w-full h-[100svh] min-h-[640px] overflow-hidden">
         <img
           ref={imgRef}
           src={heroDesert}
           alt="Luxury modern desert house at twilight"
-          className="absolute inset-x-0 top-0 w-full h-[160svh] min-h-[1100px] object-cover animate-ken-burns will-change-transform"
+          className="absolute inset-x-0 top-0 w-full h-[125svh] min-h-[820px] object-cover animate-ken-burns will-change-transform"
           style={{ objectPosition: "center top", transform: `translate3d(0, ${-offset}px, 0)` }}
           width={1920}
           height={1280}
           loading="eager"
         />
+
 
         {/* Cinematic gradients for depth and copy legibility */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-2/3 bg-gradient-to-b from-black/35 via-black/10 to-transparent" />
