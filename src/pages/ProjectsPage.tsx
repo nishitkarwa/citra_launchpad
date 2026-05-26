@@ -23,7 +23,7 @@ const subWords =
   );
 
 const ProjectsHero = () => (
-  <section className="relative min-h-screen w-full flex items-start justify-center overflow-hidden bg-black">
+  <section className="relative h-[75vh] min-h-[520px] w-full flex items-start justify-center overflow-hidden bg-black">
     <img
       src={projectsHero}
       alt="CITRA projects"
