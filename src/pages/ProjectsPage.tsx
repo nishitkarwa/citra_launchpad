@@ -30,17 +30,25 @@ const ProjectsHero = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
     <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
-      <h1 className="text-[#1f2a44] text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-tight">
-        {headingWords.map((w, i) => (
-          <span
-            key={i}
-            className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
-            style={{ animationDelay: `${i * 120}ms`, animationFillMode: "forwards" }}
-          >
-            {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
+      <h1 className="text-[#1f2a44] text-4xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-tight">
+        {headingLines.map((line, li) => (
+          <span key={li} className="block">
+            {line.map((w, i) => {
+              const idx = li * 10 + i;
+              return (
+                <span
+                  key={i}
+                  className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
+                  style={{ animationDelay: `${idx * 120}ms`, animationFillMode: "forwards" }}
+                >
+                  {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
+                </span>
+              );
+            })}
           </span>
         ))}
       </h1>
+
       <p className="text-[#1f2a44]/70 text-sm md:text-base max-w-xl mx-auto mt-6">
         {subWords.map((w, i) => (
           <span
