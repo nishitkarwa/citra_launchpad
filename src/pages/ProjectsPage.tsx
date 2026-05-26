@@ -32,7 +32,7 @@ const ProjectsHero = () => (
       width={1920}
       height={1280}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/30 to-black/50" />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/25" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="drop-shadow-lg">
         {headingWords.map((w, i) => (
