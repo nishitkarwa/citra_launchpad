@@ -4,7 +4,7 @@ import citraLogo from "@/assets/citra-logo.png";
 
 // Routes that render the navbar over a light background at the top of the page.
 // On these routes we use a cyan-blue accent (#38BDF8) for nav text to ensure contrast.
-const LIGHT_BG_ROUTES = ["/blog"];
+const LIGHT_BG_ROUTES = ["/blog", "/projects"];
 
 const navLinks = [
   { label: "Projects", link: "/projects" },
