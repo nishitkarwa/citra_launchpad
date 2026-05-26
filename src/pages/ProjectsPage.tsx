@@ -28,11 +28,11 @@ const ProjectsHero = () => (
       src={projectsHero}
       alt="CITRA projects"
       className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns-soft will-change-transform scale-95"
-      style={{ objectPosition: "center center" }}
+      style={{ objectPosition: "center center", filter: "brightness(1.15) saturate(1.05)" }}
       width={1920}
       height={1280}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/25" />
+    <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-black/20" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="drop-shadow-lg">
         {headingWords.map((w, i) => (
