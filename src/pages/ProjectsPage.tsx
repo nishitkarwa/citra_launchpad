@@ -7,15 +7,11 @@ import { projects, signatureProjects, projectCategories } from "@/data/projects"
 import projectsHero from "@/assets/projects-hero-collage.jpg";
 
 /* ── Hero ── */
-const headingWords: { text: string; italic?: boolean }[] = [
-  { text: "A" },
-  { text: "Showcase" },
-  { text: "of" },
-  { text: "Design,", italic: true },
-  { text: "Detail", italic: true },
-  { text: "&" },
-  { text: "Development.", italic: true },
+const headingLines: { text: string; italic?: boolean }[][] = [
+  [{ text: "Designing" }, { text: "Spaces.", italic: true }],
+  [{ text: "Building" }, { text: "Experiences.", italic: true }],
 ];
+
 
 const subWords =
   "Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.".split(
