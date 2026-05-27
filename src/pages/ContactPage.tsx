@@ -23,10 +23,40 @@ const ContactPage = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const ADMIN_WA_NUMBER = "918686662540";
+
+  const formatDateTime = (d = new Date()) =>
+    d.toLocaleString(undefined, {
+      year: "numeric",
+      month: "long",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // placeholder
-    alert("Thank you! We'll be in touch soon.");
+    const message = [
+      "CITRA INFRA STUDIO",
+      "New Client Enquiry",
+      "------------------------------",
+      "",
+      "Client Name: " + `${form.firstName.trim()} ${form.lastName.trim()}`.trim(),
+      "Phone Number: " + form.phone.trim(),
+      "Email: " + form.email.trim(),
+      "Consultation Type: " + form.consultation.trim(),
+      "",
+      "Project Information:",
+      form.projectInfo.trim(),
+      "",
+      "------------------------------",
+      "Submitted On: " + formatDateTime(),
+      "Source: Citra Official Website",
+    ].join("\n");
+
+    const url = `https://wa.me/${ADMIN_WA_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
     setForm({ firstName: "", lastName: "", phone: "", email: "", consultation: "", projectInfo: "" });
   };
 
