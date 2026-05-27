@@ -7,8 +7,6 @@ import { blogData } from "@/data/blogData";
 const posts = blogData;
 
 const BlogPage = () => {
-  const { ref: heroRef, inView: heroInView } = useInView(0.1);
-  const { ref: gridRef, inView: gridInView } = useInView(0.1);
   const displayed = posts;
 
   return (
@@ -16,28 +14,27 @@ const BlogPage = () => {
       <Navbar />
 
       {/* Hero */}
-      <section ref={heroRef} className="pt-28 md:pt-36 pb-16 md:pb-20">
+      <section className="pt-28 md:pt-36 pb-16 md:pb-20">
         <div className="container mx-auto px-6 lg:px-8">
-          <p className={`label-caption text-primary mb-4 ${heroInView ? "animate-fade-in-up" : "opacity-0"}`}>INSIGHTS & IDEAS</p>
-          <h1 className={`text-foreground max-w-2xl ${heroInView ? "animate-fade-in-up" : "opacity-0"}`} style={heroInView ? { animationDelay: "80ms" } : undefined}>
+          <p className="label-caption text-primary mb-4">INSIGHTS & IDEAS</p>
+          <h1 className="text-foreground max-w-2xl">
             Blog
           </h1>
-          <p className={`body-large text-muted-foreground max-w-xl mt-4 ${heroInView ? "animate-fade-in-up" : "opacity-0"}`} style={heroInView ? { animationDelay: "160ms" } : undefined}>
+          <p className="body-large text-muted-foreground max-w-xl mt-4">
             Stories, insights, and perspectives from the world of architecture and real estate development.
           </p>
         </div>
       </section>
 
       {/* Blog Grid */}
-      <section ref={gridRef} className="pb-20 md:pb-28">
+      <section className="pb-20 md:pb-28">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {displayed.map((post, i) => (
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className={`group block cursor-pointer hover:scale-[1.02] transition-transform duration-200 ${gridInView ? "animate-fade-in-up" : "opacity-0"}`}
-                style={gridInView ? { animationDelay: `${i * 120}ms` } : undefined}
+                className="group block cursor-pointer hover:scale-[1.02] transition-transform duration-200"
               >
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5">
                   <img
