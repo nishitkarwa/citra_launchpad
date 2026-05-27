@@ -120,12 +120,12 @@ const Footer = () => {
             </div>
 
             <div className="mt-8">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-cyan-400 text-black text-sm font-medium hover:bg-cyan-300 transition-all duration-300"
               >
                 Start a Project
-              </a>
+              </Link>
             </div>
           </div>
         </div>
