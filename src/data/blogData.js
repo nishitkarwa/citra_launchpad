@@ -13,19 +13,17 @@ export const blogData = [
     detailImage: "/images/blog/blog1.jpg",
     content: `Introduction: Luxury villas in India are entering a new era — one marked by refined materiality, climate-responsive layouts and an insistence on experiential spatial sequences.
 
-This article explores the design principles that shape modern premium villas, from axial landscapes and framed views to bespoke construction detailing that elevates everyday moments.
+  This article explores the design principles that shape modern premium villas, from axial landscapes and framed views to bespoke construction detailing that elevates everyday moments.
 
-Full article:
+  Context & Site: Every premium villa begins with a careful reading of site orientation, prevailing winds and the surrounding character. Successful schemes respond to microclimate and topography, using orientation, massing and landscape to optimise daylight and natural cooling. The architect's role is to choreograph sequence — arrival courts, framed vistas, and private courtyards become chapters in the residence's narrative.
 
-1. Context & Site: Every premium villa begins with a careful reading of site orientation, prevailing winds and the surrounding character. A successful villa frames views — whether a private garden or distant skyline — stitching interior and exterior into a composed sequence.
+  Material Strategy: Luxurious architecture balances opulence with restraint. Natural stone, warm timber and engineered concrete palettes are combined to create tactile surfaces that age gracefully. Detailing is deliberately restrained: junctions are resolved with precision, and material transitions are celebrated rather than hidden.
 
-2. Material Strategy: Luxurious architecture balances opulence with restraint. Natural stone, warm timber and engineered concrete palettes are combined thoughtfully to create tactile, durable surfaces that age gracefully.
+  Spatial Flow & Program: Clarity of plan supports refined living. Generous thresholds, layered private wings and adaptable guest suites allow a home to perform across seasons and social modes. Service zones are planned invisibly so operations remain seamless without compromising the architecture.
 
-3. Spatial Flow: Plan clarity is essential. Generous thresholds, gallery-like corridors, and layered private spaces create a choreography of discovery. The best villas allow for both sociable entertaining and quiet retreat without compromise.
+  Sustainability & Comfort: Passive design is non-negotiable in contemporary premium work. Deep overhangs, operable louvers, cross-ventilation strategies and integrated water management reduce operational load while enhancing occupant comfort. High-performance glazing and insulation are paired with responsible procurement to lower embodied carbon.
 
-4. Sustainability & Comfort: Passive shading devices, cross-ventilation and integrated water strategies ensure that luxury living remains comfortable year-round while keeping energy use efficient.
-
-5. Craft & Detail: High-end villas are defined by detailing — precise junctions, concealed service zones, and custom joinery that turn construction into craft. These are the moments clients remember.`
+  Craft & Handover: The difference between a good villa and a memorable one is in the sequence of assembled details. Procurement, mock-ups and rigorous site supervision translate design intent into reality. When craft is embedded from concept to handover, the result is architecture that both delights and endures.`
   },
   {
     id: 2,
@@ -39,12 +37,13 @@ Full article:
     detailImage: "/images/blog/blog2.jpg",
     content: `Introduction: Elevation design has evolved from skin to statement. For premium residences, the facade is a composition of depth, texture and measured restraint.
 
-Full article:
+  Layering & Architectural Depth: Successful facades use depth to create a play of light and shadow. Recessed balconies, projecting fins and articulated parapets give the building a three-dimensional quality that reads differently throughout the day.
 
-- Layering and Recess: Depth creates shadow and a sense of crafted volume. Recessed terraces and layered materials provide both shelter and visual richness.
-- Material Contrast: Combining honed stone with textured plaster and dark metal creates premium contrast without excess.
-- Framing Views: Windows are proportioned like artworks; long horizontal slots and tall verticals control light and privacy.
-- Night-time Composition: Exterior lighting is integrated to reveal texture and geometry after sunset, extending the architecture into evening.`
+  Material Palette & Tactility: Material contrast is a central strategy: warm timber, honed stone and tactile renders are combined with carefully detailed metalwork. Each material is chosen for how it will weather and be maintained over time, ensuring the elevation improves with age.
+
+  Fenestration & Proportion: Openings are composed as negative space within a crafted surface. Framing views, modulating daylight and preserving privacy are the primary objectives; glazing proportions are resolved to create visual rhythm rather than random apertures.
+
+  Lighting & Night-time Character: Thoughtful exterior lighting reveals texture after sunset and enhances the building's civic presence. Integrated lighting highlights material transitions and pathways while respecting neighbouring context.`
   },
   {
     id: 3,
@@ -58,9 +57,13 @@ Full article:
     detailImage: "/images/blog/blog3.jpg",
     content: `Introduction: Sustainability is now a central pillar of premium architecture — not an optional extra.
 
-Full article:
+  Holistic Performance Strategies: Sustainable design in premium projects starts with targets: energy, water and embodied carbon goals inform material and systems decisions. Performance is integrated into the brief rather than retrofitted, allowing architectural ambition and environmental responsibility to coexist.
 
-We explore passive design tactics, embodied carbon reduction, and operational strategies that ensure longevity and low environmental impact for high-end projects. Embedding performance targets early in design preserves aesthetic ambition while delivering measurable outcomes.`
+  Passive Design & Comfort: Strategies such as building orientation, cross-ventilation, thermal mass and shading devices reduce reliance on mechanical cooling. These moves often improve spatial quality — shaded outdoor rooms, thermally comfortable terraces and daylighted interiors.
+
+  Materials & Carbon: Low-carbon concrete alternatives, responsibly sourced timber and reclaimed stone are practical choices when paired with robust detailing. Life-cycle thinking informs material selection, resulting in luxury that is also responsible.
+
+  Operational Stewardship: High-performance buildings require simple, well-documented operation manuals, intelligent controls and service access that allows systems to be replaced without disrupting the architecture. Resilience is as important as efficiency.`
   },
   {
     id: 4,
@@ -74,9 +77,11 @@ We explore passive design tactics, embodied carbon reduction, and operational st
     detailImage: "/images/blog/blog4.jpg",
     content: `Introduction: Space planning is the silent architecture of good living — when it works, it is invisible; when it fails, everything feels cramped.
 
-Full article:
+  Principles of Effective Zoning: Clear separation of public, semi-private and private zones improves both daily life and entertaining. Public areas are placed to receive daylight and views, while private suites are arranged for tranquillity and acoustic separation.
 
-We discuss zoning strategies that separate public and private realms, flexible rooms for mixed-use living, and circulation that prioritises comfort. Smart planning anticipates change: guest rooms that convert to home offices, and service cores that keep mechanical systems accessible without impacting the living experience.`
+  Flexibility & Future-Proofing: Contemporary households demand adaptability. Rooms designed with flexible furniture arrangements and service routes can be repurposed as home offices, wellness areas or nursery spaces without major interventions.
+
+  Circulation & Thresholds: Comfortable circulation minimises wasted space and creates intentional encounters. Generous thresholds and well-dimensioned corridors act as spatial buffers that protect privacy while preserving flow.`
   },
   {
     id: 5,
@@ -90,9 +95,11 @@ We discuss zoning strategies that separate public and private realms, flexible r
     detailImage: "/images/blog/blog5.jpg",
     content: `Introduction: Designing a luxury villa requires a structured process that balances creativity, procurement discipline and client stewardship.
 
-Full article:
+  Phased Delivery: The design process is intentionally staged: discovery and briefing define client values; concept design explores spatial ideas; technical design resolves systems and junctions; procurement and construction translate design intent; finally, commissioning ensures performance and finish quality.
 
-Stages: discovery & brief, concept and massing, technical design, procurement and construction, and finally, commissioning and handover. At each stage we focus on decision clarity, value engineering without compromise, and anticipating operational needs to protect long-term quality.`
+  Client Collaboration & Decision Making: Effective projects use clear decision schedules and sample approvals to reduce ambiguity. Mock-ups for key junctions and finishes are invaluable, saving time and cost during construction.
+
+  Quality Assurance & Handover: At handover, carefully compiled maintenance manuals, as-built drawings and trained operations briefings ensure the client receives a building that performs as intended. This structured care protects the long-term value of luxury architecture.`
   },
   {
     id: 6,
@@ -106,9 +113,11 @@ Stages: discovery & brief, concept and massing, technical design, procurement an
     detailImage: "/images/blog/blog6.jpg",
     content: `Introduction: While both disciplines share craft and regulation, the priorities and risk models differ substantially between residential and commercial architecture.
 
-Full article:
+  Program Complexity & User Experience: Residential projects prioritise intimacy, personalised materiality and domestic scale. Commercial work balances efficiency, wayfinding and high occupant throughput while embedding brand identity into spatial sequencing.
 
-We break down program complexity, lifecycle expectations, structural loads and service planning. Residential design focuses on intimacy and material warmth; commercial design emphasises resilience, clear circulation and robust serviceability.`
+  Technical Demands & Durability: Commercial buildings demand higher redundancy in services and robustness in finishes — lobbies, lifts and core services must withstand continuous use and simplified maintenance cycles. Residential projects place greater emphasis on bespoke finishes and acoustic comfort.
+
+  Lifecycle & Asset Management: The procurement model influences decisions; commercial assets often prioritise life-cycle cost and rapid turnover, whereas residential investments focus on long-term value and bespoke detailing.`
   },
   {
     id: 7,
@@ -122,9 +131,11 @@ We break down program complexity, lifecycle expectations, structural loads and s
     detailImage: "/images/blog/blog7.jpg",
     content: `Introduction: 3D visualization translates design intent into an experience — it is the most persuasive communication tool we have.
 
-Full article:
+  From Concept to Conviction: Early volumetric studies help teams align on massing and program. As designs progress, rendered studies and walkthroughs clarify material choices, lighting intentions and spatial sequencing for decision makers.
 
-From early massing studies to final art-direction renders, visualization informs material choices, daylighting strategies and client approvals. High-end projects use bespoke lighting studies and filmic post-production to present concepts with cinematic clarity.`
+  Technical Integration: Sophisticated visualization workflows integrate BIM and daylight analysis, ensuring that visuals are backed by performance data. This reduces surprises in delivery and supports informed choices.
+
+  Client Experience & Marketing: For premium projects, cinematic renders and filmic post-production help communicate the project's lifestyle proposition, elevating client confidence and aiding approvals and pre-sales.`
   },
   {
     id: 8,
@@ -138,9 +149,11 @@ From early massing studies to final art-direction renders, visualization informs
     detailImage: "/images/blog/blog8.jpg",
     content: `Introduction: Smart homes are now expected in the premium market, but architecture must discreetly accommodate technology without compromising form.
 
-Full article:
+  Designing for Systems: Early coordination between architects and systems integrators ensures that cabling, antennae and service cupboards are considered in the plan rather than added later. Networked service zones, centralised distribution and flexible conduit routes future-proof the home.
 
-We outline strategies for networked service zones, unobtrusive sensor placement, and resilient connectivity. Future-ready homes balance discreet integration with easy upgrade paths so technology can evolve without invasive retrofit.`
+  Subtle Integration: Sensors, controllers and screens are best integrated into joinery or concealed panels that preserve the architecture. Attention to human-centred UI design prevents technology from dominating daily life.
+
+  Resilience & Upgrade Paths: Homes should be designed to accept technology upgrades with minimal disruption. Modular service routes and accessible risers make replacements and additions straightforward.`
   },
   {
     id: 9,
@@ -154,9 +167,11 @@ We outline strategies for networked service zones, unobtrusive sensor placement,
     detailImage: "/images/blog/blog9.jpg",
     content: `Introduction: Urban India is embracing a new architectural language — contemporary, context-aware and materially confident.
 
-Full article:
+  Contextual Modernity: Contemporary projects blend international tectonics with local craft and materials, producing work that feels both modern and rooted. Designers increasingly leverage local stone, terracotta and timber to ground projects in place.
 
-We examine projects that blend modern tectonics with local craft, and how developers and municipalities are shifting expectations toward higher-quality public realm and integrated mixed-use schemes.`
+  Public Realm & Policy: Municipal ambitions for higher-quality streetscapes and mixed-use precincts are reshaping developer expectations. Successful urban projects integrate public realm improvements that extend value beyond the site.
+
+  Typologies & Density: Architects are exploring hybrid typologies that combine residential, co-working and retail in human-scaled blocks, balancing density with amenity and daylight access.`
   },
   {
     id: 10,
@@ -186,9 +201,11 @@ We cover material choice, vertical circulation, daylighting and long-term adapta
     detailImage: "/images/blog/blog11.svg",
     content: `Introduction: Minimalism in luxury projects demands a higher order of precision — every junction and surface matters.
 
-Full article:
+  Less is More, Done Well: Minimalist luxury is not about stripping away but about making careful choices. Proportion, scale and the quality of materials become the means of expression. Restraint demands discipline: every detail must earn its place.
 
-The approach privileges material honesty, subtle daylighting and exacting detailing to create serene, enduring interiors and exteriors.`
+  Daylight & Surface: Natural light is a minimalist's ally, revealing texture and forming a shifting palette across surfaces. Careful daylighting studies and subtle reflectance strategies amplify materiality without adding visual noise.
+
+  Living with Restraint: Furniture, joinery and lighting are curated to support calm daily life. The architecture becomes a backdrop for life — durable, beautiful and effortless to maintain.`
   },
   {
     id: 12,
@@ -202,9 +219,11 @@ The approach privileges material honesty, subtle daylighting and exacting detail
     detailImage: "/images/blog/blog12.svg",
     content: `Introduction: Thoughtful landscapes extend architecture into the exterior, shaping arrival, view and microclimate.
 
-Full article:
+  Landscape as Partner: Good landscape design frames views, creates microclimates and connects interior life to nature. Native planting reduces maintenance and water demand while supporting biodiversity.
 
-We discuss use of native planting, water features and spatial choreography that enhance both comfort and architectural composition.`
+  Spatial Choreography: Sequence is important outdoors as it is indoors. Arrival courts, paths and terraces are choreographed to reveal the building gradually, creating layered experiences that increase delight.
+
+  Water & Ecology: Water features, swales and rain gardens can be both aesthetic and functional. When integrated carefully, they support stormwater management and ecological value.`
   },
   {
     id: 13,
@@ -218,9 +237,11 @@ We discuss use of native planting, water features and spatial choreography that 
     detailImage: "/images/blog/blog13.svg",
     content: `Introduction: Modern construction is a blend of digital planning and off-site precision.
 
-Full article:
+  Prefabrication & Quality: Off-site manufacture allows for tighter tolerances, faster schedules and better quality control. Prefabricated components — from bathrooms to façade panels — reduce site risk and improve finish quality.
 
-We outline benefits of prefabrication, material innovation and data-driven site management that raise the bar for luxury build quality.`
+  Digital Workflows: BIM, clash detection and integrated procurement reduce surprises in construction. Data-driven site management tracks progress and ensures that design intent translates into precise execution.
+
+  Material Innovation: Advanced composites, high-performance insulation and engineered timber open new design possibilities while improving sustainability metrics.`
   },
   {
     id: 14,
@@ -234,9 +255,11 @@ We outline benefits of prefabrication, material innovation and data-driven site 
     detailImage: "/images/blog/blog14.svg",
     content: `Introduction: Natural light sculpts space and defines experience in premium homes.
 
-Full article:
+  Designing with Light: Orientation, window placement and light modulation devices create atmosphere and control glare. Light reveals surface, enriches texture and contributes to wellbeing.
 
-We cover orientation, light modulation devices and reflective materials that increase perceived volume and comfort while reducing energy demand.`
+  Strategies & Devices: Deep overhangs, light shelves and screened facades allow abundant daylight while preventing overheating. Reflective surfaces and carefully placed skylights increase perceived volume.
+
+  Performance & Comfort: Daylighting strategies reduce artificial lighting demand and, when combined with passive cooling, improve comfort while lowering operational energy use.`
   },
   {
     id: 15,
@@ -250,9 +273,11 @@ We cover orientation, light modulation devices and reflective materials that inc
     detailImage: "/images/blog/blog15.svg",
     content: `Introduction: Architecture frames daily life — it sets rhythms, rituals and possibilities.
 
-Full article:
+  Human-Centred Design: Great architecture recognises patterns of daily life and designs spaces that support them. Scale, daylight, acoustics and material warmth shape behaviour and mood.
 
-We examine how scale, light, sound and texture inform behaviour and wellbeing, and how designers can prioritise human experience in every decision.`
+  Design for Wellbeing: Access to daylight, good acoustics and tactile materials contributes to occupant health. Designers should prioritise comfort and intuitive wayfinding as core performance metrics.
+
+  Practical Measures: Simple interventions — a well-positioned bench, a sheltered terrace, or a quiet reading nook — have outsized impact on daily life.`
   },
   {
     id: 16,
@@ -266,9 +291,11 @@ We examine how scale, light, sound and texture inform behaviour and wellbeing, a
     detailImage: "/images/blog/blog16.svg",
     content: `Introduction: Smart, sustainable planning is the foundation of future-ready cities.
 
-Full article:
+  Integrated Mobility & Corridors: Successful urban planning prioritises mobility corridors that support public transport and active travel, reducing car dependence and promoting compact, walkable neighbourhoods.
 
-We discuss corridor planning, integrated mobility, and green infrastructure strategies that balance density with amenity and climate risk.`
+  Green Infrastructure: Parks, street trees and permeable surfaces mitigate urban heat and manage stormwater. When integrated early, green systems become infrastructure rather than afterthoughts.
+
+  Governance & Phasing: Delivering complex urban projects requires clear governance and phased delivery that balances development with amenity provision.`
   },
   {
     id: 17,
@@ -282,9 +309,11 @@ We discuss corridor planning, integrated mobility, and green infrastructure stra
     detailImage: "/images/blog/blog17.svg",
     content: `Introduction: Interiors are the intimate expression of architectural intent in luxury villas.
 
-Full article:
+  Material Layers & Texture: Interior schemes layer materials to create depth — soft textiles, timber joinery and stone plinths combine to produce a refined, tactile environment.
 
-We explore proportion, lighting, furniture scale and acoustics to create calm, refined interiors that support daily life and grand entertaining.`
+  Furniture & Scale: Furniture is calibrated to room proportions, enabling both sociable gatherings and quiet moments. Bespoke joinery integrates services and storage to preserve visual calm.
+
+  Acoustics & Comfort: Attention to acoustics and lighting completes the interior experience. Quiet zones and carefully detailed ceilings improve comfort in large villa plans.`
   },
   {
     id: 18,
@@ -298,9 +327,11 @@ We explore proportion, lighting, furniture scale and acoustics to create calm, r
     detailImage: "/images/blog/blog18.svg",
     content: `Introduction: Premium architecture attracts buyers, reduces vacancy and increases long-term returns.
 
-Full article:
+  Design as an Asset: Thoughtful design improves marketability and long-term value. Well-detailed buildings often command higher prices and reduced time-to-let in competitive markets.
 
-We analyse case studies where architectural investment has delivered higher capital value, stronger leasing demand and reduced lifecycle cost.`
+  Case Studies & Metrics: Examples where design investment improved returns show higher occupancy, premium rents and better lifecycle performance. Investors increasingly recognise design quality as a value driver.
+
+  Balancing Cost & Value: Strategic investment in visible, durable materials and flexible floor plates yields long-term benefits that outweigh initial costs.`
   },
   {
     id: 19,
@@ -314,9 +345,11 @@ We analyse case studies where architectural investment has delivered higher capi
     detailImage: "/images/blog/blog19.svg",
     content: `Introduction: Mixed-use developments combine programmatic diversity with economic resilience.
 
-Full article:
+  Delivery & Phasing: Mixed-use projects are best delivered in phases that allow public realm upgrades to precede private development, ensuring activation and safety from day one.
 
-We discuss delivery strategies, public realm design and long-term governance models that make mixed-use places successful.`
+  Programming & Activation: A mix of residential, retail and workspace supports 24-hour life, creating economic resilience and richer street life. Ground-floor uses should be flexible and tuned to local demand.
+
+  Governance & Stewardship: Long-term management structures, clear maintenance obligations and adaptable leasing models help mixed-use places sustain quality over time.`
   },
   {
     id: 20,
@@ -330,8 +363,10 @@ We discuss delivery strategies, public realm design and long-term governance mod
     detailImage: "/images/blog/blog20.svg",
     content: `Introduction: Timeless architecture resists fleeting trends and focuses on proportion, material & craft.
 
-Full article:
+  Principles of Timelessness: Timeless buildings prioritise clarity of concept, restraint and high-quality materials. Proportion and composition are the enduring measures of success.
 
-This essay explores how modern projects can achieve a timeless quality by prioritising clarity of concept, considered material choices and craft-led detailing that age with dignity.`
+  Material Selection & Craft: Choosing materials that age gracefully and detailing junctions with care preserve a building's character over time. Craft-led execution ensures the building's story is legible for decades.
+
+  Contemporary Relevance: Timeless design is not nostalgic; it uses modern methods and technologies to achieve enduring outcomes that remain relevant and functional.`
   }
 ];
