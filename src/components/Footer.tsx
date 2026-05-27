@@ -2,7 +2,14 @@ import { Link } from "react-router-dom";
 import citraLogo from "@/assets/citra-logo.png";
 import { projects } from "@/data/projects";
 
-const navLinks = ["Home", "About Us", "Projects", "Services", "Blog", "Contact"];
+const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "About Us", to: "/about" },
+  { label: "Projects", to: "/projects" },
+  { label: "Services", to: "/services" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact", to: "/contact" },
+];
 const featuredProjects = projects.slice(0, 5);
 
 const Footer = () => {
@@ -54,13 +61,13 @@ const Footer = () => {
 
             <ul className="space-y-4">
               {navLinks.map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase().replace(/\s/g, "")}`}
+                <li key={link.label}>
+                  <Link
+                    to={link.to}
                     className="text-white/60 hover:text-white transition-colors duration-300 text-sm"
                   >
-                    {link}
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
