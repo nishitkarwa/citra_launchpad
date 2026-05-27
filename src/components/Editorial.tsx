@@ -50,13 +50,18 @@ const Editorial = () => {
         >
           <div>
             <div className="flex -space-x-3 mb-4">
-              {[0, 1, 2].map((i) => (
-                <div
+              {[
+                { src: "https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?w=200&q=80&auto=format&fit=crop&crop=faces", alt: "Aarav Mehta" },
+                { src: "https://images.unsplash.com/photo-1614283233556-f35b0c801ef1?w=200&q=80&auto=format&fit=crop&crop=faces", alt: "Riya Desai" },
+                { src: "https://images.unsplash.com/photo-1623091410901-00e2d268901f?w=200&q=80&auto=format&fit=crop&crop=faces", alt: "Pranav Nair" },
+              ].map((p, i) => (
+                <img
                   key={i}
-                  className="w-11 h-11 rounded-full border-2 border-background bg-secondary flex items-center justify-center text-xs font-semibold text-secondary-foreground"
-                >
-                  {["AM", "RD", "PN"][i]}
-                </div>
+                  src={p.src}
+                  alt={p.alt}
+                  loading="lazy"
+                  className="w-11 h-11 rounded-full border-2 border-background object-cover bg-secondary"
+                />
               ))}
             </div>
             <p className="body-default text-muted-foreground max-w-xs">
