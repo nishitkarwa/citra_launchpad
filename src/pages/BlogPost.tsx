@@ -57,7 +57,7 @@ const BlogPost: React.FC = () => {
 
             <div className="mt-8 rounded-lg overflow-hidden" style={{ maxHeight: 480 }}>
               <ParallaxImage
-                src={post.detailImage || post.image}
+                src={post.heroImage || post.detailImage || post.image}
                 alt={post.title}
                 className="w-full h-[min(480px,60vh)]"
                 imgClassName=""

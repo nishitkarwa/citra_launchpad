@@ -41,12 +41,12 @@ const BlogPage = () => {
               >
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5">
                   <img
-                    src={post.image}
+                    src={post.coverImage || post.image}
                     alt={post.title}
                     loading="lazy"
                     onError={(e) => {
                       const t = e.currentTarget as HTMLImageElement;
-                      if (t.src !== post.detailImage) t.src = post.detailImage || t.src;
+                      if (t.src !== (post.heroImage || post.detailImage)) t.src = post.heroImage || post.detailImage || t.src;
                     }}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
