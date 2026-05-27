@@ -60,9 +60,9 @@ const Testimonials = () => {
                 <p className="body-default text-muted-foreground mb-8">{r.quote}</p>
               </div>
               <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center overflow-hidden border border-muted-foreground/10">
+                  <div className="w-14 h-14 rounded-xl bg-white flex items-center justify-center overflow-hidden border border-muted-foreground/10 shrink-0">
                     {r.logo ? (
-                      <img src={r.logo} alt={r.name} className="w-full h-full object-contain p-1" />
+                      <img src={r.logo} alt={r.name} className="max-w-[85%] max-h-[85%] object-contain" />
                     ) : (
                       <span className="text-sm font-semibold text-secondary-foreground">
                         {r.name
