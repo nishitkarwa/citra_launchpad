@@ -73,17 +73,7 @@ const BlogPost: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-8 text-center">
-              <a
-                href={post.fullArticleUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all"
-                style={{ backgroundColor: "#00BCD4", color: "#ffffff" }}
-              >
-                Read Full Article →
-              </a>
-            </div>
+            {/* External full-article links removed — full content is served from `post.content` */}
           </div>
         </div>
       </article>
