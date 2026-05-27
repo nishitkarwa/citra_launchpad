@@ -9,8 +9,8 @@ export const blogData = [
     date: "May 24, 2026",
     readTime: "7 min read",
     excerpt: "How contemporary techniques, material mastery and cultural context are redefining premium villa design across India.",
-    image: "/images/blog/blog11.svg",
-    detailImage: "/images/blog/blog1.jpg",
+    image: "/images/blog/blog1.jpg",
+    detailImage: "/images/blog/blog11.svg",
     content: `Introduction: Luxury villas in India are entering a new era — one marked by refined materiality, climate-responsive layouts and an insistence on experiential spatial sequences.
 
   This article explores the design principles that shape modern premium villas, from axial landscapes and framed views to bespoke construction detailing that elevates everyday moments.
