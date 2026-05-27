@@ -4,12 +4,15 @@ import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
 import { blogData } from "@/data/blogData";
 import ParallaxImage from "@/components/ParallaxImage";
+import { useState } from "react";
 
 const posts = blogData;
 
 const BlogPage = () => {
   const { ref: heroRef, inView: heroInView } = useInView(0.1);
   const { ref: gridRef, inView: gridInView } = useInView(0.1);
+  const [showAll, setShowAll] = useState(false);
+  const displayed = showAll ? posts : posts.slice(0, 3);
 
   return (
     <main className="bg-background">
@@ -32,7 +35,7 @@ const BlogPage = () => {
       <section ref={gridRef} className="pb-20 md:pb-28">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            {posts.map((post, i) => (
+            {displayed.map((post, i) => (
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
@@ -55,6 +58,16 @@ const BlogPage = () => {
               </Link>
             ))}
           </div>
+          {!showAll && posts.length > 3 && (
+            <div className="mt-8 text-center">
+              <button
+                onClick={() => setShowAll(true)}
+                className="inline-flex items-center gap-3 rounded-full border border-primary/20 px-6 py-3 bg-transparent text-sm text-primary hover:bg-primary/5 transition"
+              >
+                Show more
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
