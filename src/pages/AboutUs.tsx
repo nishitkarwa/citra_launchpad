@@ -223,18 +223,9 @@ const Team = () => {
               className={`${inView ? "animate-fade-in-up" : "opacity-0"}`}
               style={inView ? { animationDelay: `${80 + i * 60}ms` } : undefined}
             >
-<<<<<<< HEAD
               <div className="w-36 h-44 rounded-2xl mx-auto bg-secondary flex items-center justify-center">
                 <User className="w-16 h-16 text-muted-foreground" strokeWidth={1.5} />
               </div>
-=======
-              <ParallaxImage
-                src={m.img}
-                alt={m.name}
-                className="w-36 h-44 rounded-2xl mx-auto"
-                loading="lazy"
-              />
->>>>>>> f39e7fc (chore: commit workspace changes — testimonials logos & styling, parallax/stagger, hero animation, social links)
               <h4 className="mt-3 text-base">{m.name}</h4>
               <p className="text-sm text-muted-foreground mt-0.5">{m.title}</p>
             </div>
