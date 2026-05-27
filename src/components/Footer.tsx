@@ -27,17 +27,20 @@ const Footer = () => {
 
             <div className="flex items-center gap-4 mt-8">
               {[
-                { label: "Li", href: "#" },
-                { label: "Ig", href: "#" },
-                { label: "Be", href: "#" },
-                { label: "Dr", href: "#" },
-              ].map((item, index) => (
+                { label: "LinkedIn", short: "Li", href: "https://www.linkedin.com/company/citra-associates/" },
+                { label: "Instagram", short: "Ig", href: "https://www.instagram.com/citra_associates/" },
+                { label: "YouTube", short: "Yt", href: "https://www.youtube.com/@architect_ravivarma" },
+                { label: "WhatsApp", short: "Wa", href: "https://wa.me/918686662540" },
+              ].map((item) => (
                 <a
-                  key={index}
+                  key={item.label}
                   href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={item.label}
                   className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-xs text-white/60 hover:text-white hover:border-cyan-400 transition-all duration-300"
                 >
-                  {item.label}
+                  {item.short}
                 </a>
               ))}
             </div>
