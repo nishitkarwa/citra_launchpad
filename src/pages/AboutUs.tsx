@@ -6,13 +6,7 @@ import aboutHero from "@/assets/about-hero.jpg";
 import aboutBuilding from "@/assets/about-building.jpg";
 import leader1 from "@/assets/leader-1.jpg";
 import leader2 from "@/assets/leader-2.jpg";
-import team1 from "@/assets/team-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
-import team4 from "@/assets/team-4.jpg";
-import team5 from "@/assets/team-5.jpg";
-import team6 from "@/assets/team-6.jpg";
-import team7 from "@/assets/team-7.jpg";
+import { User } from "lucide-react";
 
 /* ── Hero ── */
 const AboutHero = () => (
@@ -194,13 +188,15 @@ const Leaders = () => {
 
 /* ── Team ── */
 const teamMembers = [
-  { name: "Mr. Pavan", title: "Structural Engineer", img: team1 },
-  { name: "Ar. Nandini", title: "Junior Architect", img: team2 },
-  { name: "Mr. Akhil Kalyan", title: "Junior Architect", img: team3 },
-  { name: "Vaishali", title: "Junior Architect", img: team4 },
-  { name: "Ganesh", title: "Project Manager", img: team5 },
-  { name: "Veena Ramani", title: "Planning Lead", img: team6 },
-  { name: "Sanjeev Kanakarthi", title: "Civil Analyst", img: team7 },
+  { name: "Mr. Pavan", title: "Structural Engineer" },
+  { name: "Ar. Varun Ramani", title: "Business Lead" },
+  { name: "Mr. Akhil Kalyan", title: "Jr. Architect" },
+  { name: "Ms. Sharanya Ravi", title: "Interior Designer" },
+  { name: "Mrs. Bharathi", title: "Senior Architect" },
+  { name: "Ar. Md Nadeem", title: "Project Manager" },
+  { name: "Mr. Pranav Varma", title: "Media Manager" },
+  { name: "Ar. Nandini", title: "Jr. Architect" },
+  { name: "Mr. Abhishek", title: "Chartered Accountant" },
 ];
 
 const Team = () => {
@@ -216,7 +212,9 @@ const Team = () => {
               className={`${inView ? "animate-fade-in-up" : "opacity-0"}`}
               style={inView ? { animationDelay: `${80 + i * 60}ms` } : undefined}
             >
-              <img src={m.img} alt={m.name} className="w-36 h-44 object-cover rounded-2xl mx-auto" loading="lazy" width={512} height={640} />
+              <div className="w-36 h-44 rounded-2xl mx-auto bg-secondary flex items-center justify-center">
+                <User className="w-16 h-16 text-muted-foreground" strokeWidth={1.5} />
+              </div>
               <h4 className="mt-3 text-base">{m.name}</h4>
               <p className="text-sm text-muted-foreground mt-0.5">{m.title}</p>
             </div>
