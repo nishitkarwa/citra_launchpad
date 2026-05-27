@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
 import { blogData } from "@/data/blogData";
-import ParallaxImage from "@/components/ParallaxImage";
 import { useState } from "react";
 
 const posts = blogData;
@@ -43,12 +42,15 @@ const BlogPage = () => {
                 style={gridInView ? { animationDelay: `${i * 120}ms` } : undefined}
               >
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-5">
-                  <ParallaxImage
+                  <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full"
-                    imgClassName="group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    onError={(e) => {
+                      const t = e.currentTarget as HTMLImageElement;
+                      if (t.src !== post.detailImage) t.src = post.detailImage || t.src;
+                    }}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <span className="label-caption text-primary">{post.category}</span>
