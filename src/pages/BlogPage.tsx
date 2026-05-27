@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// Use anchor tags to open blog posts in a new tab
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useInView } from "@/hooks/useInView";
@@ -36,9 +36,11 @@ const BlogPage = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {displayed.map((post, i) => (
-              <Link
+              <a
                 key={post.slug}
-                to={`/blog/${post.slug}`}
+                href={`/blog/${post.slug}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group block cursor-pointer hover:scale-[1.02] transition-transform duration-200 ${gridInView ? "animate-fade-in-up" : "opacity-0"}`}
                 style={gridInView ? { animationDelay: `${i * 120}ms` } : undefined}
               >
@@ -55,7 +57,7 @@ const BlogPage = () => {
                 <h3 className="text-foreground mt-2 mb-2 group-hover:text-primary transition-colors">{post.title}</h3>
                 <p className="body-default text-muted-foreground line-clamp-2">{post.excerpt}</p>
                 <p className="text-xs text-muted-foreground/60 mt-3">{post.date}</p>
-              </Link>
+              </a>
             ))}
           </div>
           {!showAll && posts.length > 3 && (

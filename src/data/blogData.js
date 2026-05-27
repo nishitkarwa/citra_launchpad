@@ -10,7 +10,7 @@ export const blogData = [
     readTime: "7 min read",
     excerpt: "How contemporary techniques, material mastery and cultural context are redefining premium villa design across India.",
     image: "/images/blog/blog1.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505691723518-36a0b60a7b74?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog1.jpg",
     content: `Introduction: Luxury villas in India are entering a new era — one marked by refined materiality, climate-responsive layouts and an insistence on experiential spatial sequences.
 
 This article explores the design principles that shape modern premium villas, from axial landscapes and framed views to bespoke construction detailing that elevates everyday moments.
@@ -36,7 +36,7 @@ Full article:
     readTime: "6 min read",
     excerpt: "A look at current elevation strategies — layered facades, material contrast and sculpted openings that define today's premium homes.",
     image: "/images/blog/blog2.jpg",
-    detailImage: "https://images.unsplash.com/photo-1542317854-0c3d8e6f2f2f?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog2.jpg",
     content: `Introduction: Elevation design has evolved from skin to statement. For premium residences, the facade is a composition of depth, texture and measured restraint.
 
 Full article:
@@ -55,7 +55,7 @@ Full article:
     readTime: "7 min read",
     excerpt: "Practical sustainable strategies for premium projects — passive design, local materials, and low-impact construction methods.",
     image: "/images/blog/blog3.jpg",
-    detailImage: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog3.jpg",
     content: `Introduction: Sustainability is now a central pillar of premium architecture — not an optional extra.
 
 Full article:
@@ -71,7 +71,7 @@ We explore passive design tactics, embodied carbon reduction, and operational st
     readTime: "5 min read",
     excerpt: "How intelligent planning transforms comfort, flexibility and long-term value in contemporary residences.",
     image: "/images/blog/blog4.jpg",
-    detailImage: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog4.jpg",
     content: `Introduction: Space planning is the silent architecture of good living — when it works, it is invisible; when it fails, everything feels cramped.
 
 Full article:
@@ -87,7 +87,7 @@ We discuss zoning strategies that separate public and private realms, flexible r
     readTime: "8 min read",
     excerpt: "From brief to handover — an editorial guide to the stages that produce a refined, functional luxury villa.",
     image: "/images/blog/blog5.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog5.jpg",
     content: `Introduction: Designing a luxury villa requires a structured process that balances creativity, procurement discipline and client stewardship.
 
 Full article:
@@ -103,7 +103,7 @@ Stages: discovery & brief, concept and massing, technical design, procurement an
     readTime: "6 min read",
     excerpt: "A comparison of priorities, technical demands and user experience strategies across residential and commercial projects.",
     image: "/images/blog/blog6.jpg",
-    detailImage: "https://images.unsplash.com/photo-1494522740689-4d8a1f4f2a0f?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog6.jpg",
     content: `Introduction: While both disciplines share craft and regulation, the priorities and risk models differ substantially between residential and commercial architecture.
 
 Full article:
@@ -119,7 +119,7 @@ We break down program complexity, lifecycle expectations, structural loads and s
     readTime: "5 min read",
     excerpt: "How cinematic renders and interactive walkthroughs accelerate decisions and elevate client confidence in premium projects.",
     image: "/images/blog/blog7.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505842465776-3d2f5f1f4b2e?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog7.jpg",
     content: `Introduction: 3D visualization translates design intent into an experience — it is the most persuasive communication tool we have.
 
 Full article:
@@ -135,7 +135,7 @@ From early massing studies to final art-direction renders, visualization informs
     readTime: "6 min read",
     excerpt: "Integrating intelligent systems into premium homes — architecture that anticipates and supports connected lifestyles.",
     image: "/images/blog/blog8.jpg",
-    detailImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog8.jpg",
     content: `Introduction: Smart homes are now expected in the premium market, but architecture must discreetly accommodate technology without compromising form.
 
 Full article:
@@ -151,7 +151,7 @@ We outline strategies for networked service zones, unobtrusive sensor placement,
     readTime: "6 min read",
     excerpt: "Contemporary architecture's growing influence on India's cityscapes — hybrid typologies, refined material palettes, and civic ambition.",
     image: "/images/blog/blog9.jpg",
-    detailImage: "https://images.unsplash.com/photo-1494522339817-6a1a2a6f0d7b?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog9.jpg",
     content: `Introduction: Urban India is embracing a new architectural language — contemporary, context-aware and materially confident.
 
 Full article:
@@ -167,7 +167,7 @@ We examine projects that blend modern tectonics with local craft, and how develo
     readTime: "7 min read",
     excerpt: "Principles for creating commercial interiors that communicate brand, improve user experience and maximise long-term value.",
     image: "/images/blog/blog10.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505691723518-36a0b60a7b74?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog10.jpg",
     content: `Introduction: Premium commercial spaces are a synthesis of operational clarity and refined aesthetics.
 
 Full article:
@@ -183,7 +183,7 @@ We cover material choice, vertical circulation, daylighting and long-term adapta
     readTime: "6 min read",
     excerpt: "Exploring how restraint, proportion and precision craft a luxurious experience in minimalist architecture.",
     image: "/images/blog/blog1.jpg",
-    detailImage: "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog11.svg",
     content: `Introduction: Minimalism in luxury projects demands a higher order of precision — every junction and surface matters.
 
 Full article:
@@ -199,7 +199,7 @@ The approach privileges material honesty, subtle daylighting and exacting detail
     readTime: "6 min read",
     excerpt: "Strategies for integrating landscape as an equal partner in premium architecture — framing, sequence and ecology.",
     image: "/images/blog/blog2.jpg",
-    detailImage: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog12.svg",
     content: `Introduction: Thoughtful landscapes extend architecture into the exterior, shaping arrival, view and microclimate.
 
 Full article:
@@ -215,7 +215,7 @@ We discuss use of native planting, water features and spatial choreography that 
     readTime: "7 min read",
     excerpt: "Prefabrication, advanced materials and digital workflows that compress schedules and improve finish quality.",
     image: "/images/blog/blog3.jpg",
-    detailImage: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog13.svg",
     content: `Introduction: Modern construction is a blend of digital planning and off-site precision.
 
 Full article:
@@ -231,7 +231,7 @@ We outline benefits of prefabrication, material innovation and data-driven site 
     readTime: "5 min read",
     excerpt: "Designing with light — techniques that enhance materiality, wellbeing and spatial drama in premium residences.",
     image: "/images/blog/blog4.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505842465776-3d2f5f1f4b2e?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog14.svg",
     content: `Introduction: Natural light sculpts space and defines experience in premium homes.
 
 Full article:
@@ -247,7 +247,7 @@ We cover orientation, light modulation devices and reflective materials that inc
     readTime: "8 min read",
     excerpt: "Exploring the link between spatial design, behaviour and the quality of habitation in high-end projects.",
     image: "/images/blog/blog5.jpg",
-    detailImage: "https://images.unsplash.com/photo-1487029412591-4f3a2e1b2f6a?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog15.svg",
     content: `Introduction: Architecture frames daily life — it sets rhythms, rituals and possibilities.
 
 Full article:
@@ -263,7 +263,7 @@ We examine how scale, light, sound and texture inform behaviour and wellbeing, a
     readTime: "9 min read",
     excerpt: "Integrating infrastructure, mobility and green systems to create resilient, livable urban districts.",
     image: "/images/blog/blog6.jpg",
-    detailImage: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog16.svg",
     content: `Introduction: Smart, sustainable planning is the foundation of future-ready cities.
 
 Full article:
@@ -279,7 +279,7 @@ We discuss corridor planning, integrated mobility, and green infrastructure stra
     readTime: "6 min read",
     excerpt: "Interior strategies that combine calm palettes, material layers and bespoke furniture for villa living.",
     image: "/images/blog/blog7.jpg",
-    detailImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog17.svg",
     content: `Introduction: Interiors are the intimate expression of architectural intent in luxury villas.
 
 Full article:
@@ -295,7 +295,7 @@ We explore proportion, lighting, furniture scale and acoustics to create calm, r
     readTime: "7 min read",
     excerpt: "Demonstrating how thoughtful design translates into measurable asset value for high-end properties.",
     image: "/images/blog/blog8.jpg",
-    detailImage: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog18.svg",
     content: `Introduction: Premium architecture attracts buyers, reduces vacancy and increases long-term returns.
 
 Full article:
@@ -311,7 +311,7 @@ We analyse case studies where architectural investment has delivered higher capi
     readTime: "6 min read",
     excerpt: "How mixed-use projects are redefining urban resilience and creating richer public realms.",
     image: "/images/blog/blog9.jpg",
-    detailImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog19.svg",
     content: `Introduction: Mixed-use developments combine programmatic diversity with economic resilience.
 
 Full article:
@@ -327,7 +327,7 @@ We discuss delivery strategies, public realm design and long-term governance mod
     readTime: "8 min read",
     excerpt: "Design principles that create enduring, elegant architecture — proportion, materiality and restraint.",
     image: "/images/blog/blog10.jpg",
-    detailImage: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=80",
+    detailImage: "/images/blog/blog20.svg",
     content: `Introduction: Timeless architecture resists fleeting trends and focuses on proportion, material & craft.
 
 Full article:
