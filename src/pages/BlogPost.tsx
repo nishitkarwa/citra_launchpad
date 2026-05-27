@@ -262,8 +262,9 @@ const BlogPost: React.FC = () => {
     );
   }
 
-  const hero = post.heroImage || post.detailImage || post.coverImage || post.image || heroMain;
   const pool = pickPool(post.category);
+  // Always use ultra-HD curated imagery for the cinematic hero
+  const hero = pool[0];
   const paragraphs: string[] = post.content
     ? String(post.content).split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
     : [];
