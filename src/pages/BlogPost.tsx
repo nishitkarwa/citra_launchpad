@@ -76,24 +76,84 @@ const RELATED: Record<number, number[]> = {
   20: [11, 15, 17],
 };
 
-// Category-based image pools for galleries / alternating sections
+// Ultra-HD (2400px) architectural photography pools — curated luxury imagery
+const hd = (id: string) => `https://images.unsplash.com/photo-${id}?w=2400&q=90&auto=format&fit=crop`;
+
 const POOLS: Record<string, string[]> = {
-  Residential: [projectResidential, hero4, hero2, projectFarm, projectRoofgarden, projectLandscape, aboutBuilding],
-  Design: [serviceDesign, hero3, aboutBuilding, hero4, projectResidential, projectOffice, hero2],
-  Sustainability: [projectRoofgarden, projectLandscape, projectFarm, serviceMasterplan, projectGolf, aboutHero],
-  Process: [serviceCollab, service3d, serviceConstruction, projectResidential, heroMain, serviceRenovation],
-  Architecture: [projectHospitality, projectCommercial, projectOffice, projectConvent, hero5, aboutBuilding],
-  Technology: [service3d, serviceConstruction, contactHero, projectOffice, hero5, serviceMasterplan],
-  Culture: [projectsHero, projectsHeroCollage, projectConvent, projectReligious, aboutBuilding, heroMain],
-  Commercial: [projectCommercial, projectRetail, projectOffice, serviceCommercial, projectHospitality, hero5],
-  Landscape: [projectLandscape, projectRoofgarden, projectGolf, projectFarm, aboutHero, heroDesert],
-  Philosophy: [projectConvent, projectReligious, heroMain, aboutBuilding, hero3, projectResidential],
-  Urbanism: [serviceMasterplan, projectsHero, projectsHeroCollage, projectCommercial, projectRetail, contactHero],
-  Interior: [hero4, hero2, hero3, serviceDesign, projectResidential, aboutBuilding],
-  Market: [projectCommercial, projectRetail, projectOffice, serviceCommercial, hero5, projectHospitality],
+  Residential: [
+    hd("1600585154340-be6161a56a0c"), hd("1613490493576-7fde63acd811"),
+    hd("1600607687939-ce8a6c25118c"), hd("1512917774080-9991f1c4c750"),
+    hd("1600210492486-724fe5c67fb0"), hd("1600566753190-17f0baa2a6c3"),
+    hd("1580587771525-78b9dba3b914"),
+  ],
+  Design: [
+    hd("1618221195710-dd6b41faaea6"), hd("1616486338812-3dadae4b4ace"),
+    hd("1600607687939-ce8a6c25118c"), hd("1567016432779-094069958ea5"),
+    hd("1600210491892-03d54c0aaf87"), hd("1556909114-f6e7ad7d3136"),
+    hd("1505691938895-1758d7feb511"),
+  ],
+  Sustainability: [
+    hd("1518481852452-9415b262eba4"), hd("1582268611958-ebfd161ef9cf"),
+    hd("1572120360610-d971b9d7767c"), hd("1545324418-cc1a3fa10c00"),
+    hd("1518806118471-f28b20a1d79d"), hd("1448630360428-65456885c650"),
+  ],
+  Process: [
+    hd("1503387762-592deb58ef4e"), hd("1581291518633-83b4ebd1d83e"),
+    hd("1503387837-b154d5074bd2"), hd("1556761175-5973dc0f32e7"),
+    hd("1486406146926-c627a92ad1ab"), hd("1487958449943-2429e8be8625"),
+  ],
+  Architecture: [
+    hd("1486325212027-8081e485255e"), hd("1577495508048-b635879837f1"),
+    hd("1497366216548-37526070297c"), hd("1542621334-a254cf47733d"),
+    hd("1496564203457-11bb12075d90"), hd("1464146072230-91cabc968266"),
+  ],
+  Technology: [
+    hd("1581291518633-83b4ebd1d83e"), hd("1556761175-5973dc0f32e7"),
+    hd("1497366811353-6870744d04b2"), hd("1497366754035-f200968a6e72"),
+    hd("1497215728101-856f4ea42174"), hd("1542744173-8e7e53415bb0"),
+  ],
+  Culture: [
+    hd("1564507592333-c60657eea523"), hd("1545158535-c3f7168c28b6"),
+    hd("1466442929976-97f336a657be"), hd("1542379653-b204f9b56df8"),
+    hd("1473177104440-ffee2f376098"), hd("1499856871958-5b9627545d1a"),
+  ],
+  Commercial: [
+    hd("1486325212027-8081e485255e"), hd("1542621334-a254cf47733d"),
+    hd("1497366216548-37526070297c"), hd("1497366811353-6870744d04b2"),
+    hd("1521737604893-d14cc237f11d"), hd("1577495508048-b635879837f1"),
+  ],
+  Landscape: [
+    hd("1448630360428-65456885c650"), hd("1518806118471-f28b20a1d79d"),
+    hd("1416879595882-3373a0480b5b"), hd("1545324418-cc1a3fa10c00"),
+    hd("1518791841217-8f162f1e1131"), hd("1501785888041-af3ef285b470"),
+  ],
+  Philosophy: [
+    hd("1464146072230-91cabc968266"), hd("1496564203457-11bb12075d90"),
+    hd("1545158535-c3f7168c28b6"), hd("1600607687939-ce8a6c25118c"),
+    hd("1486325212027-8081e485255e"), hd("1600585154340-be6161a56a0c"),
+  ],
+  Urbanism: [
+    hd("1444723121867-7a241cacace9"), hd("1480714378408-67cf0d13bc1b"),
+    hd("1496564203457-11bb12075d90"), hd("1449824913935-59a10b8d2000"),
+    hd("1486325212027-8081e485255e"), hd("1502920917128-1aa500764cbd"),
+  ],
+  Interior: [
+    hd("1618221195710-dd6b41faaea6"), hd("1600210492486-724fe5c67fb0"),
+    hd("1600566753190-17f0baa2a6c3"), hd("1616486338812-3dadae4b4ace"),
+    hd("1505691938895-1758d7feb511"), hd("1556909114-f6e7ad7d3136"),
+  ],
+  Market: [
+    hd("1486325212027-8081e485255e"), hd("1497366811353-6870744d04b2"),
+    hd("1542621334-a254cf47733d"), hd("1521737604893-d14cc237f11d"),
+    hd("1497366216548-37526070297c"), hd("1577495508048-b635879837f1"),
+  ],
 };
 
-const FALLBACK_POOL = [heroMain, aboutBuilding, projectResidential, projectLandscape, serviceDesign, hero4];
+const FALLBACK_POOL = [
+  hd("1486325212027-8081e485255e"), hd("1600585154340-be6161a56a0c"),
+  hd("1518481852452-9415b262eba4"), hd("1618221195710-dd6b41faaea6"),
+  hd("1448630360428-65456885c650"), hd("1564507592333-c60657eea523"),
+];
 
 // Material palettes per category mood
 const MATERIALS: Record<string, { name: string; tone: string; color: string }[]> = {
