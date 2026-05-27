@@ -25,6 +25,7 @@ const ParallaxImage = ({
 }: ParallaxImageProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [offset, setOffset] = useState(0);
+  const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
     let rafId = 0;
@@ -60,18 +61,25 @@ const ParallaxImage = ({
   }, [strength]);
 
   return (
-    <div ref={wrapperRef} className={`relative overflow-hidden ${className}`}>
-      <img
-        src={src}
-        alt={alt}
-        loading={loading}
-        className={`absolute left-0 w-full object-cover will-change-transform ${imgClassName}`}
-        style={{
-          top: `-${strength}px`,
-          height: `calc(100% + ${strength * 2}px)`,
-          transform: `translate3d(0, ${offset}px, 0)`,
-        }}
-      />
+    <div
+      ref={wrapperRef}
+      className={`relative overflow-hidden ${className}`}
+      style={{ backgroundImage: `url(${src})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}
+    >
+      {!imgError && (
+        <img
+          src={src}
+          alt={alt}
+          loading={loading}
+          onError={() => setImgError(true)}
+          className={`absolute left-0 w-full object-cover will-change-transform ${imgClassName}`}
+          style={{
+            top: `-${strength}px`,
+            height: `calc(100% + ${strength * 2}px)`,
+            transform: `translate3d(0, ${offset}px, 0)`,
+          }}
+        />
+      )}
     </div>
   );
 };
