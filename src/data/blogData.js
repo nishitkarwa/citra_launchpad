@@ -9,7 +9,7 @@ export const blogData = [
     date: "May 24, 2026",
     readTime: "7 min read",
     excerpt: "How contemporary techniques, material mastery and cultural context are redefining premium villa design across India.",
-    image: "/images/blog/blog1.jpg",
+    image: "/images/blog/blog11.svg",
     detailImage: "/images/blog/blog1.jpg",
     content: `Introduction: Luxury villas in India are entering a new era — one marked by refined materiality, climate-responsive layouts and an insistence on experiential spatial sequences.
 
@@ -33,7 +33,7 @@ export const blogData = [
     date: "May 20, 2026",
     readTime: "6 min read",
     excerpt: "A look at current elevation strategies — layered facades, material contrast and sculpted openings that define today's premium homes.",
-    image: "/images/blog/blog2.jpg",
+    image: "/images/blog/blog12.svg",
     detailImage: "/images/blog/blog2.jpg",
     content: `Introduction: Elevation design has evolved from skin to statement. For premium residences, the facade is a composition of depth, texture and measured restraint.
 
@@ -53,7 +53,7 @@ export const blogData = [
     date: "May 18, 2026",
     readTime: "7 min read",
     excerpt: "Practical sustainable strategies for premium projects — passive design, local materials, and low-impact construction methods.",
-    image: "/images/blog/blog3.jpg",
+    image: "/images/blog/blog13.svg",
     detailImage: "/images/blog/blog3.jpg",
     content: `Introduction: Sustainability is now a central pillar of premium architecture — not an optional extra.
 
@@ -73,7 +73,7 @@ export const blogData = [
     date: "May 15, 2026",
     readTime: "5 min read",
     excerpt: "How intelligent planning transforms comfort, flexibility and long-term value in contemporary residences.",
-    image: "/images/blog/blog4.jpg",
+    image: "/images/blog/blog14.svg",
     detailImage: "/images/blog/blog4.jpg",
     content: `Introduction: Space planning is the silent architecture of good living — when it works, it is invisible; when it fails, everything feels cramped.
 
@@ -91,7 +91,7 @@ export const blogData = [
     date: "May 12, 2026",
     readTime: "8 min read",
     excerpt: "From brief to handover — an editorial guide to the stages that produce a refined, functional luxury villa.",
-    image: "/images/blog/blog5.jpg",
+    image: "/images/blog/blog15.svg",
     detailImage: "/images/blog/blog5.jpg",
     content: `Introduction: Designing a luxury villa requires a structured process that balances creativity, procurement discipline and client stewardship.
 
@@ -109,7 +109,7 @@ export const blogData = [
     date: "May 10, 2026",
     readTime: "6 min read",
     excerpt: "A comparison of priorities, technical demands and user experience strategies across residential and commercial projects.",
-    image: "/images/blog/blog6.jpg",
+    image: "/images/blog/blog16.svg",
     detailImage: "/images/blog/blog6.jpg",
     content: `Introduction: While both disciplines share craft and regulation, the priorities and risk models differ substantially between residential and commercial architecture.
 
@@ -127,7 +127,7 @@ export const blogData = [
     date: "May 08, 2026",
     readTime: "5 min read",
     excerpt: "How cinematic renders and interactive walkthroughs accelerate decisions and elevate client confidence in premium projects.",
-    image: "/images/blog/blog7.jpg",
+    image: "/images/blog/blog17.svg",
     detailImage: "/images/blog/blog7.jpg",
     content: `Introduction: 3D visualization translates design intent into an experience — it is the most persuasive communication tool we have.
 
@@ -145,7 +145,7 @@ export const blogData = [
     date: "May 05, 2026",
     readTime: "6 min read",
     excerpt: "Integrating intelligent systems into premium homes — architecture that anticipates and supports connected lifestyles.",
-    image: "/images/blog/blog8.jpg",
+    image: "/images/blog/blog18.svg",
     detailImage: "/images/blog/blog8.jpg",
     content: `Introduction: Smart homes are now expected in the premium market, but architecture must discreetly accommodate technology without compromising form.
 
@@ -163,7 +163,7 @@ export const blogData = [
     date: "May 02, 2026",
     readTime: "6 min read",
     excerpt: "Contemporary architecture's growing influence on India's cityscapes — hybrid typologies, refined material palettes, and civic ambition.",
-    image: "/images/blog/blog9.jpg",
+    image: "/images/blog/blog19.svg",
     detailImage: "/images/blog/blog9.jpg",
     content: `Introduction: Urban India is embracing a new architectural language — contemporary, context-aware and materially confident.
 
@@ -181,7 +181,7 @@ export const blogData = [
     date: "April 28, 2026",
     readTime: "7 min read",
     excerpt: "Principles for creating commercial interiors that communicate brand, improve user experience and maximise long-term value.",
-    image: "/images/blog/blog10.jpg",
+    image: "/images/blog/blog20.svg",
     detailImage: "/images/blog/blog10.jpg",
     content: `Introduction: Premium commercial spaces are a synthesis of operational clarity and refined aesthetics.
 
