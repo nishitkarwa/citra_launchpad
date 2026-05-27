@@ -93,9 +93,12 @@ const Footer = () => {
             </h3>
 
             <div className="space-y-4 text-sm text-white/60">
-              <p>
+              <a
+                href="mailto:hello@citrainfrastudio.com"
+                className="block hover:text-white transition-colors duration-300"
+              >
                 hello@citrainfrastudio.com
-              </p>
+              </a>
 
               <a
                 href="tel:+919876543210"
