@@ -3,214 +3,335 @@ import serviceDesignImage from "@/assets/service-design.jpg";
 export const blogData = [
   {
     id: 1,
-    slug: "future-of-infrastructure-design",
-    category: "Architecture & Design",
-    title: "The Future of Infrastructure Design: Where Function Meets Aesthetics",
-    date: "May 20, 2026",
-    readTime: "6 min read",
-    excerpt: "How modern infra studios are redefining the boundaries between civil engineering and architectural beauty — and why it matters for urban spaces.",
+    slug: "future-of-luxury-villa-architecture-india",
+    category: "Residential",
+    title: "The Future of Luxury Villa Architecture in India",
+    date: "May 24, 2026",
+    readTime: "7 min read",
+    excerpt: "How contemporary techniques, material mastery and cultural context are redefining premium villa design across India.",
     image: "/images/blog/blog1.jpg",
-    detailImage: "https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.dezeen.com/tag/infrastructure/",
-    content: `Infrastructure design has always lived at the intersection of two competing forces: the demand for structural integrity and the desire for visual harmony.
+    detailImage: "https://images.unsplash.com/photo-1505691723518-36a0b60a7b74?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Luxury villas in India are entering a new era — one marked by refined materiality, climate-responsive layouts and an insistence on experiential spatial sequences.
 
-  That era is over. Today, the most forward-thinking infrastructure studios in the world are proving that function and aesthetics are not opposites — they are partners.
+This article explores the design principles that shape modern premium villas, from axial landscapes and framed views to bespoke construction detailing that elevates everyday moments.
 
-  A well-designed flyover can become a city landmark. A thoughtfully planned drainage system can double as a public park. At Citra Infra Studio, we believe this shift is not a trend — it is the future of how we build.
+Full article:
 
-  In practice this means rethinking early-stage decisions: alignments that prioritise sight-lines and thresholds, structural elements expressed as compositional gestures, and landscape interventions that conceal engineering while delivering amenity. When function becomes part of the design language, maintenance cycles simplify and user experience improves — which is ultimately the most sustainable outcome.
+1. Context & Site: Every premium villa begins with a careful reading of site orientation, prevailing winds and the surrounding character. A successful villa frames views — whether a private garden or distant skyline — stitching interior and exterior into a composed sequence.
 
-  To realise this in live projects we embed multidisciplinary reviews into the concept phase: urban designers, structural engineers and landscape specialists co-author the geometry and materials palette. This collaborative front-loading reduces late-stage value engineering and produces outcomes where structural expression and public benefit reinforce one another.
+2. Material Strategy: Luxurious architecture balances opulence with restraint. Natural stone, warm timber and engineered concrete palettes are combined thoughtfully to create tactile, durable surfaces that age gracefully.
 
-  Finally, measured post-occupancy evaluation closes the loop — monitoring actual use, maintenance costs and thermal performance so subsequent projects can be tuned with evidence rather than assumption.`
+3. Spatial Flow: Plan clarity is essential. Generous thresholds, gallery-like corridors, and layered private spaces create a choreography of discovery. The best villas allow for both sociable entertaining and quiet retreat without compromise.
+
+4. Sustainability & Comfort: Passive shading devices, cross-ventilation and integrated water strategies ensure that luxury living remains comfortable year-round while keeping energy use efficient.
+
+5. Craft & Detail: High-end villas are defined by detailing — precise junctions, concealed service zones, and custom joinery that turn construction into craft. These are the moments clients remember.`
   },
   {
     id: 2,
-    slug: "sustainable-infrastructure-practices",
-    category: "Sustainability",
-    title: "Building Green: Sustainable Infrastructure Practices for the Next Decade",
-    date: "May 18, 2026",
-    readTime: "7 min read",
-    excerpt: "Exploring eco-friendly materials, energy-efficient design systems, and how infra studios can lead the charge toward net-zero construction.",
+    slug: "modern-elevation-design-trends",
+    category: "Design",
+    title: "Modern Elevation Design Trends for Premium Residences",
+    date: "May 20, 2026",
+    readTime: "6 min read",
+    excerpt: "A look at current elevation strategies — layered facades, material contrast and sculpted openings that define today's premium homes.",
     image: "/images/blog/blog2.jpg",
-    detailImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.worldgbc.org/news-media/building-net-zero-carbon",
-    content: `The construction industry is responsible for a large share of global carbon emissions. Sustainable infrastructure is rapidly becoming the baseline expectation.
+    detailImage: "https://images.unsplash.com/photo-1542317854-0c3d8e6f2f2f?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Elevation design has evolved from skin to statement. For premium residences, the facade is a composition of depth, texture and measured restraint.
 
-  Key strategies include material selection, passive design, water management and designing for net-zero energy from the outset. Studios that integrate LCA tools into early-stage design gain measurable advantage.
+Full article:
 
-  Operational performance and embodied carbon must be treated as co-equals during schematic design. Specifying low-carbon concrete mixes and prioritising materials with low transportation emissions are practical steps; at the same time, designing for passive daylighting and thermal comfort reduces lifecycle energy demands. Clients increasingly recognise that these decisions improve both project risk and long-term value.
-
-  On-site logistics and supply-chain choices amplify impact: choosing regional suppliers and modular prefabrication reduces waste and build time. In many projects, reusing existing structural frames or integrating salvaged materials offers both cultural value and carbon savings.
-
-  Finally, sustainable performance only persists when operations align with design intent. We support clients with simple building management strategies and occupant briefings so energy and water savings are realised in everyday use.`
+- Layering and Recess: Depth creates shadow and a sense of crafted volume. Recessed terraces and layered materials provide both shelter and visual richness.
+- Material Contrast: Combining honed stone with textured plaster and dark metal creates premium contrast without excess.
+- Framing Views: Windows are proportioned like artworks; long horizontal slots and tall verticals control light and privacy.
+- Night-time Composition: Exterior lighting is integrated to reveal texture and geometry after sunset, extending the architecture into evening.`
   },
   {
     id: 3,
-    slug: "bim-vs-traditional-drafting",
-    category: "Technology",
-    title: "BIM vs Traditional Drafting: Why Building Information Modelling is a Game Changer",
-    date: "May 15, 2026",
-    readTime: "5 min read",
-    excerpt: "A deep dive into how BIM technology is transforming project planning, reducing errors, and saving costs across infrastructure projects.",
+    slug: "sustainable-architecture-designing-for-future",
+    category: "Sustainability",
+    title: "Sustainable Architecture: Designing for the Future",
+    date: "May 18, 2026",
+    readTime: "7 min read",
+    excerpt: "Practical sustainable strategies for premium projects — passive design, local materials, and low-impact construction methods.",
     image: "/images/blog/blog3.jpg",
-    detailImage: serviceDesignImage,
-    fullArticleUrl: "https://www.autodesk.com/solutions/bim",
-    content: `Building Information Modelling (BIM) is more than 3D modelling: it is a collaborative data-rich process that streamlines coordination, reduces clashes, and improves handover documentation.
+    detailImage: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Sustainability is now a central pillar of premium architecture — not an optional extra.
 
-  Firms using BIM report fewer design errors and reduced rework costs; the next wave is AI-assisted BIM for automated optimisation.
+Full article:
 
-  Beyond coordination, BIM enables scenario testing that informs structural efficiency and constructability at an early stage. Parametric workflows allow teams to trade-off material usage, cost and thermal performance rapidly — turning what used to be a month-long exercise into iterative, data-driven design decisions within days.
-
-  Adopting BIM demands cultural change as much as technical tools: clear naming conventions, model ownership rules and disciplined change control are essential. We invest in training and maintain a client-accessible federated model so stakeholders can visualise sequencing and understand cost implications throughout the design cycle.
-
-  Emerging integrations with quantity-surveying tools and facility management platforms mean BIM is now the backbone of asset lifecycle thinking — enabling clients to plan maintenance, forecast replacement costs, and make evidence-based long-term decisions.`
+We explore passive design tactics, embodied carbon reduction, and operational strategies that ensure longevity and low environmental impact for high-end projects. Embedding performance targets early in design preserves aesthetic ambition while delivering measurable outcomes.`
   },
   {
     id: 4,
-    slug: "managing-large-scale-infrastructure-projects",
-    category: "Infrastructure",
-    title: "From Blueprint to Reality: How We Manage Large-Scale Infrastructure Projects",
-    date: "May 12, 2026",
-    readTime: "6 min read",
-    excerpt: "A behind-the-scenes look at Citra Infra Studio's project management workflow — from site analysis and planning to execution and handover.",
+    slug: "smart-space-planning-modern-homes",
+    category: "Residential",
+    title: "Why Smart Space Planning Matters in Modern Homes",
+    date: "May 15, 2026",
+    readTime: "5 min read",
+    excerpt: "How intelligent planning transforms comfort, flexibility and long-term value in contemporary residences.",
     image: "/images/blog/blog4.jpg",
-    detailImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.mckinsey.com/business-functions/operations/our-insights",
-    content: `Large projects require rigorous site analysis, staged design, and careful contractor selection. At Citra, we emphasise stakeholder alignment and quality assurance across every phase.
+    detailImage: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Space planning is the silent architecture of good living — when it works, it is invisible; when it fails, everything feels cramped.
 
-  Accurate documentation and senior engineering reviews prevent costly surprises during construction.
+Full article:
 
-  Equally important is an integrated risk register and a robust RFI process during construction. Proactive procurement strategies, incremental milestone targets, and clear responsibility matrices reduce dispute potential and help projects maintain schedule and budget integrity — particularly when complex interfaces between civil, structural and services works exist.
-
-  Coordination with utilities and early engagement with local authorities often determines programme certainty. We build regulatory milestone maps into our schedules and allocate senior team time to resolve statutory queries before they become critical path items.
-
-  Finally, continuous improvement is embedded through post-completion lessons-learned workshops that capture constructability insights and simplify future procurement and design reviews.`
+We discuss zoning strategies that separate public and private realms, flexible rooms for mixed-use living, and circulation that prioritises comfort. Smart planning anticipates change: guest rooms that convert to home offices, and service cores that keep mechanical systems accessible without impacting the living experience.`
   },
   {
     id: 5,
-    slug: "smart-cities-infrastructure-studios",
-    category: "Industry Trends",
-    title: "Smart Cities 101: What Infrastructure Studios Need to Know Right Now",
-    date: "May 10, 2026",
-    readTime: "7 min read",
-    excerpt: "Breaking down IoT integration, sensor-driven urban planning, and how infra studios must adapt their design approach for connected city ecosystems.",
+    slug: "process-of-designing-luxury-villa",
+    category: "Process",
+    title: "The Complete Process of Designing a Luxury Villa",
+    date: "May 12, 2026",
+    readTime: "8 min read",
+    excerpt: "From brief to handover — an editorial guide to the stages that produce a refined, functional luxury villa.",
     image: "/images/blog/blog5.jpg",
-    detailImage: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.smartcitiesworld.net/",
-    content: `Smart cities use data and connected systems to improve urban services. For infra studios, design must integrate conduit planning, data architecture and interoperability from day one.
+    detailImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Designing a luxury villa requires a structured process that balances creativity, procurement discipline and client stewardship.
 
-  This is no longer pilot work — it is permanent urban infrastructure.
+Full article:
 
-  Practical implementation requires cross-disciplinary teams: urban designers working with network engineers and cybersecurity specialists. Specifying accessible enclosures, redundant connectivity, and clear ownership models for data and sensors ensures that smart infrastructure remains reliable, scalable and secure over time.
-
-  Crucially, data governance dictates whether smart-city investments deliver public value. We advise clients to adopt open-data APIs where feasible and to define retention and privacy policies that balance insight with citizen rights. This fosters interoperability and encourages third-party innovation around public services.
-
-  At the design level, simple spatial decisions — reserved ducts, modular junctions and future-ready access panels — reduce long-term disruption when sensors are upgraded or new services deployed.`
+Stages: discovery & brief, concept and massing, technical design, procurement and construction, and finally, commissioning and handover. At each stage we focus on decision clarity, value engineering without compromise, and anticipating operational needs to protect long-term quality.`
   },
   {
     id: 6,
-    slug: "human-centred-infrastructure-design",
-    category: "Architecture & Design",
-    title: "The Art of Space Planning: Designing Infrastructure That People Actually Love",
-    date: "May 08, 2026",
-    readTime: "5 min read",
-    excerpt: "Human-centred design principles applied to infrastructure — accessibility, walkability, and how thoughtful planning creates lasting community value.",
+    slug: "residential-vs-commercial-architecture",
+    category: "Architecture",
+    title: "Residential vs Commercial Architecture: Key Differences",
+    date: "May 10, 2026",
+    readTime: "6 min read",
+    excerpt: "A comparison of priorities, technical demands and user experience strategies across residential and commercial projects.",
     image: "/images/blog/blog6.jpg",
-    detailImage: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.designcouncil.org.uk/our-work/what-designers-do/",
-    content: `Human-centred infrastructure is judged not by technical metrics alone but by whether people choose to spend time there.
+    detailImage: "https://images.unsplash.com/photo-1494522740689-4d8a1f4f2a0f?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: While both disciplines share craft and regulation, the priorities and risk models differ substantially between residential and commercial architecture.
 
-  Designing for the slowest user, prioritising pedestrian comfort, and programming for all-day activity creates places that last.
+Full article:
 
-  Design interventions should be tested at multiple scales: from urban block to detail junctions. Simple choices — material warmth at handrails, legible wayfinding, and the inclusion of small sheltered pauses — improve perceived safety and promote inclusive use across generations.
-
-  Inclusive design also requires active engagement with local communities during concept stages: co-design workshops reveal everyday behaviours and preferences that quantitative surveys miss. Embedding local artisans, small vendors and civic programming helps generate maintenance-minded stewardship and more diverse, resilient public life.
-
-  Finally, accessibility must be normalised rather than retrofitted. Integrating tactile guidance, gradual ramping and clear sightlines from the outset reduces long-term retrofit costs and enhances dignity of use for all ages.`
+We break down program complexity, lifecycle expectations, structural loads and service planning. Residential design focuses on intimacy and material warmth; commercial design emphasises resilience, clear circulation and robust serviceability.`
   },
   {
     id: 7,
-    slug: "climate-resilient-infrastructure-design",
-    category: "Sustainability",
-    title: "Rainwater Harvesting, Solar Integration & Smart Drainage: Infra Design for Climate Resilience",
-    date: "May 05, 2026",
-    readTime: "8 min read",
-    excerpt: "Practical strategies for building climate-resilient infrastructure — and why every new project today must account for extreme weather adaptability.",
+    slug: "role-of-3d-visualization",
+    category: "Technology",
+    title: "The Role of 3D Visualization in Modern Architecture",
+    date: "May 08, 2026",
+    readTime: "5 min read",
+    excerpt: "How cinematic renders and interactive walkthroughs accelerate decisions and elevate client confidence in premium projects.",
     image: "/images/blog/blog7.jpg",
-    detailImage: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.unep.org/resources",
-    content: `Climate projections require infrastructure to be resilient to extreme weather. Rainwater harvesting, photovoltaics with storage, and Sustainable Urban Drainage Systems (SUDS) are essential tools.
+    detailImage: "https://images.unsplash.com/photo-1505842465776-3d2f5f1f4b2e?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: 3D visualization translates design intent into an experience — it is the most persuasive communication tool we have.
 
-  We design against 2050 scenarios to ensure long-term performance and safety.
+Full article:
 
-  Resilience planning also means designing for operational continuity: critical services should be locationally distributed and backed by microgrids where feasible. Incorporating adaptive thresholds into early design — such as floodable park edges and elevated mechanical rooms — reduces the need for expensive retrofits after extreme events.
-
-  Practical resilience also depends on layered redundancy: multiple drainage pathways, sacrificial landscape elements, and access planning for emergency response teams. These measures are most effective when modelled alongside urban hydrology and infrastructure lifecycles.
-
-  We also work with insurers and lenders early to align resilience measures with financing terms, ensuring that risk reduction is understood and valued in capital allocation decisions.`
+From early massing studies to final art-direction renders, visualization informs material choices, daylighting strategies and client approvals. High-end projects use bespoke lighting studies and filmic post-production to present concepts with cinematic clarity.`
   },
   {
     id: 8,
-    slug: "3d-rendering-client-communication",
+    slug: "smart-homes-infrastructure-development",
     category: "Technology",
-    title: "How 3D Rendering is Changing Client Communication in Infrastructure Projects",
-    date: "May 02, 2026",
-    readTime: "4 min read",
-    excerpt: "Why photorealistic 3D renders and walkthroughs are no longer a luxury — they are essential for client trust, faster approvals, and fewer revisions.",
+    title: "Smart Homes & Future-Ready Infrastructure Development",
+    date: "May 05, 2026",
+    readTime: "6 min read",
+    excerpt: "Integrating intelligent systems into premium homes — architecture that anticipates and supports connected lifestyles.",
     image: "/images/blog/blog8.jpg",
-    detailImage: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.archdaily.com/tag/rendering",
-    content: `Photorealistic rendering and interactive walkthroughs remove ambiguity in decision making and reduce costly mid-construction changes.
+    detailImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Smart homes are now expected in the premium market, but architecture must discreetly accommodate technology without compromising form.
 
-  High-quality visuals accelerate approvals and strengthen client relationships.
+Full article:
 
-  Beyond marketing, rendering can be used in technical coordination: visualising shading studies, material aging, and pedestrian flows to test design hypotheses. When integrated with BIM, renders can be updated as the model evolves, keeping stakeholders aligned across delivery stages.
-
-  Advances in real-time engines now enable rapid iteration during design reviews. By combining light-accurate engines with parametric models, we can test material and daylight permutations within hours rather than days, which improves decision velocity and reduces costly change orders.
-
-  We also use annotated walkthrough captures as part of client sign-off packages so that decisions made during design meetings are recorded and carried forward into construction documentation.`
+We outline strategies for networked service zones, unobtrusive sensor placement, and resilient connectivity. Future-ready homes balance discreet integration with easy upgrade paths so technology can evolve without invasive retrofit.`
   },
   {
     id: 9,
-    slug: "common-mistakes-infrastructure-planning",
-    category: "Infrastructure",
-    title: "5 Common Mistakes in Infrastructure Planning (And How to Avoid Them)",
-    date: "April 28, 2026",
-    readTime: "5 min read",
-    excerpt: "From underestimating soil conditions to ignoring drainage loads — a practical guide to the pitfalls that derail projects and cost-overrun budgets.",
+    slug: "rise-of-contemporary-architecture-urban-india",
+    category: "Culture",
+    title: "The Rise of Contemporary Architecture in Urban India",
+    date: "May 02, 2026",
+    readTime: "6 min read",
+    excerpt: "Contemporary architecture's growing influence on India's cityscapes — hybrid typologies, refined material palettes, and civic ambition.",
     image: "/images/blog/blog9.jpg",
-    detailImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.pmi.org/learning/library/common-causes-project-failure-8420",
-    content: `Many project failures trace back to the same mistakes: inadequate site investigation, underestimated drainage, missing stakeholder alignment, rigid early-stage cost estimates, and neglecting maintenance.
+    detailImage: "https://images.unsplash.com/photo-1494522339817-6a1a2a6f0d7b?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Urban India is embracing a new architectural language — contemporary, context-aware and materially confident.
 
-  Addressing these fundamentals prevents overruns and improves delivery.
+Full article:
 
-  We recommend embedding early-stage contingency and a staged decision framework into client contracts so that emerging risks are funded and resolved without schedule disruption. This institutional approach changes incentives and keeps project teams focused on outcomes rather than blame.
-
-  Practical measures include mandatory ground-penetrating radar scans in congested urban sites, phased procurement to validate specialist subcontractor capacity, and transparent governance with an agreed change control ladder. These steps reduce information asymmetry and improve decision quality under pressure.
-
-  Finally, cultivating an organisational culture that rewards early risk reporting rather than concealment materially reduces escalation and keeps projects on track.`
+We examine projects that blend modern tectonics with local craft, and how developers and municipalities are shifting expectations toward higher-quality public realm and integrated mixed-use schemes.`
   },
   {
     id: 10,
-    slug: "mixed-use-urban-infrastructure",
-    category: "Industry Trends",
-    title: "Why Mixed-Use Developments Are Dominating Modern Urban Infrastructure",
-    date: "April 25, 2026",
-    readTime: "6 min read",
-    excerpt: "The rise of live-work-play spaces, integrated commercial and residential planning, and what this shift means for infra studios approaching new briefs.",
+    slug: "designing-premium-commercial-spaces",
+    category: "Commercial",
+    title: "Designing Premium Commercial Spaces with Functionality",
+    date: "April 28, 2026",
+    readTime: "7 min read",
+    excerpt: "Principles for creating commercial interiors that communicate brand, improve user experience and maximise long-term value.",
     image: "/images/blog/blog10.jpg",
+    detailImage: "https://images.unsplash.com/photo-1505691723518-36a0b60a7b74?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Premium commercial spaces are a synthesis of operational clarity and refined aesthetics.
+
+Full article:
+
+We cover material choice, vertical circulation, daylighting and long-term adaptability — design decisions that support both brand expression and efficient operations.`
+  },
+  {
+    id: 11,
+    slug: "minimalist-architecture-simplicity-meets-luxury",
+    category: "Design",
+    title: "Minimalist Architecture: Where Simplicity Meets Luxury",
+    date: "April 24, 2026",
+    readTime: "6 min read",
+    excerpt: "Exploring how restraint, proportion and precision craft a luxurious experience in minimalist architecture.",
+    image: "/images/blog/blog1.jpg",
+    detailImage: "https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Minimalism in luxury projects demands a higher order of precision — every junction and surface matters.
+
+Full article:
+
+The approach privileges material honesty, subtle daylighting and exacting detailing to create serene, enduring interiors and exteriors.`
+  },
+  {
+    id: 12,
+    slug: "landscape-design-enhances-architecture",
+    category: "Landscape",
+    title: "How Landscape Design Enhances Architectural Beauty",
+    date: "April 21, 2026",
+    readTime: "6 min read",
+    excerpt: "Strategies for integrating landscape as an equal partner in premium architecture — framing, sequence and ecology.",
+    image: "/images/blog/blog2.jpg",
+    detailImage: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Thoughtful landscapes extend architecture into the exterior, shaping arrival, view and microclimate.
+
+Full article:
+
+We discuss use of native planting, water features and spatial choreography that enhance both comfort and architectural composition.`
+  },
+  {
+    id: 13,
+    slug: "modern-construction-technologies",
+    category: "Technology",
+    title: "Modern Construction Technologies Transforming Real Estate",
+    date: "April 18, 2026",
+    readTime: "7 min read",
+    excerpt: "Prefabrication, advanced materials and digital workflows that compress schedules and improve finish quality.",
+    image: "/images/blog/blog3.jpg",
+    detailImage: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Modern construction is a blend of digital planning and off-site precision.
+
+Full article:
+
+We outline benefits of prefabrication, material innovation and data-driven site management that raise the bar for luxury build quality.`
+  },
+  {
+    id: 14,
+    slug: "importance-of-natural-lighting",
+    category: "Design",
+    title: "The Importance of Natural Lighting in Luxury Homes",
+    date: "April 15, 2026",
+    readTime: "5 min read",
+    excerpt: "Designing with light — techniques that enhance materiality, wellbeing and spatial drama in premium residences.",
+    image: "/images/blog/blog4.jpg",
+    detailImage: "https://images.unsplash.com/photo-1505842465776-3d2f5f1f4b2e?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Natural light sculpts space and defines experience in premium homes.
+
+Full article:
+
+We cover orientation, light modulation devices and reflective materials that increase perceived volume and comfort while reducing energy demand.`
+  },
+  {
+    id: 15,
+    slug: "architecture-influences-human-experience",
+    category: "Philosophy",
+    title: "How Architecture Influences Human Experience & Lifestyle",
+    date: "April 12, 2026",
+    readTime: "8 min read",
+    excerpt: "Exploring the link between spatial design, behaviour and the quality of habitation in high-end projects.",
+    image: "/images/blog/blog5.jpg",
+    detailImage: "https://images.unsplash.com/photo-1487029412591-4f3a2e1b2f6a?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Architecture frames daily life — it sets rhythms, rituals and possibilities.
+
+Full article:
+
+We examine how scale, light, sound and texture inform behaviour and wellbeing, and how designers can prioritise human experience in every decision.`
+  },
+  {
+    id: 16,
+    slug: "sustainable-urban-planning-smart-cities",
+    category: "Urbanism",
+    title: "Sustainable Urban Planning & Smart City Development",
+    date: "April 08, 2026",
+    readTime: "9 min read",
+    excerpt: "Integrating infrastructure, mobility and green systems to create resilient, livable urban districts.",
+    image: "/images/blog/blog6.jpg",
+    detailImage: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Smart, sustainable planning is the foundation of future-ready cities.
+
+Full article:
+
+We discuss corridor planning, integrated mobility, and green infrastructure strategies that balance density with amenity and climate risk.`
+  },
+  {
+    id: 17,
+    slug: "luxury-interior-concepts-villas",
+    category: "Interior",
+    title: "Luxury Interior Concepts for Contemporary Villas",
+    date: "April 04, 2026",
+    readTime: "6 min read",
+    excerpt: "Interior strategies that combine calm palettes, material layers and bespoke furniture for villa living.",
+    image: "/images/blog/blog7.jpg",
+    detailImage: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Interiors are the intimate expression of architectural intent in luxury villas.
+
+Full article:
+
+We explore proportion, lighting, furniture scale and acoustics to create calm, refined interiors that support daily life and grand entertaining.`
+  },
+  {
+    id: 18,
+    slug: "premium-architecture-increases-property-value",
+    category: "Market",
+    title: "How Premium Architecture Increases Property Value",
+    date: "April 01, 2026",
+    readTime: "7 min read",
+    excerpt: "Demonstrating how thoughtful design translates into measurable asset value for high-end properties.",
+    image: "/images/blog/blog8.jpg",
+    detailImage: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Premium architecture attracts buyers, reduces vacancy and increases long-term returns.
+
+Full article:
+
+We analyse case studies where architectural investment has delivered higher capital value, stronger leasing demand and reduced lifecycle cost.`
+  },
+  {
+    id: 19,
+    slug: "evolution-of-mixed-use-developments",
+    category: "Urbanism",
+    title: "The Evolution of Mixed-Use Commercial Developments",
+    date: "March 28, 2026",
+    readTime: "6 min read",
+    excerpt: "How mixed-use projects are redefining urban resilience and creating richer public realms.",
+    image: "/images/blog/blog9.jpg",
     detailImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
-    fullArticleUrl: "https://www.planetizen.com/features/111710-mixed-use-development",
-    content: `Mixed-use development integrates residential, commercial, civic and recreational uses to create active, resilient neighbourhoods.
+    content: `Introduction: Mixed-use developments combine programmatic diversity with economic resilience.
 
-  The complexity is higher but the social and economic value is greater — infra studios must coordinate structure, services and programming from day one.
+Full article:
 
-  Successful mixed-use projects begin with a rigorous use strategy that informs massing, circulation and service cores. When mixed programming is resolved early, the development delivers sustained activation and reduced conflicts between incompatible uses.
+We discuss delivery strategies, public realm design and long-term governance models that make mixed-use places successful.`
+  },
+  {
+    id: 20,
+    slug: "building-timeless-spaces-modern-architecture",
+    category: "Philosophy",
+    title: "Building Timeless Spaces Through Modern Architecture",
+    date: "March 24, 2026",
+    readTime: "8 min read",
+    excerpt: "Design principles that create enduring, elegant architecture — proportion, materiality and restraint.",
+    image: "/images/blog/blog10.jpg",
+    detailImage: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1600&q=80",
+    content: `Introduction: Timeless architecture resists fleeting trends and focuses on proportion, material & craft.
 
-  Delivering successful mixed-use schemes also depends on clear vertical separation strategies for services and careful acoustic design between uses. Early prototyping of floor plates and MEP risers helps identify conflicts and keeps service zones compact and efficient.
+Full article:
 
-  Finally, governance models for mixed-use places — from deed restrictions to shared-management companies — influence long-term viability. We work with clients to design operational frameworks that align incentives for maintenance, programming and tenant mix, ensuring the project performs as intended over decades.`
+This essay explores how modern projects can achieve a timeless quality by prioritising clarity of concept, considered material choices and craft-led detailing that age with dignity.`
   }
 ];
