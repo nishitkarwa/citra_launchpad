@@ -4,17 +4,99 @@ import { useState } from "react";
 const Contact = () => {
   const { ref, inView } = useInView();
   const [form, setForm] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
-    type: "",
-    message: "",
+    consultation: "",
+    project: "",
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" });
+  };
+
+  const validate = () => {
+    const errs: Record<string, string> = {};
+    if (!form.firstName.trim()) errs.firstName = "First name is required";
+    if (!form.lastName.trim()) errs.lastName = "Last name is required";
+    if (!/^[\d+\s()-]{7,}$/.test(form.phone)) errs.phone = "Enter a valid phone number";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errs.email = "Enter a valid email";
+    if (!form.consultation.trim()) errs.consultation = "Please specify consultation requirement";
+    if (!form.project.trim()) errs.project = "Please provide a brief about the project";
+    setErrors(errs);
+    return Object.keys(errs).length === 0;
+  };
+
+  const formatDateTime = (d = new Date()) => {
+    return d.toLocaleString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    });
+  };
+
+  const buildWhatsAppMessage = () => {
+    const now = formatDateTime();
+    const lines = [
+      "━━━━━━━━━━━━━━━━━━",
+      "🏛️ *CITRA INFRA STUDIO*",
+      "✨ New Premium Client Enquiry Received",
+      "━━━━━━━━━━━━━━━━━━",
+      "",
+      "👤 *Client Details*",
+      `• Name: ${form.firstName.trim()} ${form.lastName.trim()}`,
+      `• Contact: ${form.phone.trim()}`,
+      `• Email: ${form.email.trim()}`,
+      "",
+      "━━━━━━━━━━━━━━━━━━",
+      "",
+      "📌 *Consultation Requirement*",
+      `${form.consultation.trim()}`,
+      "",
+      "📝 *Project Brief*",
+      `${form.project.trim()}`,
+      "",
+      "━━━━━━━━━━━━━━━━━━",
+      "",
+      "🌍 *Lead Source*",
+      "Citra Official Website",
+      "",
+      "⏰ *Received On*",
+      `${now}`,
+      "",
+      "🚀 *Lead Status:* HOT LEAD",
+      "━━━━━━━━━━━━━━━━━━",
+    ];
+
+    return lines.join("\n");
+  };
+
+  const ADMIN_WA_NUMBER = "918686662540"; // admin WhatsApp number
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (submitting) return;
+    if (!validate()) return;
+    setSubmitting(true);
+    const message = buildWhatsAppMessage();
+    const encoded = encodeURIComponent(message);
+    const url = `https://wa.me/${ADMIN_WA_NUMBER}?text=${encoded}`;
+    // open in new tab/window
+    window.open(url, "_blank");
+    // small UX: re-enable after short delay and clear form
+    setTimeout(() => {
+      setSubmitting(false);
+      setForm({ firstName: "", lastName: "", email: "", phone: "", consultation: "", project: "" });
+    }, 800);
   };
 
   const inputClass =
@@ -43,22 +125,21 @@ const Contact = () => {
         <form
           className={`space-y-4 text-left ${inView ? "animate-fade-in-up" : "opacity-0"}`}
           style={inView ? { animationDelay: "280ms" } : undefined}
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={handleSubmit}
         >
           <div className="grid sm:grid-cols-2 gap-4">
             <input
-              name="name"
-              value={form.name}
+              name="firstName"
+              value={form.firstName}
               onChange={handleChange}
-              placeholder="Your full name"
+              placeholder="First name"
               className={inputClass}
             />
             <input
-              name="email"
-              type="email"
-              value={form.email}
+              name="lastName"
+              value={form.lastName}
               onChange={handleChange}
-              placeholder="your@email.com"
+              placeholder="Last name"
               className={inputClass}
             />
           </div>
@@ -71,26 +152,42 @@ const Contact = () => {
               className={inputClass}
             />
             <input
-              name="type"
-              value={form.type}
+              name="email"
+              type="email"
+              value={form.email}
               onChange={handleChange}
-              placeholder="Commercial, Residential, Mixed-Use..."
+              placeholder="your@email.com"
               className={inputClass}
             />
           </div>
-          <textarea
-            name="message"
-            rows={4}
-            value={form.message}
+          <input
+            name="consultation"
+            value={form.consultation}
             onChange={handleChange}
-            placeholder="Tell us about your project, timeline, and goals"
+            placeholder="Consultation Requirement (Commercial, Residential, etc.)"
+            className={inputClass}
+          />
+          <textarea
+            name="project"
+            rows={4}
+            value={form.project}
+            onChange={handleChange}
+            placeholder="Project brief: timeline, scale, goals"
             className={`${inputClass} resize-none`}
           />
+          {Object.keys(errors).length > 0 && (
+            <div className="text-sm text-rose-400 space-y-1">
+              {Object.entries(errors).map(([k, v]) => (
+                <div key={k}>{v}</div>
+              ))}
+            </div>
+          )}
           <button
             type="submit"
-            className="w-full rounded-full bg-primary py-3.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all mt-2"
+            disabled={submitting}
+            className={`w-full rounded-full bg-primary py-3.5 text-sm font-medium text-primary-foreground hover:brightness-110 transition-all mt-2 ${submitting ? 'opacity-60 pointer-events-none' : ''}`}
           >
-            Send Message
+            {submitting ? 'Opening WhatsApp...' : 'Send Message'}
           </button>
         </form>
       </div>
