@@ -73,6 +73,9 @@ import nikita2 from "@/assets/projects/nikita-2.png";
 import nikita3 from "@/assets/projects/nikita-3.png";
 import nikita4 from "@/assets/projects/nikita-4.png";
 import nikita5 from "@/assets/projects/nikita-5.png";
+import landscapeVinodFarm from "@/assets/projects/landscape-vinod-farm.png";
+import landscapeVesellaMeadows from "@/assets/projects/landscape-vesella-meadows.png";
+import landscapeRoofTop from "@/assets/projects/landscape-roof-top.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -582,6 +585,84 @@ export const projects: Project[] = [
     ],
     cover: projectResidential,
     gallery: [projectResidential, projectResidential, projectResidential, projectResidential],
+  },
+  {
+    slug: "vinod-kumar-farm-house",
+    title: "Vinod Kumar Farm House",
+    location: "India",
+    year: "—",
+    status: "Design",
+    category: "Landscaping",
+    section: "Landscaping",
+    tagline: "A serene farm house landscape with a tropical gazebo, fire pit, and natural rockwork.",
+    description: [
+      "A landscape design centered around a wooden gazebo overlooking lush palm groves, with a circular fire pit and naturalistic rock arrangements.",
+      "The composition blends tropical planting, hardscape, and gathering zones for a tranquil outdoor retreat.",
+    ],
+    highlights: [
+      "Tropical Gazebo Pavilion",
+      "Circular Fire Pit",
+      "Natural Rock Landscaping",
+      "Palm Grove Planting",
+    ],
+    meta: [
+      { label: "Section", value: "Landscaping" },
+      { label: "Status", value: "Design" },
+    ],
+    cover: landscapeVinodFarm,
+    gallery: [landscapeVinodFarm, landscapeVinodFarm, landscapeVinodFarm, landscapeVinodFarm],
+  },
+  {
+    slug: "vesella-meadows-la",
+    title: "Vesella Meadows LA",
+    location: "India",
+    year: "—",
+    status: "Design",
+    category: "Landscaping",
+    section: "Landscaping",
+    tagline: "A sculptural terraced garden with parametric canopies and patterned paving.",
+    description: [
+      "A landscape architecture project featuring curved planter walls, parametric tree-like canopies, and patterned stone paving around a central seating court.",
+      "Designed as a contemporary social garden combining geometry, planting layers, and intimate gathering spaces.",
+    ],
+    highlights: [
+      "Parametric Canopy Structures",
+      "Terraced Planter Walls",
+      "Patterned Stone Paving",
+      "Central Seating Court",
+    ],
+    meta: [
+      { label: "Section", value: "Landscaping" },
+      { label: "Status", value: "Design" },
+    ],
+    cover: landscapeVesellaMeadows,
+    gallery: [landscapeVesellaMeadows, landscapeVesellaMeadows, landscapeVesellaMeadows, landscapeVesellaMeadows],
+  },
+  {
+    slug: "roof-top-garden",
+    title: "Roof Top",
+    location: "India",
+    year: "—",
+    status: "Design",
+    category: "Landscaping",
+    section: "Landscaping",
+    tagline: "A modern rooftop garden with pergola lounge, planters, and stepping stone paths.",
+    description: [
+      "A rooftop landscape design with a timber pergola lounge, layered planters, and an artificial grass path with stepping stones.",
+      "Designed as a private outdoor retreat balancing greenery, shade, and contemporary detailing.",
+    ],
+    highlights: [
+      "Timber Pergola Lounge",
+      "Layered Planter Beds",
+      "Stepping Stone Pathway",
+      "Outdoor Dining Area",
+    ],
+    meta: [
+      { label: "Section", value: "Landscaping" },
+      { label: "Status", value: "Design" },
+    ],
+    cover: landscapeRoofTop,
+    gallery: [landscapeRoofTop, landscapeRoofTop, landscapeRoofTop, landscapeRoofTop],
   },
 ];
 
