@@ -84,6 +84,12 @@ import landscapeVesellaMeadows4 from "@/assets/projects/landscape-vesella-meadow
 import landscapeVesellaMeadows5 from "@/assets/projects/landscape-vesella-meadows-5.png";
 import landscapeVesellaMeadows6 from "@/assets/projects/landscape-vesella-meadows-6.png";
 import landscapeRoofTop from "@/assets/projects/landscape-roof-top.png";
+import landscapeRoofTop1 from "@/assets/projects/landscape-roof-top-1.png";
+import landscapeRoofTop2 from "@/assets/projects/landscape-roof-top-2.png";
+import landscapeRoofTop3 from "@/assets/projects/landscape-roof-top-3.png";
+import landscapeRoofTop4 from "@/assets/projects/landscape-roof-top-4.png";
+import landscapeRoofTop5 from "@/assets/projects/landscape-roof-top-5.png";
+import landscapeRoofTop6 from "@/assets/projects/landscape-roof-top-6.png";
 
 export type ProjectCategory =
   | "Residential"
@@ -670,7 +676,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design" },
     ],
     cover: landscapeRoofTop,
-    gallery: [landscapeRoofTop, landscapeRoofTop, landscapeRoofTop, landscapeRoofTop],
+    gallery: [landscapeRoofTop1, landscapeRoofTop2, landscapeRoofTop3, landscapeRoofTop4, landscapeRoofTop5, landscapeRoofTop6],
   },
 ];
 
