@@ -14,6 +14,7 @@ const AboutHero = () => (
   <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
     <img src={aboutHero} alt="CITRA headquarters" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
     <div className="absolute inset-0 bg-foreground/60" />
+    <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background pointer-events-none z-10" />
     <div className="relative z-10 text-center text-primary-foreground px-6">
       <p className="label-caption text-primary mb-4 animate-fade-in-up">About Us</p>
       <h1 className="animate-fade-in-up" style={{ animationDelay: "100ms" }}>

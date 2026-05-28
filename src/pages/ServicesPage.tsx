@@ -16,6 +16,7 @@ const ServicesHero = () => (
   <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
     <img src={servicesHero} alt="CITRA services" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />
     <div className="absolute inset-0 bg-foreground/50" />
+    <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background pointer-events-none z-10" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="animate-fade-in-up">
         Comprehensive <em className="italic">Design</em> and <em className="italic">Development</em> for Business‑Focused Projects
