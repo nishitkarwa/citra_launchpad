@@ -31,47 +31,23 @@ const ProjectsHero = () => (
     />
     <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
     <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
-      <h1 className="text-[#1f2a44] text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05] tracking-tight">
-        {(() => {
-          // ensure a sequential index so words animate in visual order (line by line)
-          let seq = 0;
-          return headingLines.map((line, li) => (
-            <span key={li} className="block">
-              {line.map((w, i) => {
-                const idx = seq++;
-                return (
-                  <span
-                    key={i}
-                    className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
-                    style={{ animationDelay: `${idx * 120}ms`, animationFillMode: "forwards" }}
-                  >
-                    {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
-                  </span>
-                );
-              })}
-            </span>
-          ));
-        })()}
+      <h1 className="animate-fade-in-up">
+        {headingLines.map((line, li) => (
+          <span key={li} className="block">
+            {line.map((w, i) => (
+              <span key={i} className="inline-block mr-[0.25em]">
+                {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
+              </span>
+            ))}
+          </span>
+        ))}
       </h1>
 
-      <p className="text-[#1f2a44]/70 text-xs md:text-sm max-w-lg mx-auto mt-4">
-        {(() => {
-          // calculate total heading spans so subtitle starts after headings finish
-          const totalHeadingSpans = headingLines.reduce((acc, l) => acc + l.length, 0);
-          const baseDelay = totalHeadingSpans * 120 + 120; // small gap after headings
-          return subWords.map((w, i) => (
-            <span
-              key={i}
-              className="inline-block mr-[0.25em] animate-slide-in-left opacity-0"
-              style={{
-                animationDelay: `${baseDelay + i * 60}ms`,
-                animationFillMode: "forwards",
-              }}
-            >
-              {w}
-            </span>
-          ));
-        })()}
+      <p
+        className="body-default text-muted-foreground max-w-lg mx-auto mt-4 animate-fade-in-up"
+        style={{ animationDelay: "160ms" }}
+      >
+        Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
       </p>
     </div>
   </section>
