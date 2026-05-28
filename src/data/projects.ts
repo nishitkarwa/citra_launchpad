@@ -74,6 +74,9 @@ import nikita3 from "@/assets/projects/nikita-3.png";
 import nikita4 from "@/assets/projects/nikita-4.png";
 import nikita5 from "@/assets/projects/nikita-5.png";
 import landscapeVinodFarm from "@/assets/projects/landscape-vinod-farm.png";
+import landscapeVinodFarm2 from "@/assets/projects/landscape-vinod-farm-2.png";
+import landscapeVinodFarm3 from "@/assets/projects/landscape-vinod-farm-3.png";
+import landscapeVinodFarm4 from "@/assets/projects/landscape-vinod-farm-4.png";
 import landscapeVesellaMeadows from "@/assets/projects/landscape-vesella-meadows.png";
 import landscapeRoofTop from "@/assets/projects/landscape-roof-top.png";
 
@@ -610,7 +613,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design" },
     ],
     cover: landscapeVinodFarm,
-    gallery: [landscapeVinodFarm, landscapeVinodFarm, landscapeVinodFarm, landscapeVinodFarm],
+    gallery: [landscapeVinodFarm, landscapeVinodFarm2, landscapeVinodFarm3, landscapeVinodFarm4],
   },
   {
     slug: "vesella-meadows-la",
