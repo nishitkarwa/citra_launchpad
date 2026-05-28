@@ -20,32 +20,22 @@ const subWords =
   );
 
 const ProjectsHero = () => (
-  <section className="relative h-[75vh] min-h-[520px] w-full flex items-start justify-center overflow-hidden bg-black">
+  <section className="relative h-[70vh] min-h-[480px] flex items-center justify-center overflow-hidden">
     <img
       src={projectsHero}
       alt="CITRA projects"
-      className="absolute inset-0 w-full h-full object-contain md:object-cover animate-ken-burns-soft will-change-transform scale-[0.74] translate-y-[22%]"
-      style={{ objectPosition: "center bottom", filter: "brightness(1.28) saturate(1.05)" }}
+      className="absolute inset-0 w-full h-full object-cover"
       width={1920}
-      height={1280}
+      height={800}
     />
-    <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-transparent" />
-    <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-16 md:pt-20">
+    <div className="absolute inset-0 bg-foreground/50" />
+    <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="animate-fade-in-up">
-        {headingLines.map((line, li) => (
-          <span key={li} className="block">
-            {line.map((w, i) => (
-              <span key={i} className="inline-block mr-[0.25em]">
-                {w.italic ? <em className="italic font-serif font-normal">{w.text}</em> : w.text}
-              </span>
-            ))}
-          </span>
-        ))}
+        Designing <em className="italic">Spaces.</em> Building <em className="italic">Experiences.</em>
       </h1>
-
       <p
-        className="body-default text-black max-w-lg mx-auto mt-4 -translate-y-6 md:-translate-y-10 animate-fade-in-up"
-        style={{ animationDelay: "160ms" }}
+        className="body-large text-primary-foreground/80 max-w-2xl mx-auto mt-6 animate-fade-in-up"
+        style={{ animationDelay: "120ms" }}
       >
         Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
       </p>
