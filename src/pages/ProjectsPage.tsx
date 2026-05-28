@@ -55,7 +55,7 @@ const ProjectsHero = () => (
 
 /* ── Signature Projects ── */
 const SignatureProjects = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView(0.05, "0px 0px -5% 0px", 0);
   return (
     <section ref={ref} className="section-padding">
       <div className="container mx-auto px-6 lg:px-8">
