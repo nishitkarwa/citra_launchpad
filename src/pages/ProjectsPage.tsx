@@ -44,7 +44,7 @@ const ProjectsHero = () => (
       </h1>
 
       <p
-        className="body-default text-black max-w-lg mx-auto mt-4 animate-fade-in-up"
+        className="body-default text-black max-w-lg mx-auto mt-4 -translate-y-6 md:-translate-y-10 animate-fade-in-up"
         style={{ animationDelay: "160ms" }}
       >
         Exploring the intersection of structural integrity and aesthetic innovation across our global portfolio.
