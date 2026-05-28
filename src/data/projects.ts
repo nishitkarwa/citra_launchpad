@@ -81,6 +81,8 @@ import landscapeVesellaMeadows from "@/assets/projects/landscape-vesella-meadows
 import landscapeVesellaMeadows2 from "@/assets/projects/landscape-vesella-meadows-2.png";
 import landscapeVesellaMeadows3 from "@/assets/projects/landscape-vesella-meadows-3.png";
 import landscapeVesellaMeadows4 from "@/assets/projects/landscape-vesella-meadows-4.png";
+import landscapeVesellaMeadows5 from "@/assets/projects/landscape-vesella-meadows-5.png";
+import landscapeVesellaMeadows6 from "@/assets/projects/landscape-vesella-meadows-6.png";
 import landscapeRoofTop from "@/assets/projects/landscape-roof-top.png";
 
 export type ProjectCategory =
@@ -642,7 +644,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design" },
     ],
     cover: landscapeVesellaMeadows,
-    gallery: [landscapeVesellaMeadows, landscapeVesellaMeadows2, landscapeVesellaMeadows3, landscapeVesellaMeadows4],
+    gallery: [landscapeVesellaMeadows, landscapeVesellaMeadows2, landscapeVesellaMeadows3, landscapeVesellaMeadows4, landscapeVesellaMeadows5, landscapeVesellaMeadows6],
   },
   {
     slug: "roof-top-garden",
