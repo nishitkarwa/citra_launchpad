@@ -136,11 +136,10 @@ const ProjectDetail = () => {
                 key={i}
                 className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
               >
-                <ParallaxImage
+                <img
                   src={g}
                   alt={`${project.title} visual ${i + 1}`}
-                  className="w-full h-full"
-                  imgClassName="transition-transform duration-700 ease-out hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
                   loading="lazy"
                 />
               </div>
