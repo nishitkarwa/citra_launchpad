@@ -78,7 +78,8 @@ export type ProjectCategory =
   | "Residential"
   | "Commercial"
   | "Religious"
-  | "Master Plan";
+  | "Master Plan"
+  | "Landscaping";
 
 export type Project = {
   slug: string;
@@ -595,4 +596,5 @@ export const projectCategories: (ProjectCategory | "All Projects")[] = [
   "Commercial",
   "Religious",
   "Master Plan",
+  "Landscaping",
 ];
