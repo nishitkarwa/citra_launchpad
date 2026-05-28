@@ -29,6 +29,7 @@ const ProjectsHero = () => (
       height={800}
     />
     <div className="absolute inset-0 bg-foreground/50" />
+    <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background pointer-events-none z-10" />
     <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl mx-auto">
       <h1 className="animate-fade-in-up">
         Designing <em className="italic">Spaces.</em> Building <em className="italic">Experiences.</em>
