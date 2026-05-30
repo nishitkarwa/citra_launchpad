@@ -4,13 +4,13 @@ import citraLogo from "@/assets/citra-logo.png";
 
 // Routes that render the navbar over a light background at the top of the page.
 // On these routes we use a cyan-blue accent (#38BDF8) for nav text to ensure contrast.
-const LIGHT_BG_ROUTES = ["/blog", "/projects"];
+const LIGHT_BG_ROUTES = ["/projects"];
 
-const navLinks = [
+const navLinks: { label: string; link: string; external?: boolean }[] = [
   { label: "Projects", link: "/projects" },
   { label: "Services", link: "/services" },
   { label: "About Us", link: "/about" },
-  { label: "Blog", link: "/blog" },
+  { label: "Blog", link: "/blog/", external: true },
   { label: "Contact", link: "/contact" },
 ];
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           }
         >
           {navLinks.map((l) => {
-            const isRoute = l.link.startsWith("/") && !l.link.includes("#");
+            const isRoute = l.link.startsWith("/") && !l.link.includes("#") && !l.external;
             const className = `px-5 py-2 rounded-full text-sm font-medium transition-colors ${
               scrolled
                 ? "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
@@ -122,7 +122,7 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden bg-background border-t border-border px-6 pb-6 pt-4 space-y-3">
           {navLinks.map((l) => {
-            const isRoute = l.link.startsWith("/") && !l.link.includes("#");
+            const isRoute = l.link.startsWith("/") && !l.link.includes("#") && !l.external;
             const cls = "block text-base font-medium text-foreground/70 hover:text-foreground";
             return isRoute ? (
               <Link key={l.label} to={l.link} onClick={() => setOpen(false)} className={cls}>
