@@ -1,9 +1,9 @@
 /* ============================================================
    CITRA Associates — Blog Shared Stylesheet
-   blog.css | Google Fonts: DM Sans 300, 400, 500, 600
+   Font: Host Grotesk (matches main site)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&display=swap');
 
 /* ── Custom Properties ──────────────────────────────────────── */
 :root {
@@ -18,7 +18,7 @@
   --color-bg-white:  #FFFFFF;
   --color-badge-bg:  rgba(14, 165, 233, 0.12);
 
-  --font-sans:  'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Host Grotesk', system-ui, -apple-system, sans-serif;
 
   --text-xs:   0.75rem;
   --text-sm:   0.875rem;
@@ -64,9 +64,9 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-sans);
-  font-size: var(--text-base);
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-body);
   background: var(--color-bg-white);
   -webkit-font-smoothing: antialiased;
@@ -320,10 +320,11 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .blog-hero-overlay h1 {
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  font-weight: 600;
+  font-size: clamp(2rem, 4.5vw, 3.25rem); /* matches site h2 scale: 32px→52px */
+  font-weight: 700;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   max-width: 800px;
   margin-bottom: var(--space-4);
 }
@@ -352,27 +353,29 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .article-body h2 {
-  font-size: var(--text-2xl);
-  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 2rem); /* site h3 scale: 24px→32px */
+  font-weight: 700;
   color: var(--color-heading);
   margin-top: var(--space-12);
   margin-bottom: var(--space-4);
-  line-height: 1.3;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .article-body h3 {
-  font-size: var(--text-xl);
+  font-size: clamp(1.125rem, 2vw, 1.375rem); /* site h4 scale: 18px→22px */
   font-weight: 600;
   color: var(--color-heading);
   margin-top: var(--space-8);
   margin-bottom: var(--space-3);
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .article-body p {
   margin-bottom: var(--space-5);
   color: var(--color-body);
-  font-size: var(--text-base);
+  font-size: 1.0625rem; /* 17px — body-large feel for readability */
+  line-height: 1.7;
 }
 
 .article-body ul,
@@ -419,8 +422,9 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .faq-section > h2 {
-  font-size: var(--text-2xl);
-  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--color-heading);
   margin-bottom: var(--space-8);
 }
@@ -432,11 +436,11 @@ ul, ol { padding-left: var(--space-6); }
 .faq-item:last-child { border-bottom: none; }
 
 .faq-item h3 {
-  font-size: var(--text-lg);
+  font-size: 1.125rem; /* 18px — h4 equivalent */
   font-weight: 600;
   color: var(--color-heading);
   margin-bottom: var(--space-3);
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .faq-item p {
@@ -453,8 +457,9 @@ ul, ol { padding-left: var(--space-6); }
 
 .related-section > h2 {
   text-align: center;
-  font-size: var(--text-2xl);
-  font-weight: 600;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--color-heading);
   margin-bottom: var(--space-10);
 }
@@ -524,8 +529,10 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .cta-block h2 {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  font-weight: 600;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem); /* between h2 and h3 on main site */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
   color: #fff;
   margin-bottom: var(--space-5);
 }
@@ -603,11 +610,12 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .listing-hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 600;
+  font-size: clamp(2.5rem, 5vw, 4rem); /* matches main site h1 scale: 40px→80px */
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--color-heading);
   margin-bottom: var(--space-5);
-  line-height: 1.15;
+  line-height: 1.08;
 }
 
 .listing-hero p {
@@ -685,10 +693,11 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .card-body h2 {
-  font-size: var(--text-lg);
+  font-size: 1.125rem; /* 18px — h4 equivalent */
   font-weight: 600;
   color: var(--color-heading);
-  line-height: 1.35;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   margin-bottom: var(--space-3);
 }
 
