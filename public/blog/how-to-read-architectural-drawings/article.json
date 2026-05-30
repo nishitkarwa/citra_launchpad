@@ -1,0 +1,28 @@
+{
+  "title": "How to Read Architectural Drawings as a Client",
+  "slug": "/blog/how-to-read-architectural-drawings/",
+  "published": "2025-04-07",
+  "author": "CITRA Associates",
+  "category": "Process",
+  "tags": ["architectural drawings", "floor plan reading", "how to read blueprints", "client architecture process"],
+  "primaryKeyword": "how to read architectural drawings",
+  "secondaryKeywords": ["floor plan reading guide", "architectural elevations explained", "architecture drawings client"],
+  "metaDescription": "Floor plans, sections, and elevations can feel overwhelming. This practical guide helps homeowners understand every architectural drawing their architect presents to them.",
+  "excerpt": "Architectural drawings communicate how a building is designed and constructed. This guide explains floor plans, elevations, sections, site plans, and detail drawings in plain language so clients can review, understand, and confidently approve their architect's work at every project stage.",
+  "faqs": [
+    {
+      "question": "What is the most important drawing to understand in an architectural set?",
+      "answer": "The floor plan is the most important drawing for most clients. It shows how spaces are organised relative to each other, the size and shape of every room, the position of doors and windows, and the flow of movement through the building. Every other drawing — sections, elevations, details — is in some sense a clarification of something shown in the floor plan."
+    },
+    {
+      "question": "What does a scale of 1:100 mean on an architectural drawing?",
+      "answer": "A scale of 1:100 means that every 1 mm on the drawing represents 100 mm (10 cm) in the actual building. So a wall shown as 30 mm long on the drawing is 3,000 mm (3 metres) long in reality. Common scales for floor plans are 1:100 and 1:50; detail drawings may use 1:20, 1:10, or even 1:1 for very specific elements."
+    },
+    {
+      "question": "Should I approve architectural drawings before construction starts?",
+      "answer": "Yes, absolutely. The working drawing approval stage is your last opportunity to make changes before they become expensive construction changes. You should review drawings carefully, ask questions about anything unclear, and formally approve the complete drawing set before construction begins. A good architect will walk you through the drawings and answer all questions before requesting your approval."
+    }
+  ],
+  "relatedArticles": ["/blog/what-is-a-design-brief/", "/blog/schematic-design-phase-explained/", "/blog/architect-vs-civil-engineer-india/"],
+  "canonicalUrl": "https://www.citraassociates.com/blog/how-to-read-architectural-drawings/"
+}

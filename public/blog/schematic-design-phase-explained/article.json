@@ -1,0 +1,28 @@
+{
+  "title": "What Happens During the Schematic Design Phase",
+  "slug": "/blog/schematic-design-phase-explained/",
+  "published": "2025-04-21",
+  "author": "CITRA Associates",
+  "category": "Process",
+  "tags": ["schematic design phase", "architecture design process", "design review client", "architectural schematic"],
+  "primaryKeyword": "schematic design phase architecture",
+  "secondaryKeywords": ["what is schematic design", "design development architecture", "architecture review process India"],
+  "metaDescription": "The schematic design phase is where ideas become drawings for the first time. Learn what your architect produces, how to review it, and how to give feedback that genuinely shapes the design.",
+  "excerpt": "Schematic design is the critical phase where the brief becomes a building for the first time. This article explains what deliverables to expect, what is not yet decided at this stage, how to review floor plans and elevations effectively, and how to give feedback that shapes the design rather than just reacting to it.",
+  "faqs": [
+    {
+      "question": "How many design options should my architect present at the schematic stage?",
+      "answer": "Most architects present two or three schematic design options at the initial stage. This range allows the client to compare fundamentally different approaches to the design problem rather than just variations on a single idea. The goal is not choice for its own sake but productive comparison that leads to a clear design direction."
+    },
+    {
+      "question": "Can I ask for major changes after the schematic design is approved?",
+      "answer": "You can, but significant changes after schematic approval will require redesign work that may incur additional fees under your contract. This is why it is critical to review schematics carefully and resolve all major concerns before approving them. Minor adjustments are typically absorbed, but changes that affect the building's organisation or structure should be managed as formal revisions."
+    },
+    {
+      "question": "What is the difference between schematic design and design development?",
+      "answer": "Schematic design establishes the fundamental organisation of the building — the layout, spatial relationships, massing, and overall design direction. Design development adds detail: structural system, MEP coordination, material selections, door and window schedules, and enough specification to enable accurate cost estimation. Design development is the intermediate stage between schematic design and working drawings."
+    }
+  ],
+  "relatedArticles": ["/blog/what-is-a-design-brief/", "/blog/how-to-read-architectural-drawings/", "/blog/citra-associates-project-approach/"],
+  "canonicalUrl": "https://www.citraassociates.com/blog/schematic-design-phase-explained/"
+}
