@@ -1,29 +1,29 @@
 import { useInView } from "@/hooks/useInView";
-import greenmarkLogo from "@/assets/grrenmarkdev.jpg";
-import ecoLogo from "@/assets/eco.png";
-import surabiLogo from "@/assets/surabi.png";
+import ecoridgeLogo from "@/assets/clients/ecoridge.png";
+import ekveeraLogo from "@/assets/clients/ekveera.png";
+import tokyoLogo from "@/assets/clients/tokyo.png";
 
 const reviews = [
   {
     quote:
       "CITRA completely transformed how we thought about our retail space. The team brought commercial intelligence to every design decision and delivered exactly what they promised.",
-    name: "Ananya Mehta",
-    title: "Director, Surabi Group",
-    logo: surabiLogo,
+    name: "Mr. Sandeep Polakonda",
+    title: "MD, ECORIDGE INFRASTRUCTURES",
+    logo: ecoridgeLogo,
   },
   {
     quote:
       "From the first brief to final handover, the process was seamless. We had full visibility at every stage and the finished development exceeded our expectations on every metric.",
-    name: "Rohan Desai",
-    title: "CEO, Greenmark Developments",
-    logo: greenmarkLogo,
+    name: "Sanjeev Kanaparthi",
+    title: "CEO, EKVEERA CONSTRUCTIONS",
+    logo: ekveeraLogo,
   },
   {
     quote:
       "Their visualisation work alone sold three floors of our commercial tower before construction even began. That is the kind of value CITRA delivers.",
-    name: "Priya Nambiar",
-    title: "Founder, EcoEdge Properties",
-    logo: ecoLogo,
+    name: "Mr. Surender Surana",
+    title: "M.D., Tokyo Japan Constructions",
+    logo: tokyoLogo,
   },
 ];
 
