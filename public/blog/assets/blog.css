@@ -94,14 +94,19 @@ ul, ol { padding-left: var(--space-6); }
 }
 
 .nav-logo {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: var(--color-dark);
-  text-transform: uppercase;
-  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo:hover { color: var(--color-primary); }
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 600px) {
+  .nav-logo-img { height: 36px; }
+}
 
 .nav-links {
   display: flex;
