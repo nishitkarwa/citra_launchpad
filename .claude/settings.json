@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd \"/Users/nishitkarwa/Documents/CITRA Website\" && if [ -n \"$(git status --porcelain)\" ]; then git add -A && git commit -m \"Auto-sync: Claude changes [$(date +%Y-%m-%d %H:%M)]\" && git push origin main; fi",
+            "command": "cd \"/Users/nishitkarwa/Documents/CITRA Website\" && git fetch origin 2>/dev/null; if [ -n \"$(git status --porcelain)\" ]; then git add -A && git commit -m \"Auto-sync: Claude changes [$(date '+%Y-%m-%d %H:%M')]\"; fi; if [ -n \"$(git log origin/main..HEAD 2>/dev/null)\" ]; then git pull origin main --rebase 2>/dev/null && git push origin main; fi",
             "timeout": 60,
             "statusMessage": "Pushing changes to GitHub..."
           }
