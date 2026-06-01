@@ -27,6 +27,8 @@ import iskconNerella2 from "@/assets/projects/iskcon-nerella-2.jpg";
 import iskconNerella3 from "@/assets/projects/iskcon-nerella-3.jpg";
 import iskconNerella4 from "@/assets/projects/iskcon-nerella-4.jpg";
 import iskconNerella5 from "@/assets/projects/iskcon-nerella-5.jpg";
+import iskconNerellaGarden from "@/assets/projects/iskcon-nerella-garden.png";
+import iskconNerellaMasterplan from "@/assets/projects/iskcon-nerella-masterplan.png";
 import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
 import motiMahal1 from "@/assets/projects/moti-mahal-1.jpg";
 import motiMahal3 from "@/assets/projects/moti-mahal-3.jpg";
@@ -156,7 +158,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design Completed" },
     ],
     cover: iskconNerellaHero,
-    gallery: [iskconNerellaHero, iskconNerella1, iskconNerella2, iskconNerella3, iskconNerella4, iskconNerella5],
+    gallery: [iskconNerellaHero, iskconNerellaMasterplan, iskconNerellaGarden, iskconNerella1, iskconNerella2, iskconNerella3, iskconNerella4, iskconNerella5],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1j0iiTJeRPsd_xPdNz6i8Fz8WONfwCKyd",
   },
