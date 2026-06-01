@@ -10,6 +10,9 @@ import convent3 from "@/assets/projects/convent-3.png";
 import convent4 from "@/assets/projects/convent-4.png";
 import convent5 from "@/assets/projects/convent-5.png";
 import projectOffice from "@/assets/project-office.jpg";
+import rainbowEntrance from "@/assets/projects/rainbow-vistas/entrance.png";
+import rainbowAerial from "@/assets/projects/rainbow-vistas/aerial-plan.png";
+import rainbowAmenities from "@/assets/projects/rainbow-vistas/amenities.png";
 import projectFarm from "@/assets/project-farm.jpg";
 import projectLandscape from "@/assets/project-landscape.jpg";
 import projectHospitality from "@/assets/project-hospitality.jpg";
@@ -401,8 +404,8 @@ export const projects: Project[] = [
       { label: "Plot Division", value: "~200 Sq Yards Units" },
       { label: "Year", value: "2022" },
     ],
-    cover: projectOffice,
-    gallery: [projectOffice, projectOffice, projectOffice, projectOffice],
+    cover: rainbowEntrance,
+    gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities],
   },
   {
     slug: "nikitas-villa",
