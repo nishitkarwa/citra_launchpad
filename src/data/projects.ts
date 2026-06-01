@@ -13,6 +13,9 @@ import projectOffice from "@/assets/project-office.jpg";
 import rainbowEntrance from "@/assets/projects/rainbow-vistas/entrance.png";
 import rainbowAerial from "@/assets/projects/rainbow-vistas/aerial-plan.png";
 import rainbowAmenities from "@/assets/projects/rainbow-vistas/amenities.png";
+import rainbowGate from "@/assets/projects/rainbow-vistas/gate.png";
+import rainbowPool from "@/assets/projects/rainbow-vistas/pool.png";
+import rainbowPlayAreaNight from "@/assets/projects/rainbow-vistas/play-area-night.png";
 import projectFarm from "@/assets/project-farm.jpg";
 import projectLandscape from "@/assets/project-landscape.jpg";
 import projectHospitality from "@/assets/project-hospitality.jpg";
@@ -405,7 +408,7 @@ export const projects: Project[] = [
       { label: "Year", value: "2022" },
     ],
     cover: rainbowEntrance,
-    gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities],
+    gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities, rainbowGate, rainbowPool, rainbowPlayAreaNight],
   },
   {
     slug: "nikitas-villa",
