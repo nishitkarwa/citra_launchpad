@@ -408,7 +408,7 @@ export const projects: Project[] = [
       { label: "Year", value: "2022" },
     ],
     cover: rainbowEntrance,
-    gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities],
+    gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities, rainbowGate, rainbowPool, rainbowPlayAreaNight],
   },
   {
     slug: "nikitas-villa",
