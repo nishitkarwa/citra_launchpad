@@ -407,7 +407,7 @@ export const projects: Project[] = [
       { label: "Plot Division", value: "~200 Sq Yards Units" },
       { label: "Year", value: "2022" },
     ],
-    cover: rainbowEntrance,
+    cover: rainbowGate,
     gallery: [rainbowEntrance, rainbowAerial, rainbowAmenities, rainbowGate, rainbowPool, rainbowPlayAreaNight],
   },
   {
