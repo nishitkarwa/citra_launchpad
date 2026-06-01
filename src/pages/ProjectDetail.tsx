@@ -42,7 +42,7 @@ const ProjectDetail = () => {
       <section className="relative h-[75vh] min-h-[520px] flex items-end overflow-hidden">
         <img
           src={project.cover}
-          alt={project.title}
+          alt={`${project.title} - ${project.section} project by CITRA Associates in ${project.location}`}
           className="absolute inset-0 w-full h-full object-cover object-center animate-ken-burns will-change-transform"
           width={1920}
           height={1080}
@@ -138,7 +138,7 @@ const ProjectDetail = () => {
               >
                 <img
                   src={g}
-                  alt={`${project.title} visual ${i + 1}`}
+                  alt={`${project.title} ${project.location} - ${project.section} architecture by CITRA Associates, image ${i + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
                   loading="lazy"
                 />

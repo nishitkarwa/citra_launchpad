@@ -90,19 +90,19 @@ const SignatureProjects = () => {
                     <div className="grid grid-cols-2 gap-3">
                       <ParallaxImage
                         src={p.gallery[0] ?? p.cover}
-                        alt={p.title}
+                        alt={`${p.title} - ${p.section} by CITRA Associates, ${p.location}`}
                         className="rounded-xl w-full h-44 md:h-56 col-span-2"
                         loading="lazy"
                       />
                       <ParallaxImage
                         src={p.gallery[1] ?? p.cover}
-                        alt={p.title}
+                        alt={`${p.title} gallery image - CITRA Associates ${p.location}`}
                         className="rounded-xl w-full h-32"
                         loading="lazy"
                       />
                       <ParallaxImage
                         src={p.gallery[2] ?? p.gallery[1] ?? p.cover}
-                        alt={p.title}
+                        alt={`${p.title} architecture detail - CITRA Associates`}
                         className="rounded-xl w-full h-32"
                         loading="lazy"
                       />

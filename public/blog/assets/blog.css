@@ -778,3 +778,19 @@ ul, ol { padding-left: var(--space-6); }
   .article-meta { gap: var(--space-2); font-size: var(--text-xs); }
   .card-body h2 { font-size: var(--text-base); }
 }
+
+/* Project reference links in articles */
+.project-links-note {
+  background: var(--color-bg-light);
+  border-left: 3px solid var(--color-primary);
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9375rem;
+  margin: 2rem 0;
+}
+.project-links-note a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
