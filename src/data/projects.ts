@@ -161,7 +161,7 @@ export const projects: Project[] = [
       { label: "Status", value: "Design Completed" },
     ],
     cover: iskconNerellaHero,
-    gallery: [iskconNerellaMasterplan, iskconNerellaGarden, iskconNerellaAerialView, iskconNerellaPoolView, iskconNerellaFountainView, iskconNerellaGoshalaView, iskconNerellaTowerView],
+    gallery: [iskconNerellaMasterplan, iskconNerellaGarden, iskconNerellaAerialView, iskconNerellaPoolView, iskconNerellaFountainView, iskconNerellaGoshalaView, iskconNerellaTowerView, iskconNerellaSiteOverview, iskconNerellaStreetView],
     featured: true,
     driveLink: "https://drive.google.com/drive/folders/1j0iiTJeRPsd_xPdNz6i8Fz8WONfwCKyd",
   },
