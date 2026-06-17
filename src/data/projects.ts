@@ -30,6 +30,8 @@ import iskconNerellaPoolView from "@/assets/projects/iskcon-nerella-pool-view.pn
 import iskconNerellaFountainView from "@/assets/projects/iskcon-nerella-fountain-view.png";
 import iskconNerellaGoshalaView from "@/assets/projects/iskcon-nerella-goshala-view.png";
 import iskconNerellaTowerView from "@/assets/projects/iskcon-nerella-tower-view.png";
+import iskconNerellaSiteOverview from "@/assets/projects/iskcon-nerella-site-overview.png";
+import iskconNerellaStreetView from "@/assets/projects/iskcon-nerella-street-view.png";
 import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
 import motiMahal1 from "@/assets/projects/moti-mahal-1.jpg";
 import motiMahal3 from "@/assets/projects/moti-mahal-3.jpg";
