@@ -36,6 +36,22 @@ const ProjectDetail = () => {
 
   const others = signatureProjects.filter((p) => p.slug !== project.slug).slice(0, 3);
 
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+
+  const goToPrev = () =>
+    setLightboxIndex((prev) => (prev === 0 ? project.gallery.length - 1 : prev - 1));
+
+  const goToNext = () =>
+    setLightboxIndex((prev) => (prev === project.gallery.length - 1 ? 0 : prev + 1));
+
   return (
     <div className="min-h-screen">
       <Navbar />
