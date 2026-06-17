@@ -22,7 +22,7 @@ import projectHospitality from "@/assets/project-hospitality.jpg";
 import projectRoofgarden from "@/assets/project-roofgarden.jpg";
 import projectGolf from "@/assets/project-golf.jpg";
 import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.jpg";
-import iskconNerella3 from "@/assets/projects/iskcon-nerella-3.jpg";
+
 import iskconNerellaGarden from "@/assets/projects/iskcon-nerella-garden.png";
 import iskconNerellaMasterplan from "@/assets/projects/iskcon-nerella-masterplan.png";
 import iskconNerellaAerialView from "@/assets/projects/iskcon-nerella-aerial-view.png";
