@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ExternalLink, MapPin, Calendar, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GalleryLightbox from "@/components/GalleryLightbox";
 import { useInView } from "@/hooks/useInView";
 import ParallaxImage from "@/components/ParallaxImage";
 import { getProjectBySlug, signatureProjects } from "@/data/projects";
@@ -33,6 +35,22 @@ const ProjectDetail = () => {
   }
 
   const others = signatureProjects.filter((p) => p.slug !== project.slug).slice(0, 3);
+
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+
+  const goToPrev = () =>
+    setLightboxIndex((prev) => (prev === 0 ? project.gallery.length - 1 : prev - 1));
+
+  const goToNext = () =>
+    setLightboxIndex((prev) => (prev === project.gallery.length - 1 ? 0 : prev + 1));
 
   return (
     <div className="min-h-screen">
@@ -132,9 +150,12 @@ const ProjectDetail = () => {
           <h2 className="mb-10">Visual Showcase</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {project.gallery.map((g, i) => (
-              <div
+              <button
                 key={i}
-                className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
+                type="button"
+                onClick={() => openLightbox(i)}
+                className={`overflow-hidden rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
+                aria-label={`View ${project.title} gallery image ${i + 1} in full size`}
               >
                 <img
                   src={g}
@@ -142,9 +163,18 @@ const ProjectDetail = () => {
                   className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
                   loading="lazy"
                 />
-              </div>
+              </button>
             ))}
           </div>
+
+          <GalleryLightbox
+            images={project.gallery}
+            currentIndex={lightboxIndex}
+            isOpen={lightboxOpen}
+            onClose={closeLightbox}
+            onPrev={goToPrev}
+            onNext={goToNext}
+          />
           <p className="text-xs text-muted-foreground mt-4">Placeholder visuals — final imagery to be added.</p>
         </div>
       </section>
