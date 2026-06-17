@@ -150,9 +150,12 @@ const ProjectDetail = () => {
           <h2 className="mb-10">Visual Showcase</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {project.gallery.map((g, i) => (
-              <div
+              <button
                 key={i}
-                className={`overflow-hidden rounded-2xl ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
+                type="button"
+                onClick={() => openLightbox(i)}
+                className={`overflow-hidden rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${i === 0 ? "md:col-span-2 md:row-span-2 h-[300px] md:h-[520px]" : "h-[240px]"}`}
+                aria-label={`View ${project.title} gallery image ${i + 1} in full size`}
               >
                 <img
                   src={g}
@@ -160,9 +163,18 @@ const ProjectDetail = () => {
                   className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-110"
                   loading="lazy"
                 />
-              </div>
+              </button>
             ))}
           </div>
+
+          <GalleryLightbox
+            images={project.gallery}
+            currentIndex={lightboxIndex}
+            isOpen={lightboxOpen}
+            onClose={closeLightbox}
+            onPrev={goToPrev}
+            onNext={goToNext}
+          />
           <p className="text-xs text-muted-foreground mt-4">Placeholder visuals — final imagery to be added.</p>
         </div>
       </section>
