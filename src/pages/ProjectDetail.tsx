@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ExternalLink, MapPin, Calendar, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GalleryLightbox from "@/components/GalleryLightbox";
 import { useInView } from "@/hooks/useInView";
 import ParallaxImage from "@/components/ParallaxImage";
 import { getProjectBySlug, signatureProjects } from "@/data/projects";
