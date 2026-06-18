@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useInView } from "@/hooks/useInView";
 import ParallaxImage from "@/components/ParallaxImage";
-import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.png.asset.json";
+import iskconNerellaHero from "@/assets/projects/iskcon-nerella-hero.png";
 import motiMahalHero from "@/assets/projects/moti-mahal-hero.jpg";
 import varahiHero from "@/assets/projects/varahi-hero.png";
 import westroHero from "@/assets/projects/westro-hero.png";
